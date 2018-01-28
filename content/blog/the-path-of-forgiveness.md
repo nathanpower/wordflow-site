@@ -89,11 +89,8 @@ to do if and when they are perfectly capable of making their own decisions.*
 The poet Kahlil Gibran reminds you –
 
 >   'Your children are not your children
-
 >   They are the sons and daughters of
-
 >   Life's longing for itself. They come
-
 >   Through you but not for you .....'
 
 When you stop trying to control others according to the whims and demand-led
