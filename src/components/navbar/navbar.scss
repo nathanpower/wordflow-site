@@ -49,7 +49,7 @@ nav {
 
   @media only screen and (max-width: 48em) {
     opacity: 1;
-    color: black;
+    color: $black;
   }
 }
 
@@ -62,8 +62,8 @@ nav {
 }
 
 nav.scrolled .nav-links a,
-nav.scrolled .nav-home {
-  color: black;
+nav.scrolled .nav-home a {
+  color: $black;
   opacity: 1;
 }
 
@@ -93,7 +93,7 @@ nav.scrolled .nav-home {
   }
 
   a {
-    color: black;
+    color: $black;
     line-height: 1.7;
     padding: .5rem;
     font-weight: 300;

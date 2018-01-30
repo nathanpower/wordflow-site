@@ -1,12 +1,9 @@
 import React from 'react'
-import { Router, Link } from 'react-static'
-import classNames from 'classnames'
+import { Router } from 'react-static'
 //
 import Routes from 'react-static-routes'
 import ScrollContainer from './components/scroll-container'
 import NavBar from './components/navbar'
-import BurgerIcon from './components/icons/burger'
-
 
 import './app.scss'
 

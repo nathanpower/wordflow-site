@@ -11,6 +11,16 @@ body {
   height: 2000px;
 }
 
+button, input[type="submit"], input[type="reset"] {
+  background: none !important;
+  color: inherit;
+  border: none;
+  padding: 0! important;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit !important;
+}
+
 a {
   text-decoration: none;
   color: $primary-color;
@@ -23,7 +33,6 @@ img {
 
 .content {
   margin-top: 100px;
-  padding: 1rem;
 
   @media only screen and (max-width: 48em) {
     margin-top: 50px;

@@ -1,8 +1,12 @@
 import React from 'react'
 import { getSiteProps } from 'react-static'
 
+import Header from '../components/header'
+import Tagline from '../components/tagline'
+
 export default getSiteProps(() => (
   <div>
-    <h1 style={{ textAlign: 'center' }}>Welcome to Wordflow</h1>
+    <Header />
+    <Tagline />
   </div>
 ))

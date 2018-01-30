@@ -37,9 +37,9 @@ export default class NavBar extends React.Component {
   renderBurgerMenu () {
     const Icon = this.state.mobileMenuVisible ? CancelIcon : BurgerIcon
     return (
-      <switch className="burger-menu row end-xs col-xs-1" onClick={this.boundToggleMenu}>
+      <button className="burger-menu row end-xs col-xs-1" onClick={this.boundToggleMenu}>
         <Icon />
-      </switch>
+      </button>
     )
   }
 
