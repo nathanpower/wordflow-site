@@ -11,10 +11,10 @@ export default class NavBar extends React.Component {
   constructor (props) {
     super(props)
     this.state = {}
+    this.boundToggleMenu = this.toggleMobileMenu.bind(this)
   }
 
   toggleMobileMenu () {
-    console.log('called')
     this.setState({ mobileMenuVisible: !this.state.mobileMenuVisible })
   }
 
@@ -24,7 +24,7 @@ export default class NavBar extends React.Component {
     }
 
     return (
-      <div className="nav-links row end-sm col-sm-8">
+      <div className="nav-links row end-sm col-sm-9">
         <Link to="/services">Services</Link>
         <Link to="/about">About Us</Link>
         <Link to="/testimonials">Testimonials</Link>
@@ -37,9 +37,9 @@ export default class NavBar extends React.Component {
   renderBurgerMenu () {
     const Icon = this.state.mobileMenuVisible ? CancelIcon : BurgerIcon
     return (
-      <div className="burger-menu row end-xs col-xs-1" onClick={this.toggleMobileMenu.bind(this)}>
+      <switch className="burger-menu row end-xs col-xs-1" onClick={this.boundToggleMenu}>
         <Icon />
-      </div>
+      </switch>
     )
   }
 
@@ -64,7 +64,7 @@ export default class NavBar extends React.Component {
 
     return (
       <nav className={classNames('full-width row middle-xs center-sm start-xs', { scrolled })}>
-        <div className="nav-home row center-sm start-xs col-sm-2 col-xs-11">
+        <div className="nav-home row start-xs col-sm-2 col-xs-11">
           <Link to="/">WordFlow</Link>
         </div>
         {this.renderDesktopLinks()}
