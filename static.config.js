@@ -1,13 +1,13 @@
-import axios from 'axios'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import { getContent } from './src/utils/content'
+import Document from './src/Document'
 
 export default {
+  Document,
   getSiteProps: () => ({
     title: 'React Static',
   }),
   getRoutes: async () => {
-    // const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
     const posts = await getContent('blog')
 
     return [

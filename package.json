@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "classnames": "^2.2.5",
     "fast-glob": "^2.0.1",
+    "flexboxgrid-sass": "^8.0.5",
     "marked": "^0.3.12",
     "normalize.css": "^7.0.0",
     "react": "^16.0.0",
