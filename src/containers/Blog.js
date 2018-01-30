@@ -2,9 +2,10 @@
 import React from 'react'
 import { getRouteProps, Link } from 'react-static'
 //
+import './blog.scss'
 
 export default getRouteProps(({ posts }) => (
-  <div>
+  <div className="blog">
     <h1>It’s blog time.</h1>
     <br />
     All Posts:

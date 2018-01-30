@@ -1,0 +1,8 @@
+@import '../../variables.scss';
+
+.services-container {
+  display: flex;
+  flex-grow: 1;
+  height: 1000px;
+  background-color: $orange;
+}

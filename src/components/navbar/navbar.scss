@@ -8,12 +8,13 @@
 
 nav {
   font-family: 'Poppins', sans-serif;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   height: 100px;
   transition: height, .45s;
   background: $primary-color;
+  z-index: 1;
 
   &.scrolled {
     height: 50px;

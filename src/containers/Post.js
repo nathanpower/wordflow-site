@@ -2,12 +2,13 @@ import React from 'react'
 import { getRouteProps, Link } from 'react-static'
 import marked from 'marked'
 //
+import './blog.scss'
 
 export default getRouteProps(({ post }) => {
   const createMarkup = () => ({ __html: marked(post.__content) })
 
   return (
-    <div>
+    <div className="post">
       <Link to="/blog/">{'<'} Back</Link>
       <br />
       <div className="blog-content" dangerouslySetInnerHTML={createMarkup()} />
