@@ -1,5 +1,5 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import { getContent } from './src/utils/content'
+import { getBlogContent, getPortfolioContent } from './src/utils/content'
 import Document from './src/Document'
 
 export default {
@@ -8,8 +8,10 @@ export default {
     title: 'React Static',
   }),
   getRoutes: async () => {
-    const posts = await getContent('blog')
+    const posts = await getBlogContent()
+    const paths = await getPortfolioContent()
 
+    console.log(paths)
     return [
       {
         path: '/',
