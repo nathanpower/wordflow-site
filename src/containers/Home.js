@@ -1,14 +1,14 @@
 import React from 'react'
-import { getSiteProps } from 'react-static'
+import { getRouteProps } from 'react-static'
 
 import Header from '../components/header'
 import Tagline from '../components/tagline'
 import Services from '../components/services'
 
-export default getSiteProps(() => (
+export default getRouteProps(({ portfolio }) => (
   <div>
     <Header />
     <Tagline />
-    <Services />
+    <Services portfolio={portfolio} />
   </div>
 ))

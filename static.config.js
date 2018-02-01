@@ -9,13 +9,15 @@ export default {
   }),
   getRoutes: async () => {
     const posts = await getBlogContent()
-    const paths = await getPortfolioContent()
+    const portfolio = await getPortfolioContent()
 
-    console.log(paths)
     return [
       {
         path: '/',
         component: 'src/containers/Home',
+        getProps: () => ({
+          portfolio,
+        }),
       },
       {
         path: '/about',
