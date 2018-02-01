@@ -13,7 +13,7 @@ export default ({ item, index }) => (
         justifyContent: 'center',
         alignItems: 'flex-end',
         height: '230px',
-        background: `url('./images/${item.thumbnail}'`,
+        background: `url('./images/${item.thumbnail}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         margin: '15px',
