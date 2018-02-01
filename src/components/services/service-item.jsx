@@ -37,7 +37,7 @@ export default ({ item, index }) => (
       >
         <h3 style={{
           fontFamily: 'Montserrat, sans-serif',
-          fontWeight: 200,
+          fontWeight: 300,
           fontSize: '1.4rem',
           color: 'white',
         }}>
