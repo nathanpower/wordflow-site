@@ -1,12 +1,14 @@
 
 import React from 'react'
 //
+import { Link } from 'react-static'
 
 import './service-item.scss'
 
 export default ({ item, index }) => (
   <div className="service-item-container col-md-4 col-sm-9 col-xs-12">
-    <div
+    <Link
+      to={`services/${item.slug}`}
       className="service-item"
       style={{
         display: 'flex',
@@ -46,6 +48,6 @@ export default ({ item, index }) => (
           {item.category}
         </h3>
       </div>
-    </div>
+    </Link>
   </div>
 )

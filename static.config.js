@@ -18,6 +18,13 @@ export default {
         getProps: () => ({
           portfolio,
         }),
+        children: portfolio.map(detail => ({
+          path: `/services/${detail.slug}`,
+          component: 'src/components/services/service-detail',
+          getProps: () => ({
+            detail,
+          }),
+        })),
       },
       {
         path: '/about',
