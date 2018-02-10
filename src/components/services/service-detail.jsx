@@ -5,6 +5,6 @@ import DetailHeader from './detail-header'
 
 export default getRouteProps(({ detail }) => (
   <div className="service-detail">
-    <DetailHeader heading={detail.category} />
+    <DetailHeader heading={detail.title} />
   </div>
 ))
