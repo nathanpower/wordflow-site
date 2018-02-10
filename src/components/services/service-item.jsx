@@ -45,7 +45,7 @@ export default ({ item, index }) => (
           color: 'white',
         }}
         >
-          {item.category}
+          {item.title}
         </h3>
       </div>
     </Link>
