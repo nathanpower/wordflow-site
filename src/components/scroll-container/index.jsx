@@ -12,6 +12,7 @@ export default class ScrollContainer extends React.Component {
 
   setScrollTop () {
     const scrollTop = document.documentElement.scrollTop
+    console.log(scrollTop);
     this.setState({ scrollTop })
   }
 
