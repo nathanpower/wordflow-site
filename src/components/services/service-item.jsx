@@ -24,15 +24,16 @@ export default ({ item, index }) => (
       <div
         className="service-title"
         style={{
-          height: 60,
+          height: 50,
           width: '70%',
-          background: index % 3 === 0 ? '#159C92' : index % 2 === 0 ? '#6389D4' : '#FE8222',
+          background: index === 0 ? '#159C92' : index % 3 === 0 ?
+            '#159C92' : (index - 1)% 3 === 0 ? '#FE8222' : '#6389D4' /* green */,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           position: 'relative',
-          top: 30,
-          borderRadius: 30,
+          top: 25,
+          borderRadius: 25,
         }}
       >
         <h3 style={{
@@ -40,11 +41,11 @@ export default ({ item, index }) => (
           fontWeight: 300,
           fontSize: '1.4rem',
           color: 'white',
-        }}>
+        }}
+        >
           {item.category}
         </h3>
       </div>
     </div>
   </div>
 )
-
