@@ -5,7 +5,7 @@ import React from 'react'
 import './service-item.scss'
 
 export default ({ item, index }) => (
-  <div className="service-item-container col-lg-3 col-md-4 col-sm-9 col-xs-12">
+  <div className="service-item-container col-md-4 col-sm-9 col-xs-12">
     <div
       className="service-item"
       style={{
