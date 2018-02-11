@@ -13,7 +13,7 @@ export default () => (
       <div>
         <NavBar scrolled={scrollTop > 50} />
         <div className="content">
-          <Routes />
+          <Routes scrollTop={scrollTop} />
         </div>
       </div>
     </Router>
