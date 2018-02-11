@@ -11,6 +11,13 @@ body {
   margin-top: 100px;
 }
 
+@media only screen and (max-width: 48em) {
+
+  body {
+    margin-top: 50px;
+  }
+}
+
 button, input[type="submit"], input[type="reset"] {
   background: none !important;
   color: inherit;
