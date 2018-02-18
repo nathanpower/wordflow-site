@@ -20,6 +20,7 @@ export default class NavBar extends React.Component {
     this.boundToggleDropdown = this.toggleDropdown.bind(this)
     this.boundCloseDropdown = this.closeDropdown.bind(this)
     this.boundSetDropdownRef = this.setDropDownRef.bind(this)
+    this.boundSetBurgerMenuRef = this.setBurgerMenuRef.bind(this)
     this.debouncedResize = debounce(this.onResize.bind(this), 300)
   }
 
@@ -42,7 +43,7 @@ export default class NavBar extends React.Component {
   }
 
   onResize () {
-    this.setState({ mobileMenuVisible: false, dropdownVisible: false })
+    this.closeDropdown()
   }
 
   setDropDownRef (el) {
@@ -55,12 +56,16 @@ export default class NavBar extends React.Component {
     }
   }
 
+  setBurgerMenuRef (el) {
+    this.burgerMenuRef = el
+  }
+
   toggleDropdown () {
     this.setState({ dropdownVisible: !this.state.dropdownVisible })
   }
 
   closeDropdown () {
-    this.setState({ dropdownVisible: false })
+    this.setState({ mobileMenuVisible: false, dropdownVisible: false })
   }
 
   toggleMobileMenu () {
@@ -109,7 +114,11 @@ export default class NavBar extends React.Component {
   renderBurgerMenu () {
     const Icon = this.state.mobileMenuVisible ? CancelIcon : BurgerIcon
     return (
-      <button className="burger-menu row end-xs col-xs-1" onClick={this.boundToggleMenu}>
+      <button
+        className="burger-menu row end-xs col-xs-1"
+        onClick={this.boundToggleMenu}
+        ref={this.boundSetBurgerMenuRef}
+      >
         <Icon />
       </button>
     )
@@ -133,7 +142,14 @@ export default class NavBar extends React.Component {
 
     return (
       <div className="mobile-nav open full-width row start-xs">
-        {portfolioLinks.map(link => <Link key={link.slug} className="col-xs-12" to={`/services/${link.slug}`}>{link.title}</Link>)}
+        {portfolioLinks.map(link => (
+          <Link
+            onClick={this.boundCloseDropdown}
+            key={link.slug}
+            className="col-xs-12"
+            to={`/services/${link.slug}`}>{link.title}
+          </Link>
+        ))}
         <Link className="col-xs-12" to="/about">About Us</Link>
         <Link className="col-xs-12" to="/testimonials">Testimonial</Link>
         <Link className="col-xs-12" to="/contact">Contact</Link>
