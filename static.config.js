@@ -1,12 +1,15 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import { getBlogContent, getPortfolioContent } from './src/utils/content'
+import { getBlogContent, getPortfolioContent, getPortfolioLinks } from './src/utils/content'
 import Document from './src/Document'
 
 export default {
   Document,
-  getSiteProps: () => ({
-    title: 'React Static',
-  }),
+  getSiteData: async () => {
+    const portfolioLinks = await getPortfolioLinks()
+    return {
+      portfolioLinks,
+    }
+  },
   getRoutes: async () => {
     const posts = await getBlogContent()
     const portfolio = await getPortfolioContent()
@@ -15,13 +18,13 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home',
-        getProps: () => ({
+        getData: () => ({
           portfolio,
         }),
         children: portfolio.map(detail => ({
           path: `/services/${detail.slug}`,
           component: 'src/components/services/service-detail',
-          getProps: () => ({
+          getData: () => ({
             detail,
           }),
         })),
@@ -33,13 +36,13 @@ export default {
       {
         path: '/blog',
         component: 'src/containers/Blog',
-        getProps: () => ({
+        getData: () => ({
           posts,
         }),
         children: posts.map(post => ({
           path: `/post/${post.slug}`,
           component: 'src/containers/Post',
-          getProps: () => ({
+          getData: () => ({
             post,
           }),
         })),

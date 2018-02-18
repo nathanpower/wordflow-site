@@ -22,22 +22,12 @@ export const getBlogContent = async () => {
   return parsed
 }
 
-export const getPortfolioContent = async () => {
+export const getOverviews = async () => {
   const paths = await getPortfolioPaths()
-  const categories = paths.map(path => StartCase(Path.basename(path)))
 
-  const entryPromises = paths.map(path => Glob([`${path}entries/*.md`]))
-  const overViewPromises = paths.map(path => Glob([`${path}overview*.md`]))
+  const overViewPromises = paths.map(path => Glob([`${path}/overview*.md`]))
 
-  const contentPaths = await Promise.all(entryPromises)
   const overviewPaths = await Promise.all(overViewPromises)
-
-  const contentFilePromises = contentPaths.map(paths => readFiles(paths))
-  const contentFiles = await Promise.all(contentFilePromises)
-
-  const contentPromises = await Promise.all(contentFiles.map(files => parseFiles(files)))
-
-  const content = await Promise.all(contentPromises)
 
   const overviewFilePromises = overviewPaths.map(paths => readFiles(paths))
   const overviewFiles = await Promise.all(overviewFilePromises)
@@ -45,6 +35,26 @@ export const getPortfolioContent = async () => {
   const overviewPromises = await Promise.all(overviewFiles.map(files => parseFiles(files)))
 
   const overviews = Flatten(await Promise.all(overviewPromises))
+
+  return overviews.map((overview, i) => Object.assign(overview, { slug: Path.basename(paths[i]) }))
+}
+
+export const getPortfolioLinks = async () => {
+  const overviews = await getOverviews()
+  return overviews.map(o => ({ title: o.title, slug: o.slug }))
+}
+
+export const getPortfolioContent = async () => {
+  const paths = await getPortfolioPaths()
+  const overviews = await getOverviews()
+  const categories = paths.map(path => StartCase(Path.basename(path)))
+
+  const entryPromises = paths.map(path => Glob([`${path}/entries/*.md`]))
+  const contentPaths = await Promise.all(entryPromises)
+  const contentFilePromises = contentPaths.map(paths => readFiles(paths))
+  const contentFiles = await Promise.all(contentFilePromises)
+  const contentPromises = await Promise.all(contentFiles.map(files => parseFiles(files)))
+  const content = await Promise.all(contentPromises)
 
   return categories.reduce((memo, category, index) => {
     memo.push(Object.assign({
