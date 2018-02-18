@@ -2,7 +2,7 @@ import React from 'react'
 import { Router } from 'react-static'
 //
 import Routes from 'react-static-routes'
-import ScrollContainer from './components/scroll-container'
+import ScrollContainer from './components/shared/scroll-container'
 import NavBar from './components/navbar'
 
 import './app.scss'
