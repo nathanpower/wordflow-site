@@ -4,16 +4,18 @@
   justify-content: flex-start;
   min-width: 145px;
   background-color: black;
-  transition: all .5s ease;
+  transition: transform .5s ease 0s, opacity .1s ease;
   z-index: 1;
   transform: translateY(-150%);
   border: 1px solid rgba(255, 255, 255, .2 );
+  opacity: 0;
 
   @media only screen and (max-width: 48em) {
     display: none;
   }
 
   &.visible {
+    opacity: 1;
     transform: translate(0);
   }
 
