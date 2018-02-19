@@ -1,6 +1,6 @@
 ---
 video: https://i.vimeocdn.com/video/625567590.webp?mw=1200&mh=675&q=70
-caption: Century Office Supplies
+client: Century Office Supplies
 title: Social Media Videos
 ---
 

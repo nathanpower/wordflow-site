@@ -1,6 +1,6 @@
 ---
 video: https://i.vimeocdn.com/video/209641199.webp?mw=3400&mh=1913&q=70
-caption: Orangina Schweppes Corporation
+client: Orangina Schweppes Corporation
 title: Corporate Videos
 ---
 

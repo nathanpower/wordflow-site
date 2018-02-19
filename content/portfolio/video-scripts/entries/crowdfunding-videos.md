@@ -1,6 +1,6 @@
 ---
 video: https://i.vimeocdn.com/video/625568264.webp?mw=1200&mh=675&q=70
-caption: Kailani Ice Tea
+client: Kailani Ice Tea
 title: Crowdfunding Videos
 ---
 

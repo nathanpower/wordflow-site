@@ -1,6 +1,6 @@
 ---
 video: https://i.vimeocdn.com/video/677049960.webp?mw=1200&mh=675&q=70
-caption: GoodToGo Media
+client: GoodToGo Media
 title: Promotional Content
 ---
 
