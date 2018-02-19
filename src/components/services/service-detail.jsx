@@ -7,7 +7,6 @@ import './service-detail.scss'
 
 export default withRouteData(({ detail }) => (
   <div className="service-detail">
-    {console.log(detail)}
     <DetailHeader heading={detail.title} />
     <div className="detail-body">
       <div className="detail-description row full-width center-xs">
