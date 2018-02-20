@@ -1,8 +1,6 @@
 ---
 image: dr-mark-rowe-site.jpg
-client: Dr. Mark Rowe
-title: Blogging with Dr. Mark Rowe
-date: November 2016
+client: Dr. Mark Rowe - Transformations
+order: 3
 ---
-
-Dr. Mark is an extremely busy man with his medical practice and his regular speaking spots at seminars and events. He has a lot to say, but little time to write. As a result he would provide us with notes he had made about what it is he would like to communicate in a blog, which we were then able to reshape into engaging material for his followers to enjoy, and of course to increase his visibility in the world of self-care.
+With Dr Mark’s site, the key challenge was to find a voice commensurate with the work he is trying to do in the areas of self-help, empowerment, and self-improvement. Mark had already released a book and there was a variety of literature around his work so it was important that there was a consistency of tone throughout. We’re proud to say that we achieved this with Mark’s site and went on to copy-edit a number of blogs for the site having been provided with input from Mark, It was a challenging, but satisfying product and we’re sure you’ll be hearing more from Dr. Mark in the future.

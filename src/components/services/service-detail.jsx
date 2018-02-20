@@ -16,7 +16,9 @@ export default withRouteData(({ detail }) => (
         {detail.entries.map((item, index) => (
           <div key={item.client} className="portfolio-item row center-xs around-xs col-lg-8 col-sm-10 col-xs-12">
             <div className="portfolio-image col-sm-6 col-xs-12" style={{ order: index % 2 === 0 ? 1 : 2 }} >
-              <img alt={item.client} src={`/images/${item.image}`} />
+              {item.image && <img alt={item.client} src={`/images/${item.image}`} />}
+              {item.video &&
+                <iframe src={item.video} width="100%" height="100%" frameBorder="0" title={item.title} allowFullScreen />}
             </div>
             <div
               className="portfolio-text col-sm-6 col-xs-12"

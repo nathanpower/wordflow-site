@@ -1,5 +1,5 @@
 ---
-video: https://i.vimeocdn.com/video/677049960.webp?mw=1200&mh=675&q=70
+video: https://player.vimeo.com/video/226184927
 client: GoodToGo Media
 title: Promotional Content
 ---

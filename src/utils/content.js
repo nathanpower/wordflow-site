@@ -60,7 +60,7 @@ export const getPortfolioContent = async () => {
     memo.push(Object.assign({
       category,
       slug: Path.basename(paths[index]),
-      entries: content[index],
+      entries: content[index].sort((a, b) => a.order > b.order),
     }, overviews[index]))
     return memo
   }, []).sort((a, b) => a.order > b.order)

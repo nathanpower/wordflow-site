@@ -28,7 +28,13 @@
   }
 
   .portfolio-text {
+    height: 331px;
     font: 300 16px/1.65em 'Poppins', sans-serif;
     color: #0b486b;
+
+    @media only screen and (max-width: 48em) {
+
+      height: auto;
+    }
   }
 }

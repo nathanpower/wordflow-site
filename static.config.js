@@ -4,6 +4,7 @@ import Document from './src/Document'
 
 export default {
   Document,
+  siteRoot: 'https://adoring-beaver-e5df49.netlify.com/',
   getSiteData: async () => {
     const portfolioLinks = await getPortfolioLinks()
     return {
