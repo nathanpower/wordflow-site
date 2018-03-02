@@ -15,12 +15,13 @@ const readFiles = async paths => Promise.all(paths.map(path => readFileAsync(pat
 
 const parseFiles = async files => Promise.all(files.map(file => FrontMatter.loadFront(file)))
 
-export const getBlogContent = async () => {
-  const paths = await Glob(['./content/blog/*.md'])
+export const getContent = async folder => {
+  const paths = await Glob([`./content/${folder}/*.md`])
   const files = await readFiles(paths)
   const parsed = await parseFiles(files)
-  return parsed
+  return parsed.sort((a, b) => a.order > b.order)
 }
+
 
 export const getOverviews = async () => {
   const paths = await getPortfolioPaths()

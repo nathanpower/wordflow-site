@@ -1,5 +1,5 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import { getBlogContent, getPortfolioContent, getPortfolioLinks } from './src/utils/content'
+import { getContent, getPortfolioContent, getPortfolioLinks } from './src/utils/content'
 import Document from './src/Document'
 
 export default {
@@ -12,7 +12,8 @@ export default {
     }
   },
   getRoutes: async () => {
-    const posts = await getBlogContent()
+    const posts = await getContent('blog')
+    const quotes = await getContent('quotes')
     const portfolio = await getPortfolioContent()
 
     return [
@@ -21,6 +22,7 @@ export default {
         component: 'src/containers/Home',
         getData: () => ({
           portfolio,
+          quotes,
         }),
         children: portfolio.map(detail => ({
           path: `/services/${detail.slug}`,
