@@ -29,7 +29,7 @@ export default ({ item, index }) => (
           height: 50,
           width: '70%',
           background: index === 0 ? '#159C92' : index % 3 === 0 ?
-            '#159C92' : (index - 1)% 3 === 0 ? '#FE8222' : '#6389D4' /* green */,
+            '#159C92' : (index - 1)% 3 === 0 ? '#FE8222' : '#6389D4',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
