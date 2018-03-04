@@ -5,7 +5,7 @@
   width: 100%;
 
   .carousel-item {
-    height: 250px;
+    height: 285px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,6 +16,7 @@
 
 
   h2.carousel-quote {
+    text-align: left;
     padding-top: 25px;
     width: 700px;
     font-stretch: 100%;
