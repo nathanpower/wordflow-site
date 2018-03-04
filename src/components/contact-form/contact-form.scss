@@ -44,22 +44,22 @@
       }
     }
 
-    form {
+    form.contact-form {
 
-      input {
+      input.text-input {
         height: 54px;
       }
 
-      textarea: {
+      textarea.multiline-input {
         height: auto;
       }
 
-      input,
-      textarea {
+      input.text-input,
+      textarea.multiline-input {
         margin: 30px 0 0;
-        font: 300 12px 'Poppins', sans-serif;
+        font: 700 14px 'Poppins', sans-serif;
         letter-spacing: .2px;
-        color: #9d9d9d;
+        color: black;
         background-color: rgba(0, 0, 0, .05);
         border: none;
         box-shadow: none;
@@ -71,6 +71,35 @@
         &:hover {
           background-color: rgba(0, 0, 0, .08);
           box-shadow: none;
+        }
+
+        &::placeholder {
+          font: 400 14px 'Poppins', sans-serif;
+          color: #8d8d8d;
+        }
+      }
+
+      input.contact-submit-btn {
+        text-align: center;
+        color: white;
+        background-color: $primary-color!important;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 1px;
+        padding: 18px 38px 18px 38px!important;
+        margin: 15px 10px;
+        border: 2px solid $primary-color;;
+        opacity: .98;
+        border-radius: 30px;
+        transition: all .3s;
+    
+        &:hover {
+          cursor: pointer;
+          background-color: white;
+          opacity: .75;
         }
       }
     }
