@@ -16,8 +16,8 @@
 
 
   h2.carousel-quote {
-    text-align: left;
-    padding-top: 25px;
+    text-align: center;
+    padding: 25px 15px;
     width: 700px;
     font-stretch: 100%;
     font-size: 40px;
@@ -25,6 +25,11 @@
     line-height: 50px;
     letter-spacing: -2px;
     margin: 0;
+
+    @media only screen and (max-width: 48em) {
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 
   h3.carousel-client {
@@ -35,6 +40,11 @@
     letter-spacing: 4px;
     text-transform: uppercase;
     line-height: 1;
+
+    @media only screen and (max-width: 48em) {
+      font-size: 10px;
+      line-height: .8px;
+    }
   }
 }
 
