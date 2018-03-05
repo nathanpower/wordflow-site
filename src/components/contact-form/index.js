@@ -34,13 +34,13 @@ export default class ContactForm extends React.Component {
   }
 
   isValidForm () {
-    const required = ['name', 'email', 'message'];
+    const required = ['name', 'email', 'message']
     return required.every(field => this.state[field] && this.state[field].trim().length > 0)
   }
 
   render () {
     return (
-      <div className="contact-form-container row center-xs middle-xs around-xs col-xs-12">
+      <div className="contact-form-container row center-xs middle-xs around-xs">
         <div className="contact-form col-md-7 col-sm-10 col-xs-12 row center-xs">
           <h5 className="col-xs-12 phone-cta">Give us a call</h5>
           <address>
