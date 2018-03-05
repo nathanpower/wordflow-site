@@ -62,7 +62,7 @@
         font: 700 14px 'Poppins', sans-serif;
         letter-spacing: .2px;
         color: black;
-        background-color: rgba(0, 0, 0, .05);
+        background-color: $form-bg;
         border: none;
         box-shadow: none;
         border-radius: 0px;
@@ -71,7 +71,7 @@
         transition: background-color .3s;
 
         &:hover {
-          background-color: rgba(0, 0, 0, .08);
+          background-color: $form-bg-hover;
           box-shadow: none;
         }
 

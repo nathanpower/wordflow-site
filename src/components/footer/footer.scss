@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.footer {
+  height: 150px;
+  background-color: $form-bg;
+  font: 300 16px/1.65em 'Raleway', sans-serif;
+  letter-spacing: .2px;
+
+  @media only screen and (max-width: 48em) {
+    height: 70px;
+    font-size: 10px;
+  }
+}
