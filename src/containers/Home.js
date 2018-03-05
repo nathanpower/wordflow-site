@@ -8,13 +8,14 @@ import Carousel from '../components/carousel'
 import CallToAction from '../components/call-to-action'
 import ContactForm from '../components/contact-form'
 
-export default withRouteData(({ portfolio, quotes }) => (
+export default withRouteData(({ portfolio, quotes, testimonials }) => (
   <div>
     <Header />
     <Tagline />
     <Services portfolio={portfolio} />
     <Carousel items={quotes} color="#159C92" />
-    <CallToAction headerMsg="Get In Touch" buttonMsg="Contact WordFlow" color="rgb(254, 130, 34)" />
+    <CallToAction headerText="Get In Touch" buttonMsg="Contact WordFlow" color="rgb(254, 130, 34)" />
+    <Carousel headerText="Testimonials" items={testimonials} color="#A6A6A6" height={180} alignItems="top" />
     <ContactForm />
   </div>
 ))

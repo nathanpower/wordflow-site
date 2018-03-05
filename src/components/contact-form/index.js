@@ -48,7 +48,7 @@ export default class ContactForm extends React.Component {
           </address>
 
           <form
-            className="contact-form row col-xs-12 center-xs between-xs"
+            className="row col-xs-12 center-xs between-xs"
             name="contact"
             method="post"
             data-netlify="true"

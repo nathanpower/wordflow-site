@@ -4,9 +4,11 @@
   height: calc(100vh - 50px);
   width: 100%;
   background-color: white;
+  // border: solid red 1px;
 
   .contact-form {
-    height: 70%;
+    // border: solid blue 1px;
+    height: 75%;
     color: black;
     font-family: Montserrat, sans-serif;
 
@@ -44,7 +46,7 @@
       }
     }
 
-    form.contact-form {
+    form {
 
       input.text-input {
         height: 54px;

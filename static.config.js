@@ -14,6 +14,7 @@ export default {
   getRoutes: async () => {
     const posts = await getContent('blog')
     const quotes = await getContent('quotes')
+    const testimonials = await getContent('testimonials')
     const portfolio = await getPortfolioContent()
 
     return [
@@ -23,6 +24,7 @@ export default {
         getData: () => ({
           portfolio,
           quotes,
+          testimonials,
         }),
         children: portfolio.map(detail => ({
           path: `/services/${detail.slug}`,

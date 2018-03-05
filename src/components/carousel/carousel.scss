@@ -1,38 +1,65 @@
 @import '../../variables.scss';
 
 .carousel {
-  height: 320px;
-  width: 100%;
+  height: 350px;
 
   .carousel-item {
-    height: 285px;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    color: white;
+    font-family: Montserrat, sans-serif;
+  }
+
+  h2.carousel-header {
+    padding-bottom: 0;
+    padding-top: 40px;
+    height: 40px;
     color: white;
     font-family: Montserrat, sans-serif;
   }
 
 
-  h2.carousel-quote {
+  h2.carousel-quote,
+  h2.carousel-header {
     text-align: center;
-    padding: 25px 15px;
     width: 700px;
     font-stretch: 100%;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 50px;
     letter-spacing: -2px;
     margin: 0;
 
     @media only screen and (max-width: 48em) {
       font-size: 30px;
-      line-height: 35px;
+      line-height: 40px;
     }
   }
 
-  h3.carousel-client {
+  h5.carousel-quote,
+  p.quote-author {
+    width: 700px;
+    font: 300 20px/1.65em 'Raleway', sans-serif;
+    letter-spacing: .2px;
+    margin: 0;
+
+    @media only screen and (max-width: 48em) {
+      font-size: 14px;
+    }
+  }
+
+  h5.carousel-quote {
+    text-align: left;
+    padding: 0 15px
+  }
+
+  p.quote-author {
+    position: absolute;
+    bottom: 50px;
+  }
+
+  h6.carousel-client {
     position: absolute;
     bottom: 0px;
     font-size: 12px;
@@ -44,6 +71,7 @@
     @media only screen and (max-width: 48em) {
       font-size: 10px;
       line-height: .8px;
+      letter-spacing: 1px;
     }
   }
 }
@@ -51,4 +79,8 @@
 .slider-decorator-0,
 .slider-decorator-1 {
   display: none;
+}
+
+.slider-decorator-2 {
+  bottom: 10px;
 }
