@@ -87,8 +87,6 @@ export default class NavBar extends React.Component {
         >
           Services
         </div>
-        <Link to="/about">About Us</Link>
-        <Link to="/testimonials">Testimonials</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/blog">Blog</Link>
       </div>
@@ -150,8 +148,6 @@ export default class NavBar extends React.Component {
             to={`/services/${link.slug}`}>{link.title}
           </Link>
         ))}
-        <Link className="col-xs-12" to="/about">About Us</Link>
-        <Link className="col-xs-12" to="/testimonials">Testimonial</Link>
         <Link className="col-xs-12" to="/contact">Contact</Link>
         <Link className="col-xs-12" to="/blog">Blog</Link>
       </div>
