@@ -8,6 +8,7 @@ date: '2016-20-01'
 ---
 # Releasing the Happiness Within
 ### Pause for a moment and ask yourself this question…
+
 How many people do I know that are genuinely thriving in happy, fulfilling, and purposeful lives?
 It’s not that easy to think of candidates who fit the criteria is it? The disappointing reality is that even if you reckon 3 out of 10 in your network fit the bill, then you are enjoying an above average share of highly positive people in your life. Research has found that only about 20% of people see themselves as flourishing, or living close to their optimum potential. Unfortunately the other 80% identify as living a great deal less fruitfully than they know they are capable of. 
 

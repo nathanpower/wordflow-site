@@ -6,6 +6,7 @@ const Glob = require('fast-glob')
 const FrontMatter = require('yaml-front-matter')
 const StartCase = require('lodash.startcase')
 const Flatten = require('lodash.flatten')
+const Marked = require('marked')
 
 const readFileAsync = promisify(Fs.readFile)
 
@@ -19,7 +20,24 @@ export const getContent = async folder => {
   const paths = await Glob([`./content/${folder}/*.md`])
   const files = await readFiles(paths)
   const parsed = await parseFiles(files)
-  return parsed.sort((a, b) => a.order > b.order)
+  const converted = parsed.map(entry => Object.assign({}, entry, { html: Marked(entry.__content) }))
+  converted.forEach(entry => {
+    if (folder === 'blog') {
+      delete entry.__content // let's not keep the blog markdown in memory
+    }
+
+    const paragraphs = entry.html.match(/<p>(.*?)<\/p>/g)
+    const optimalParagraph = paragraphs.find(paragraph => paragraph.length > 300) || paragraphs[0]
+    entry.summary = `<p>${
+      optimalParagraph.replace(/<\/?p>/g, '').substring(0, 300)
+    } <span class="summary-ellipsis">[...]</span></p>`
+  })
+
+  if (folder === 'blog') {
+    console.log(converted[0].summary)
+  }
+
+  return converted.sort((a, b) => a.order > b.order)
 }
 
 

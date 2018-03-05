@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+.blog-main-container {
+  // border: solid 1px red;
+  padding: 50px 0;
+  
+
+  .blog-post-list {
+    height: 100%;
+    // border: solid 1px blue;
+
+    .blog-list-item {
+      text-align: left;
+      padding-bottom: 50px;
+
+      .item-header {
+        width: 100%;
+
+        h2 {
+          margin-bottom: 10px;
+        }
+        h2 a {
+          color: #222222;
+          font-size: 21px;
+        }
+      }
+
+      .item-meta {
+        width: 100%;
+
+        span {
+          color: #8d8d8d;
+        }
+      }
+
+    }
+  }
+
+  .blog-info {
+    height: 100%;
+    // border: solid 1px green;
+  }
+}

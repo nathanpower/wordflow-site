@@ -1,11 +1,9 @@
 import React from 'react'
 import { withRouteData, Link } from 'react-static'
-import marked from 'marked'
 //
-import './blog.scss'
 
 export default withRouteData(({ post }) => {
-  const createMarkup = () => ({ __html: marked(post.__content) })
+  const createMarkup = () => ({ __html: post.html })
 
   return (
     <div className="post">

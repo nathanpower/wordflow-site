@@ -6,9 +6,9 @@ slug: The-French-Conundrum
 category: Incasso Partners
 date: '2016-18-01'
 ---
-The French Conundrum
-=======================
+# The French Conundrum
 ## Socialist Ideals VS Capitalist Realities
+
 The world admires France in so many ways. Between Paris and the Riviera are a plethora of attractions that contribute to France being the most popular tourist destination in the world. There is scarcely a chef in the world who doesn’t hold dear the culinary traditions and cuisines of France. You can hardly tie your shoelaces within a mile of the Eiffel Tower without your girlfriend thinking you are about to propose to her! So yes there is much to admire; the charm, the mellifluous accent, the museums, liberty, equality, and fraternity, but alas the economy is not something we can currently add to the list of French strengths.
 
 First of all it should be noted that the economic outlook doesn’t invoke the same harrowing foreboding as say, Greece, for example. In fact on the face of things a lot of French people are doing OK. They have a relatively high birth rate, usually a contributor to Economic growth. They have a very productive work force; again usually a statistic that would encourage analysts to predicts a growing economy. So why isn’t France flourishing when on the surface there seem to be no shortage of rain and sunshine?

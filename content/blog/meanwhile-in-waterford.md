@@ -7,7 +7,9 @@ category: Lifestyle
 date: '2016-16-07'
 ---
 # Meanwhile In Waterford
+
 This particular piece of cliff face will be familiar to natives of both Waterford and Kilkenny who have, for many years, used it to express pride in their counties. Many a young hurling fan has gotten up at the crack of dawn to stealthily paint it white and blue or yellow and black. Tit for tat friendly jibes at their neighbouring sporting nemesis.
+
 Of course, there have been times when the tricolour was the daub of choice as the counties were united in support of their country for one reason or another.
 
 Well last night, a group of similarly stealthy individuals took the time to call for unity once more.
