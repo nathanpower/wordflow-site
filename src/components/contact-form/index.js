@@ -29,6 +29,13 @@ export default class ContactForm extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({ 'form-name': 'contact', ...this.state }),
     })
+
+    this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
+  }
+
+  isValidForm () {
+    const required = ['name', 'email', 'message'];
+    return required.every(field => this.state[field] && this.state[field].trim().length > 0)
   }
 
   render () {
@@ -61,7 +68,7 @@ export default class ContactForm extends React.Component {
             <input onChange={this.boundHandleChange} placeholder="Subject" name="subject" type="text" className="text-input col-xs-12" />
             <textarea onChange={this.boundHandleChange} cols="40" rows="12" name="message" placeholder="Your message *" type="text" className="multiline-input col-xs-12" />
             <div className="btn-container row center-xs middle-xs around-xs col-xs-12">
-              <input value="submit" type="submit" className="contact-submit-btn" />
+              <input disabled={!this.isValidForm()} value="submit" type="submit" className="contact-submit-btn" />
             </div>
           </form>
         </div>

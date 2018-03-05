@@ -4,6 +4,7 @@ import { Router } from 'react-static'
 import Routes from 'react-static-routes'
 import ScrollContainer from './components/shared/scroll-container'
 import NavBar from './components/navbar'
+import Footer from './components/footer'
 
 import './app.scss'
 
@@ -15,6 +16,7 @@ export default () => (
         <div className="content">
           <Routes scrollTop={scrollTop} />
         </div>
+        <Footer />
       </div>
     </Router>
   )}

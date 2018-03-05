@@ -1,9 +1,11 @@
+@import '../../variables.scss';
+
 .nav-dropdown {
   position: fixed;
   display: flex;
   justify-content: flex-start;
   min-width: 145px;
-  background-color: black;
+  background-color: $black;
   transition: transform .5s ease 0s, opacity .1s ease;
   z-index: 1;
   transform: translateY(-150%);
@@ -35,7 +37,7 @@
         background-color: rgba(255, 255, 255, .2 );
 
         a {
-          color: white;
+          color: $white;
         }
       }
     }
@@ -51,7 +53,7 @@
 
       &:hover,
       &.active {
-        color: white;
+        color: $white;
       }
     }
   }

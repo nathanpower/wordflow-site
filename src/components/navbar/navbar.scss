@@ -26,7 +26,7 @@ nav {
 
   .nav-links a,
   .nav-links .dropdown-button {
-    color: white;
+    color: $white;
     padding: 1rem;
     display: inline-block;
     text-transform: uppercase;
@@ -76,7 +76,7 @@ nav {
 }
 
 .row.nav-links {
-  color: white;
+  color: $white;
 
   @media only screen and (max-width: 48em) {
     display: none;

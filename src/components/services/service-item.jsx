@@ -28,23 +28,19 @@ export default ({ item, index }) => (
         style={{
           height: 50,
           width: '70%',
-          background: index === 0 ? '#159C92' : index % 3 === 0 ?
-            '#159C92' : (index - 1)% 3 === 0 ? '#FE8222' : '#6389D4',
+          // background: index === 0 ? '#159C92' : index % 3 === 0 ?
+          //   '#159C92' : (index - 1)% 3 === 0 ? '#FE8222' : '#6389D4',
+          background: '#159C92',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           position: 'relative',
           top: 25,
           borderRadius: 25,
+          border: '2px solid #159C92',
         }}
       >
-        <h3 style={{
-          fontFamily: 'Montserrat, sans-serif',
-          fontWeight: 300,
-          fontSize: '1.4rem',
-          color: 'white',
-        }}
-        >
+        <h3>
           {item.title}
         </h3>
       </div>

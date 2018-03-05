@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  color: white;
+  color: $white;
   font-family: Montserrat, sans-serif;
 
   h2 {
@@ -45,9 +45,9 @@
 
     &:hover {
       cursor: pointer;
-      background-color: white;
+      background-color: $white;
       border-color: #fff;
-      color: black;
+      color: $black;
     }
   }
 }
