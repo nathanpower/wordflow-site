@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-static'
 
+import BlogNav from './blog-nav'
+
 import './blog.scss'
 
 export default class Blog extends React.Component {
@@ -17,9 +19,9 @@ export default class Blog extends React.Component {
       'November', 'December',
     ]
 
-    const day = date.getDate();
-    const monthIndex = date.getMonth();
-    const year = date.getFullYear();
+    const day = date.getDate()
+    const monthIndex = date.getMonth()
+    const year = date.getFullYear()
 
     return `${monthNames[monthIndex]} ${day}, ${year}`
   }
@@ -30,7 +32,7 @@ export default class Blog extends React.Component {
 
     return (
       <div className="blog-main-container row full-width col-xs-12 center-xs">
-        <div className="blog-post-list col-md-5 col-sm-7 col-xs-10 left-xs">
+        <div className="blog-post-list col-lg-6 col-md-7 col-sm-9 col-xs-11 left-xs">
           {posts.map(post => {
             const dateArgs = post.date.split('-').map((num, idx) => idx === 1 ? parseInt(num) - 1 : parseInt(num))
             const date = this.formatDate(new Date(...dateArgs))
@@ -53,7 +55,12 @@ export default class Blog extends React.Component {
             )
           })}
         </div>
-        <div className="blog-info col-sm-3 left-xs" />
+        <div className="blog-info col-lg-2 col-md-3 left-xs">
+          <BlogNav
+            updateSearchQuery={q => console.log(q.target.value)}
+            posts={posts}
+          />
+        </div>
       </div>
     )
   }

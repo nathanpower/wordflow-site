@@ -1,12 +1,15 @@
 @import '../../variables.scss';
 
 .blog-main-container {
-  // border: solid 1px red;
   padding: 50px 0;
-  
 
   .blog-post-list {
     height: 100%;
+    padding-right: 50px;
+
+    @media only screen and (max-width: 62em) {
+      padding-right: inherit!important;
+    }
 
     .blog-list-item {
       text-align: left;
@@ -36,9 +39,11 @@
   }
 
   .blog-info {
+    position: sticky;
+    top: 70px;
     height: 100%;
     
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 62em) {
       display: none;
     }
   }
