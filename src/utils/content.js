@@ -33,10 +33,6 @@ export const getContent = async folder => {
     } <span class="summary-ellipsis">[...]</span></p>`
   })
 
-  if (folder === 'blog') {
-    console.log(converted[0].summary)
-  }
-
   return converted.sort((a, b) => a.order > b.order)
 }
 

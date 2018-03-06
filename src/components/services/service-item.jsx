@@ -5,7 +5,7 @@ import { Link } from 'react-static'
 
 import './service-item.scss'
 
-export default ({ item, index }) => (
+export default ({ item }) => (
   <div className="service-item-container col-md-4 col-sm-9 col-xs-12">
     <Link
       to={`services/${item.slug}`}
@@ -16,20 +16,19 @@ export default ({ item, index }) => (
         alignItems: 'flex-end',
         height: '230px',
         background: `url('./images/${item.thumbnail}')`,
-        backgroundSize: 'cover',
+        backgroundSize: '100% 100%',
         backgroundPosition: 'center',
         margin: '15px',
         marginBottom: 60,
         cursor: 'pointer',
       }}
     >
+      <div className="overlay" />
       <div
         className="service-title"
         style={{
           height: 50,
           width: '70%',
-          // background: index === 0 ? '#159C92' : index % 3 === 0 ?
-          //   '#159C92' : (index - 1)% 3 === 0 ? '#FE8222' : '#6389D4',
           background: '#159C92',
           display: 'flex',
           alignItems: 'center',
