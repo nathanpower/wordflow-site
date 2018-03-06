@@ -43,6 +43,15 @@
     &:hover {
       background-size: 104% 104%!important;
 
+      .service-title {
+        background: $white!important;
+        border-color: $black!important;
+    
+        h3 {
+          color: $black!important;
+        }
+      }
+
       .overlay {
         opacity: .4;
       }
