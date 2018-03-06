@@ -30,7 +30,7 @@ export default class Blog extends React.Component {
 
     return (
       <div className="blog-main-container row full-width col-xs-12 center-xs">
-        <div className="blog-post-list col-xs-5 left-xs">
+        <div className="blog-post-list col-md-5 col-sm-7 col-xs-10 left-xs">
           {posts.map(post => {
             const dateArgs = post.date.split('-').map((num, idx) => idx === 1 ? parseInt(num) - 1 : parseInt(num))
             const date = this.formatDate(new Date(...dateArgs))
@@ -53,7 +53,7 @@ export default class Blog extends React.Component {
             )
           })}
         </div>
-        <div className="blog-info col-xs-3 left-xs" />
+        <div className="blog-info col-sm-3 left-xs" />
       </div>
     )
   }
