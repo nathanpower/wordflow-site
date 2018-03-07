@@ -10,7 +10,7 @@
     "test": "eslint ./src || true"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.0",
     "classnames": "^2.2.5",
     "fast-glob": "^2.0.1",
     "flexboxgrid-sass": "^8.0.5",
@@ -18,7 +18,7 @@
     "lodash.flatten": "^4.4.0",
     "lodash.startcase": "^4.4.0",
     "marked": "^0.3.12",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.0",
     "nuka-carousel": "^3.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
