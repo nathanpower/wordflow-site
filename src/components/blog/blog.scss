@@ -2,6 +2,7 @@
 
 .blog-main-container {
   padding: 50px 0;
+  min-height: calc(100vh - 220px);
 
   .blog-post-list {
     height: 100%;
@@ -21,9 +22,15 @@
         h2 {
           margin-bottom: 10px;
         }
-        h2 a {
+        h2 a,
+        h2.no-posts {
           color: #222222;
           font-size: 21px;
+        }
+        h2.no-posts {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 300;
+          letter-spacing: .2px;
         }
       }
 

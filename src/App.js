@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router } from 'react-static'
+import { Router, Route } from 'react-static'
 //
 import Routes from 'react-static-routes'
 import ScrollContainer from './components/shared/scroll-container'
@@ -8,17 +8,30 @@ import Footer from './components/footer'
 
 import './app.scss'
 
-export default () => (
-  <ScrollContainer render={({ scrollTop }) => (
-    <Router>
-      <div>
-        <NavBar scrolled={scrollTop > 50} />
-        <div className="content">
-          <Routes scrollTop={scrollTop} />
+// This is the default renderer for `<Routes>`
+const RenderRoutes = ({ getComponentForPath }) => (
+  // The default renderer uses a catch all route to recieve the pathname
+  <Route path="*" render={props => {
+    // The pathname is used to retrieve the component for that path
+    const Comp = getComponentForPath(props.location.pathname)
+    // The component is rendered!
+    return (
+      <ScrollContainer render={({ scrollTop }) => (
+        <div>
+          <NavBar scrolled={scrollTop > 50} />
+          <div className="content">
+            <Comp key={props.location.pathname} scrollTop={scrollTop} {...props} />
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
-  )}
-  />
+    )}
+    />
+    )
+  }} />
+)
+
+export default () => (
+  <Router>
+    <Routes render={RenderRoutes} />
+  </Router>
 )

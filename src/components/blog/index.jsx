@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-static'
+import debounce from 'lodash.debounce'
 
 import BlogNav from './blog-nav'
 
@@ -7,8 +8,12 @@ import './blog.scss'
 
 export default class Blog extends React.Component {
   constructor (props) {
+    console.log('constructor called')
     super(props)
-    this.state = {}
+    this.state = {
+      searchQuery: null,
+    }
+    this.debouncedSearchQuery = debounce(this.handleSearchQuery.bind(this), 300)
   }
 
   formatDate (date) {
@@ -26,13 +31,47 @@ export default class Blog extends React.Component {
     return `${monthNames[monthIndex]} ${day}, ${year}`
   }
 
-  render () {
+  handleSearchQuery (value) {
+    if (!value || value === '') {
+      return this.setState({ searchQuery: null })
+    }
+
+    this.setState({ searchQuery: value })
+  }
+
+  filterPosts () {
     const { posts } = this.props
+    const { searchQuery } = this.state
+
+    console.log(searchQuery)
+
+    if (!searchQuery) {
+      return posts
+    }
+
+    const match = post => post.title.includes(searchQuery) || post.html.includes(searchQuery)
+
+    return posts.filter(match)
+  }
+
+  renderNoPosts () {
+    return (
+      <div className="blog-list-item">
+        <div className="item-header">
+          <h2 className="no-posts">No posts match search criteria</h2>
+        </div>
+      </div>
+    )
+  }
+
+  render () {
+    const posts = this.filterPosts()
     const createMarkup = html => ({ __html: html })
 
     return (
       <div className="blog-main-container row full-width col-xs-12 center-xs">
         <div className="blog-post-list col-lg-6 col-md-7 col-sm-9 col-xs-11 left-xs">
+          {posts.length === 0 && this.renderNoPosts()}
           {posts.map(post => {
             const dateArgs = post.date.split('-').map((num, idx) => idx === 1 ? parseInt(num) - 1 : parseInt(num))
             const date = this.formatDate(new Date(...dateArgs))
@@ -57,7 +96,7 @@ export default class Blog extends React.Component {
         </div>
         <div className="blog-info col-lg-2 col-md-3 left-xs">
           <BlogNav
-            updateSearchQuery={q => console.log(q.target.value)}
+            updateSearchQuery={ev => this.debouncedSearchQuery(ev.target.value)}
             posts={posts}
           />
         </div>

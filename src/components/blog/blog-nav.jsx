@@ -9,7 +9,7 @@ export default ({ updateSearchQuery, posts }) => (
   <div className="blog-nav row start-xs col-xs-12">
     <div className="blog-search col-xs-12">
       <span className="icon-search" />
-      <input className="search-input" type="text" placeholder="Search" onChange={updateSearchQuery} />
+      <input className="search-input" type="search" placeholder="Search" onChange={updateSearchQuery} />
     </div>
 
     <div className="blog-nav-section col-xs-12">
