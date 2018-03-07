@@ -1,11 +1,6 @@
-# React-Static - Basic Example
+# WordFlow Site
 
-This example is the most basic version of react-static available. It includes:
-- Babel
-- SASS/SCSS imports
-- Image imports
-- File imports
-- SASS Loader
-- Automatic Routing
+`npm install`
+`npm start`
 
-To get started, run `react-static create` and use the `sass` template.
+Site will be served locally from `localhost:3000`
