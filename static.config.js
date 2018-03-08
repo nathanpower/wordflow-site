@@ -27,7 +27,7 @@ export default {
           testimonials,
         }),
         children: portfolio.map(detail => ({
-          path: `/services/${detail.slug}`,
+          path: `services/${detail.slug}`,
           component: 'src/containers/Service',
           getData: () => ({
             detail,
