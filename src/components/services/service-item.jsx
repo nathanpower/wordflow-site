@@ -8,7 +8,7 @@ import './service-item.scss'
 export default ({ item }) => (
   <div className="service-item-container col-md-4 col-sm-9 col-xs-12">
     <Link
-      to={`services/${item.slug}`}
+      to={`/services/${item.slug}`}
       className="service-item"
       style={{
         display: 'flex',

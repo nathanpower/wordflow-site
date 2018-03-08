@@ -4,7 +4,7 @@ import Document from './src/Document'
 
 export default {
   Document,
-  siteRoot: 'https://adoring-beaver-e5df49.netlify.com/',
+  siteRoot: process.env.SITE_ROOT,
   getSiteData: async () => {
     const portfolioLinks = await getPortfolioLinks()
     return {
@@ -35,8 +35,8 @@ export default {
         })),
       },
       {
-        path: '/about',
-        component: 'src/containers/About',
+        path: '/services',
+        redirect: '/',
       },
       {
         path: '/contact',

@@ -8,7 +8,6 @@ import './blog.scss'
 
 export default class Blog extends React.Component {
   constructor (props) {
-    console.log('constructor called')
     super(props)
     this.state = {
       searchQuery: null,
@@ -42,8 +41,6 @@ export default class Blog extends React.Component {
   filterPosts () {
     const { posts } = this.props
     const { searchQuery } = this.state
-
-    console.log(searchQuery)
 
     if (!searchQuery) {
       return posts
