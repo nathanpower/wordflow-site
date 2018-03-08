@@ -94,7 +94,7 @@ export default class Blog extends React.Component {
         <div className="blog-info col-lg-2 col-md-3 left-xs">
           <BlogNav
             updateSearchQuery={ev => this.debouncedSearchQuery(ev.target.value)}
-            posts={posts}
+            posts={this.props.posts}
           />
         </div>
       </div>
