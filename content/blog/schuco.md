@@ -1,8 +1,8 @@
 ---
-title: The Amzing possibilities of Schuco
+title: The Amazing possibilities of Schuco
 description: 
 author: Rob Power
-slug: schuco-blog
+slug: the-amazing-possibilities-of-schuco
 category: Glazing Industry
 date: '2017-08-18'
 ---
