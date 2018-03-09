@@ -1,8 +1,8 @@
 ---
-title: The French Conundrum
+title: 'Triple-Glazing-Is-it-Worth-it?'
 description: 
 author: Rob Power
-slug: Triple-Glazing-Is-it-Worth-it?
+slug: triple-glazing-is-it-worth-it
 category: Glazing Industry
 date: '201-05-02'
 ---
