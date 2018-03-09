@@ -1,5 +1,5 @@
-title: The New Wonder Woord for Windows
-description: 
+title: The New Wonder Wood for Windows
+description: Written For Zyle Fenster Ireland
 author: Rob Power
 slug: the-new-wonder-wood-for-windows
 category: Glazing Industry
