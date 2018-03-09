@@ -1,10 +1,10 @@
 ---
-title: Meanwhile, in Waterford
-description:
+title: 'Meanwhile, in Waterford'
+description: Written for Broadsheet
 author: Rob Power
 slug: meanwhile-in-waterford
-category: Lifestyle
-date: '2016-16-07'
+category: Opinion
+date: '2015-16-04'
 ---
 # Meanwhile In Waterford
 
