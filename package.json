@@ -24,7 +24,7 @@
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
     "react-static": "^5",
-    "yaml-front-matter": "^3.4.0"
+    "yaml-front-matter": "^4.0.0"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
