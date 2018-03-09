@@ -1,7 +1,7 @@
 title: 'Explainer: 10 Terms to Understand When Buying Windows'
 description: 
 author: Rob Power
-slug: ten-terms
+slug: ten-terms-when-buying-windows
 category: Glazing Industry
 date: '2017-18-07'
 # Explainer: 10 Terms to Understand When Buying Windows
