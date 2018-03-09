@@ -1,10 +1,10 @@
 ---
 title: The Path of Forgiveness
-description: A post written for <a href="http://www.doctormarkrowe.com">Dr. Mark Rowe</a>
+description: Written for Dr. Marke Rowe
 author: Rob Power
 slug: the-path-of-forgiveness
-category: Dr. Mark Rowe
-date: '2016-18-01'
+category: Self Help
+date: '2016-18-08'
 ---
 # The Path of Forgiveness
 
