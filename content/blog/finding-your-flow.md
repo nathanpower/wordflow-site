@@ -1,6 +1,6 @@
 ---
 title: Finding Your Flow
-description: Written for Dr. Marke Rowe
+description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: finding-your-flow
 category: Self Help
