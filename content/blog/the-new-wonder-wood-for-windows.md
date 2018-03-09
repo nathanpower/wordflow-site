@@ -1,9 +1,11 @@
+---
 title: The New Wonder Wood for Windows
 description: Written For Zyle Fenster Ireland
 author: Rob Power
 slug: the-new-wonder-wood-for-windows
 category: Glazing Industry
 date: '2017-16-05'
+---
 # Accoya
 ## The New Wonder Wood for Windows
 Modern joinery techniques have greatly improved the quality and affordability of wood framed windows. While PVC is still popular, and indeed has improved in its own right, the love affair with it that was prevalent in nineties and noughties has given way to a resurgence in appreciation for the look and feel of wood. Hardwoods like Meranti, Oak, and Sapele have proven themselves to be durable enough to provide a lifetime’s satisfactory glazing in most climates. The onset of aluminium cladding has meant that even softwoods such as pine or larch can provide great structural integrity and interior styling with the benefit of exterior protection.
