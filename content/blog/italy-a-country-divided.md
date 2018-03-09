@@ -1,10 +1,10 @@
 ---
-title: Italy, A Country Divided
-description:
+title: 'Italy, A Country Divided'
+description:Written For Incasso Partners
 author: Rob Power
 slug: italy-a-country-divided
-category: Incasso Partners
-date: '2016-18-07'
+category: Economics
+date: '2016-18-05'
 ---
 # Italy – A Country Divided
 It has been a while since there has been any positive news with regard to the Italian economy. This month, with the release of statistics for the first quarter of 2015, there is finally a glimmer of hope, a tiny green shoot in soil, the fertility of which was beginning to come into question. So after three years of almost continuous recession (having only briefly exited a previous one) Italian GDP grew by a modest 0.3%. This growth is small but given the difficult times that Italy has experienced, even lagging behind the rest of the Eurozone pre-crisis, it still may be cause for optimism. The truth is, however, if we assess Italy’s economy holistically, we can’t fail to see a massive disparity between the northern and southern regions of the nation.

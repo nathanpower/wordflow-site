@@ -1,10 +1,10 @@
 ---
 title: Releasing the Happiness Within
-description: A post written for <a href="http://www.doctormarkrowe.com">Dr. Mark Rowe</a>
+description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: releasing-the-happiness-within
-category: Dr. Mark Rowe
-date: '2016-20-01'
+category: Self Help
+date: '2016-20-05'
 ---
 # Releasing the Happiness Within
 ### Pause for a moment and ask yourself this question…
