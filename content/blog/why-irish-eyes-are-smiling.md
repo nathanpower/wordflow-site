@@ -1,6 +1,6 @@
 ---
 title: Why Irish Eyes Are Smiling
-description:
+description: Written For Incasso Partners
 author: Rob Power
 slug: why-irish-eyes-are-smiling
 category: Economics
