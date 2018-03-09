@@ -2,10 +2,11 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/nathanpower/wordflow-site.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/nathanpower/wordflow-site.svg?branch=master)](https://travis-ci.org/nathanpower/wordflow-site)
+[![Dependency Status](https://david-dm.org/boennemann/badges.svg)](https://david-dm.org/boennemann/badges)
+[![devDependency Status](https://david-dm.org/boennemann/badges/dev-status.svg)](https://david-dm.org/boennemann/badges#info=devDependencies)
 
 A statically generated portfolio and blog site built with [react-static](https://github.com/nozzle/react-static) and [flexboxgrid-sass](https://github.com/hugeinc/flexboxgrid-sass)
 
-[![NPM version](https://badge.fury.io/js/badge-list.svg)](http://badge.fury.io/js/badge-list)
 
 ### Running locally
 ```
