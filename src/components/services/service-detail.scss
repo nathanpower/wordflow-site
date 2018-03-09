@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.detail-body {
+  background-color: $orange;
+
+  .detail-description {
+ 
+    padding: 15px 25px;
+    h3 {
+      text-align: left;
+      font: 300 20px/1.65em 'Raleway', sans-serif;
+      color: #0b486b;
+    }
+  }
+
+  .portfolio-item {
+    padding: 25px;
+  }
+
+  .portfolio-image,
+  .portfolio-text {
+    padding: 0 15px;
+    @media only screen and (max-width: 48em) {
+
+      order: 1!important;
+      text-align: left!important;
+    }
+  }
+
+  .portfolio-text {
+    height: 331px;
+    font: 300 16px/1.65em 'Poppins', sans-serif;
+    color: #0b486b;
+
+    @media only screen and (max-width: 48em) {
+
+      height: auto;
+    }
+  }
+}

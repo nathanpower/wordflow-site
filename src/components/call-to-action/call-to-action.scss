@@ -1,0 +1,53 @@
+@import '../../variables.scss';
+
+.call-to-action {
+  position: relative;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: $white;
+  font-family: Montserrat, sans-serif;
+
+  h2 {
+    text-align: center;
+    padding-top: 70px;
+    width: 700px;
+    font-stretch: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -2px;
+    margin: 0;
+  }
+
+  .cta-btn-container {
+    position: absolute;
+    bottom: 120px;
+  }
+
+  a.cta-btn {
+    border-color: #fff;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    padding: 18px 38px 18px 38px;
+    margin: 5px 10px;
+    border: 2px solid;
+    opacity: .98;
+    border-radius: 100px;
+    transition: all .3s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      border-color: #fff;
+      color: $black;
+    }
+  }
+}

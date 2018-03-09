@@ -7,7 +7,8 @@ category: Incasso Partners
 date: '2016-16-07'
 ---
 # The Rise and Rise of China
-> “when the red dragon awakes, she will shake the world”- Napolean
+
+>  “when the red dragon awakes, she will shake the world”- Napolean
 
 While Napoleon’s fears are said to be based on the vast populations of poverty stricken citizens at a time when sheer numbers really meant something militarily, it is a different kind of force that China has used to shift the world on its axis in recent decades. Instead of vast armies, China now has vast legions of SME’s; there are more small-to-medium enterprises in China than there are in the U.S and Europe combined! Instead of attacking the world with armies, China has flooded it with its goods. In 1990 China accounted for approximately 3% of world manufacturing by value, that figure has now risen to almost 25%. Included in this are 70% of the world’s mobile phones, 80% of its air conditioners and 60% of its shoes!
 ## Is China’s grip on world manufacturing weakening?

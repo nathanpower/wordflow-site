@@ -1,34 +1,57 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import { getContent } from './src/utils/content'
+import { getContent, getPortfolioContent, getPortfolioLinks } from './src/utils/content'
 import Document from './src/Document'
 
 export default {
   Document,
-  getSiteProps: () => ({
-    title: 'React Static',
-  }),
+  siteRoot: process.env.SITE_ROOT,
+  getSiteData: async () => {
+    const portfolioLinks = await getPortfolioLinks()
+    return {
+      portfolioLinks,
+    }
+  },
   getRoutes: async () => {
     const posts = await getContent('blog')
+    const quotes = await getContent('quotes')
+    const testimonials = await getContent('testimonials')
+    const portfolio = await getPortfolioContent()
 
     return [
       {
         path: '/',
         component: 'src/containers/Home',
+        getData: () => ({
+          portfolio,
+          quotes,
+          testimonials,
+        }),
+        children: portfolio.map(detail => ({
+          path: `services/${detail.slug}`,
+          component: 'src/containers/Service',
+          getData: () => ({
+            detail,
+          }),
+        })),
       },
       {
-        path: '/about',
-        component: 'src/containers/About',
+        path: '/services',
+        redirect: '/',
+      },
+      {
+        path: '/contact',
+        component: 'src/containers/Contact',
       },
       {
         path: '/blog',
         component: 'src/containers/Blog',
-        getProps: () => ({
+        getData: () => ({
           posts,
         }),
         children: posts.map(post => ({
           path: `/post/${post.slug}`,
           component: 'src/containers/Post',
-          getProps: () => ({
+          getData: () => ({
             post,
           }),
         })),

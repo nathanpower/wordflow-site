@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.services-container {
+  display: flex;
+  background-color: $orange;
+  padding-top: 30px;
+  justify-content: space-around;
+}
+
+.services {
+  align-self: center;
+  max-width: 1200px;
+}

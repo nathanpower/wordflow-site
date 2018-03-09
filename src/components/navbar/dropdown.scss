@@ -1,0 +1,60 @@
+@import '../../variables.scss';
+
+.nav-dropdown {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  min-width: 145px;
+  background-color: $black;
+  transition: transform .5s ease 0s, opacity .1s ease;
+  z-index: 1;
+  transform: translateY(-150%);
+  border: 1px solid rgba(255, 255, 255, .2 );
+  opacity: 0;
+
+  @media only screen and (max-width: 48em) {
+    display: none;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+
+    li {
+      display: flex;
+      border-bottom: 1px solid rgba(255, 255, 255, .2 );
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, .2 );
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    li a {
+      padding: 5px 25px;
+      font: 300 14px/1.8 'Poppins', sans-serif;
+      color: #8d8d8d;
+
+      &:hover,
+      &.active {
+        color: $white;
+      }
+    }
+  }
+}

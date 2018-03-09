@@ -2,8 +2,12 @@ import React from 'react'
 
 export default class ScrollContainer extends React.Component {
   componentDidMount () {
-    document.addEventListener('scroll', this.onScroll.bind(this))
+    this.listener = window.addEventListener('scroll', this.onScroll.bind(this))
     this.setScrollTop()
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.listener)
   }
 
   onScroll () {

@@ -8,13 +8,16 @@ date: '2016-19-01'
 ---
 # Never Say Die!
 ## A Blog on the Power or Resilience
+
 Our ability to maintain momentum in the face of adversity is such an important factor in ensuring that we get the most out of life. The vigour of our resilience can often be the difference between achieving a goal, or falling at the hurdles that we meet along the way. However, it is vital to recognise that we do not have a static amount of resilience; just like knowledge or fitness, resilience is a skill that can be learned, developed, and nurtured in order to greatly benefit our lives.
+
 > Our initial reaction to stress is so important, as it can really be the difference between overcoming or succumbing to adversity; maintaining a base line of positivity can make all the difference.
 
 The word resilient stems from the Latin ‘resilio’, meaning to bounce back from adversity. The health of our resilience impacts our ability to cope with setbacks, our ability to let go of past events, and crucially, our ability to maintain realistic optimism. Maintaining realistic optimism is so vitally important to all of life’s endeavours, because without it, we can so easily fall into self-fulfilling our own negative perspectives on the future. Anyone who has had the experience of triumphing against adversity will understand just how life affirming this experience can be. These experiences can feed our resilience through the understanding that we become stronger and wiser through overcoming obstacles. It allows us to view ourselves as unstoppable, which of course, we all have the potential to be!
 
 Resilient people are recognisable for their grit and determination, an outlook that acknowledges that challenges lay ahead but rather than fearing them, welcomes them and the growth that will surely accompany them. They are inclined to think ahead, display characteristic of optimism and positivity, and a refusal to capitulate to external pressures. This positive outlook is at the very core of resilience as it allows the individual to frame adversity in the right way, as and when it presents itself. Our initial reaction to stress is so important, as it can really be the difference between overcoming or succumbing to adversity; maintaining a base line of positivity can make all the difference. One important factor in doing this is how we perceive our daily life, and for most of us, it means how we perceive our job.
 ## Maintaining Positivity in the Workplace
+
 >‘Before Enlightenment, chop wood, carry water. After Enlightenment, chop wood, carry water’
 
 The above quote stems from Buddhist teachings and the meaning it is essentially trying to convey is that the key to happiness lies not with changing your daily tasks, but with changing your perception of them. 

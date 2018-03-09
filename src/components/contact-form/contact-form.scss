@@ -1,0 +1,119 @@
+@import '../../variables.scss';
+
+.contact-form-container {
+  padding: 25px 0;
+  margin: 0!important;
+  width: 100%;
+  background-color: $white;
+
+  .contact-form {
+    height: 80%;
+    color: $black;
+    font-family: Montserrat, sans-serif;
+
+    h5.phone-cta {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    h2.phone-number {
+      word-spacing: 0px;
+      font-stretch: 100%;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 46px;
+      letter-spacing: -2px;
+      margin: 0;
+
+      .number-text {
+        vertical-align: text-top;
+      }
+    }
+
+    a.email-address {
+      font: 300 12px 'Poppins', sans-serif;
+      letter-spacing: .2px;
+      color: $grey;
+
+      .email-text {
+        padding-left: 5px;
+        vertical-align: top;
+      }
+    }
+
+    form {
+
+      input.text-input {
+        height: 54px;
+      }
+
+      textarea.multiline-input {
+        height: auto;
+      }
+
+      input.text-input,
+      textarea.multiline-input {
+        margin: 30px 0 0;
+        font: 700 14px 'Poppins', sans-serif;
+        letter-spacing: .2px;
+        color: $black;
+        background-color: $form-bg;
+        border: none;
+        box-shadow: none;
+        border-radius: 0px;
+        outline: none;
+        padding: 15px 20px;
+        transition: background-color .3s;
+
+        &:hover {
+          background-color: $form-bg-hover;
+          box-shadow: none;
+        }
+
+        &::placeholder {
+          font: 400 14px 'Poppins', sans-serif;
+          color: #8d8d8d;
+        }
+      }
+
+      input.contact-submit-btn {
+        text-align: center;
+        color: $white;
+        background-color: #159C92!important;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 1px;
+        padding: 18px 38px 18px 38px!important;
+        margin: 25px 10px 0;
+        border: 2px solid #159C92;
+        opacity: .98;
+        border-radius: 30px;
+        transition: all .3s;
+
+        &:disabled {
+          background-color: $form-bg!important;
+          border-color: $form-bg-hover!important;
+          color: $black!important;
+          cursor: not-allowed;
+        }
+    
+        &:hover {
+
+          &:not([disabled]) {
+            cursor: pointer;
+            background-color: white!important;
+            border-color: $black!important;
+            color: $black!important;
+          }
+        }
+      }
+    }
+  }
+}

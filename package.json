@@ -6,19 +6,24 @@
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "dist": "export SITE_ROOT=http://localhost:3000 && npm run build && serve dist -p 3000",
+    "test": "eslint ./src || true"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.0",
     "classnames": "^2.2.5",
     "fast-glob": "^2.0.1",
     "flexboxgrid-sass": "^8.0.5",
+    "lodash.debounce": "^4.0.8",
+    "lodash.flatten": "^4.4.0",
+    "lodash.startcase": "^4.4.0",
     "marked": "^0.3.12",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.0",
+    "nuka-carousel": "^3.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-static": "^4.9.0-beta.5",
+    "react-static": "^5",
     "yaml-front-matter": "^3.4.0"
   },
   "devDependencies": {

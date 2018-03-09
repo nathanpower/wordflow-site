@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.tagline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100px;
+  background-color: $white;
+  padding-bottom: 10px;
+}
+
+.tagline-text {
+  color: $black;
+  font-weight: 200;
+  font-size: 26px;
+  opacity: .7;
+  text-align: center;
+}

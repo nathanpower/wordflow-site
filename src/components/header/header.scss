@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  height: 345px;
+  background-color: $black;
+}
+
+.header-hero {
+  height: 345px;
+  width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

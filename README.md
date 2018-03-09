@@ -1,11 +1,15 @@
-# React-Static - Basic Example
+# WordFlow Site
 
-This example is the most basic version of react-static available. It includes:
-- Babel
-- SASS/SCSS imports
-- Image imports
-- File imports
-- SASS Loader
-- Automatic Routing
+[![Greenkeeper badge](https://badges.greenkeeper.io/nathanpower/wordflow-site.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/nathanpower/wordflow-site.svg?branch=master)](https://travis-ci.org/nathanpower/wordflow-site)
 
-To get started, run `react-static create` and use the `sass` template.
+A statically generated portfolio and blog site built with [react-static](https://github.com/nozzle/react-static) and [flexboxgrid-sass](https://github.com/hugeinc/flexboxgrid-sass)
+
+### Running locally
+```
+npm install
+
+npm start
+```
+
+Site will be served locally from `localhost:3000`

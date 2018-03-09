@@ -1,0 +1,60 @@
+@import '../../variables.scss';
+
+.service-item-container {
+
+  .service-title {
+    transition: all .3s;
+  
+    h3 {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  
+    &:hover {
+      background: $white!important;
+      border-color: $black!important;
+  
+      h3 {
+        color: $black!important;
+      }
+    }
+  }
+
+  .service-item {
+    position: relative;
+    transition: all .3s ease;
+
+    .overlay {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $black;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      background-size: 104% 104%!important;
+
+      .service-title {
+        background: $white!important;
+        border-color: $black!important;
+    
+        h3 {
+          color: $black!important;
+        }
+      }
+
+      .overlay {
+        opacity: .4;
+      }
+    }
+  }
+}

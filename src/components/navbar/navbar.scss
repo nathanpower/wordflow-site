@@ -14,6 +14,7 @@ nav {
   height: 100px;
   transition: height, .45s;
   background: $primary-color;
+  z-index: 2;
 
   &.scrolled {
     height: 50px;
@@ -23,14 +24,35 @@ nav {
     height: 50px;
   }
 
-  .nav-links a {
-    color: white;
+  .nav-links a,
+  .nav-links .dropdown-button {
+    color: $white;
     padding: 1rem;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-weight: 600;
-    font-size: 11px;
+    font-weight: 300;
+    font-size: 12px;
+
+    &::selection {
+      color: none;
+      background: none;
+    }
+  }
+
+  .nav-links .dropdown-button {
+    cursor: pointer;
+
+    &:after {
+      content: "\25BC";
+      display: inline-block;
+      font-size: 8px;
+      position: relative;
+      margin-left: 3px;
+      top: 40%;
+
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -49,12 +71,12 @@ nav {
 
   @media only screen and (max-width: 48em) {
     opacity: 1;
-    color: black;
+    color: $black;
   }
 }
 
 .row.nav-links {
-  color: white;
+  color: $white;
 
   @media only screen and (max-width: 48em) {
     display: none;
@@ -62,9 +84,11 @@ nav {
 }
 
 nav.scrolled .nav-links a,
-nav.scrolled .nav-home {
-  color: black;
+nav.scrolled .nav-links .dropdown-button,
+nav.scrolled .nav-home a {
+  color: $black;
   opacity: 1;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 48em) {
@@ -93,13 +117,13 @@ nav.scrolled .nav-home {
   }
 
   a {
-    color: black;
+    color: $black;
     line-height: 1.7;
     padding: .5rem;
     font-weight: 300;
     letter-spacing: 1.5px;
-    font-weight: 600;
-    font-size: 11px;
+    font-weight: 500;
+    font-size: 13px;
     text-transform: uppercase;
   }
 }
