@@ -4,24 +4,20 @@ author: Rob Power
 slug: passive-house-builds
 category: Glazing Industry
 date: '2017-02-05'
-Passive House Builds: What they are and why they might be the future.
-
+# Passive House Builds: What they are and why they might be the future.
 Whether you’re involved in the building industry, you’ve got a passing interest in building your own home, or you’re just a fan of Grand Designs; it is very likely that you have heard the phrase ‘Passive House’. The ubiquity of the term is down to the steady growth of the popularity of the building practice internationally, and the chances are, if there isn’t a passive house near you already, there will be soon. But what exactly is it? What are the benefits? And is it something you should consider for your own building project?
-
-What is a Passive House?
+## What is a Passive House?
 A Passive House is essentially a building specifically engineered to be energy efficient. High specification building materials, glazing, and ventilation systems are utilised to control the heat and airflow throughout the building. There are recognised standards developed in order to facilitate the design of such buildings with the most internationally recognised being the Passivhaus standard, developed in Germany. There are very specific requirements that must be met to have a building certified as Passivhaus, the specific details of which I won’t include here, as the measurements would be meaningless to the lay man, however the main areas in play are heating demand, cooling demand, energy consumption, and air leakage. Naturally, building to a rigorous standard with such high specifications is not gentle on the wallet, but are there associated savings? And what are the benefits when the job is done?
-
-For the Conscious Consumer
+## For the Conscious Consumer
 While there are certain factually challenged word leaders who don’t seem to recognise the devastating realities of global warming, most rational people have some awareness and at least a little concern about the effects our carbon emissions are having on the planet. A 2003 German study found that passive houses use 90% less energy than conventional homes and as much as 80% less than homes built to Germany’s already stringent low energy construction standards. Of course the effects of any one individual building a passive home are negligible to the environment, but it still stands as a benefit to the ecologically aware. Additionally, it is not just homes that can be built to this standard, there have been schools and university buildings constructed to this standard internationally. Indeed buildings can be retrofitted to meet Passivhaus standards thanks to the improvement in the construction practices of quality windows and doors.
 
-The Financials
+## The Financials
 So naturally, the initial expense of building to Passivhaus standards are generally going to be greater than that of building a conventional home. However, it is worth mentioning that some of this added expense will be offset even in the construction stages. First of all, many passive builds require far less infrastructure for heating and cooling throughout so there is a saving to be found there. Additionally, the vast majority of jurisdictions are motivated to support the construction of such properties so it is almost certain that your government provides, incentives, rebates, and/or tax credits. The combination of these two factors already increase the attractiveness of this kind of build, but when you add the ongoing savings it makes it a prospect that anyone embarking on a new build should at least consider. Essentially, the efficiency of a passive home means that utility bills are vastly reduced, a financial factor that really stacks up over the years. Combine this with the fact that the quality of materials involved ensures maximum durability for years to come, and it starts feeling like a false economy to go for the cheaper build initially.
 
-The Cosy Factor
+## The Cosy Factor
 If you live in a passive build you are never going to hear someone complain about a draft. Across a variety of climates, passive builds manage the air temperature throughout the seasons to ensure optimum comfort at all times. On top of this the ventilation systems do an incredible job of circulation, drawing air from kitchens, bathrooms, and any other moisture-rich or odour-prone areas and piping fresh air throughout the living spaces. These ventilation systems also maintain humidity at a comfortable thirty to sixty percent. So no cold spots, no drafts, and no cold mornings waiting for the heating to kick in. These are benefits certainly not to be sneezed at. On top of this, noise pollution is greatly reduced due to the quality of your windows, so the outside disturbances stay right there, and indeed if your Christmas party is getting a little noisy, nobody is likely to notice! Of course you can open windows on passive homes just like any other, to adjust the temperature, let in air, or hear the world. However, these homes function so well, that most people just choose not to.
 
-Should You Build One?
+## Should You Build One?
 Although it varies from country to country, construction costs are said to be around 10% more than that of a conventional build, although this is dependent on the availability of materials and professionals in your area. Indeed there have been passive builds which have come in under the cost of a similar conventional product. Either way the ongoing savings, durability, and unparalleled level of comfort means that, if you are considering a new build, you would be doing yourself a disservice not to at least look into your options when it comes to developing a build to Passivhaus standards. In an upcoming blog, we will profile one of the first passive builds completed in South East Ireland in  Zyle Fenster played a major role in guiding the client and providing the ideal products to meet the specifications required.
-
 
 To learn more about this and other Zyle Fenster UK Products, please feel free to browse through our range here.
