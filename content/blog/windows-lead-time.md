@@ -1,7 +1,7 @@
 title: 'Buying Windows – How long Should My Lead Time Be?'
 description: 
 author: Rob Power
-slug: lead-time-blog
+slug: windows-lead-time
 category: Glazing Industry
 date: '2018-18-01'
 # Buying Windows – How long Should My Lead Time Be?
