@@ -1,9 +1,9 @@
 ---
 title: The French Conundrum
-description: 
+description: Written For Incasso Partners
 author: Rob Power
 slug: The-French-Conundrum
-category: Incasso Partners
+category: Economics
 date: '2016-18-01'
 ---
 # The French Conundrum
