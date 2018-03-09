@@ -1,6 +1,6 @@
 ---
 title: 'Is Japan Falling on it's Sword?'
-description:Written For Incasso Partners
+description: Written For Incasso Partners
 author: Rob Power
 slug: economy-is-japan-falling-on-its-sword
 category: Economics
