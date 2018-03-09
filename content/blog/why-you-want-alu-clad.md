@@ -1,7 +1,7 @@
 title: 'Alu Clad: What it is and Why you Want it'
 description: 
 author: Rob Power
-slug: alu-clad
+slug: why-you-want-alu-clad
 category: Glazing Industry
 date: '2017-30-05'
 # Alu-Clad: What it is and Why You Want it
