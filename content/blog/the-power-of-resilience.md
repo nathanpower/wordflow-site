@@ -1,6 +1,6 @@
 ---
 title: Never Say Die! A Blog on the Power of Resilience
-description: Written for Dr. Marke Rowe
+description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: the-power-of-resilience
 category: Self Help
