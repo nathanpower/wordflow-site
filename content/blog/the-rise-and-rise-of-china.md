@@ -1,10 +1,10 @@
 ---
 title: The Rise And Rise Of China
-description:
+description: Written For Incasso Partners
 author: Rob Power
 slug: the-rise-and-rise-of-china
-category: Incasso Partners
-date: '2016-16-07'
+category: Economics
+date: '2016-16-04'
 ---
 # The Rise and Rise of China
 
