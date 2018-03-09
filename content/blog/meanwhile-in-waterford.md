@@ -1,5 +1,5 @@
 ---
-title: Meanwhile, in Waterford
+title: 'Meanwhile, in Waterford'
 description: Written for Broadsheet
 author: Rob Power
 slug: meanwhile-in-waterford
