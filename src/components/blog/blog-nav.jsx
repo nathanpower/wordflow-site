@@ -40,7 +40,7 @@ export default ({ updateSearchQuery, posts }) => (
         const year = new Date(...dateArgs).getFullYear()
         if (!memo.includes(year)) memo.push(year)
         return memo
-      }, []).map(year => (
+      }, []).sort().map(year => (
         <div key={year} className="section-link">
           <Link to={`/blog/archive/${year}`}>{year}</Link>
         </div>
