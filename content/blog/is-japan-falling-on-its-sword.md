@@ -1,10 +1,10 @@
 ---
-title: Is Japan Falling on it's Sword?
-description:
+title: 'Is Japan Falling on it's Sword?'
+description:Written For Incasso Partners
 author: Rob Power
 slug: is-japan-falling-on-its-sword
-category: Incasso Partners
-date: '2016-18-07'
+category: Economics
+date: '2016-18-06'
 ---
 # Is Japan Falling on its Sword?
 ## Why a Shrinking and Aging Population is Playing Havoc with the Economy
