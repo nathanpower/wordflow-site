@@ -1,8 +1,8 @@
 ---
-title: Triple Glazing: Is it worth it?
+title: 'Triple Glazing: Is it worth it?'
 description: 
 author: Rob Power
-slug: Triple-Glazing-Is-it-Worth-it?
+slug: triple-glazing-is-it-worth-it
 category: Glazing Industry
 date: '201-05-02'
 ---
