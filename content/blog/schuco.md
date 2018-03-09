@@ -1,5 +1,5 @@
 ---
-title: The Amazing possibilities of Schuco
+title: The Amazing possibilities of Schüco
 description: 
 author: Rob Power
 category: Glazing Industry
