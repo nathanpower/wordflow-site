@@ -4,7 +4,7 @@ description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: the-power-of-resilience
 category: Self Help
-date: '2016-19-09'
+date: '2016-09-19'
 ---
 # Never Say Die!
 ## A Blog on the Power or Resilience

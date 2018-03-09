@@ -4,7 +4,7 @@ description:
 author: Rob Power
 slug: five-questions-when-buying-windows
 category: Glazing Industry
-date: '2017-20-06'
+date: '2017-06-20'
 ---
 
 # 5 Questions People Often Ask When Buying Windows

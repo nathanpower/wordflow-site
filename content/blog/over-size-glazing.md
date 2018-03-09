@@ -4,7 +4,7 @@ description:
 author: Rob Power
 slug: over-size-glazing
 category: Glazing Industry
-date: '2018-18-02'
+date: '2018-02-18'
 ---
 
 # Windows, Doors, and Sliders: How Big is Too Big?

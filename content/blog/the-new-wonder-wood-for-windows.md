@@ -4,7 +4,7 @@ description: Written For Zyle Fenster Ireland
 author: Rob Power
 slug: the-new-wonder-wood-for-windows
 category: Glazing Industry
-date: '2017-16-05'
+date: '2017-05-16'
 ---
 # Accoya
 ## The New Wonder Wood for Windows

@@ -36,6 +36,7 @@ export default ({ updateSearchQuery, posts }) => (
     <div className="blog-nav-section col-xs-12">
       <h4 className="section-title"><span className="icon-radio-unchecked" />Archive</h4>
       {posts.reduce((memo, post) => {
+        console.log(post.date)
         const dateArgs = post.date.split('-').map((num, idx) => idx === 1 ? parseInt(num) - 1 : parseInt(num))
         const year = new Date(...dateArgs).getFullYear()
         if (!memo.includes(year)) memo.push(year)

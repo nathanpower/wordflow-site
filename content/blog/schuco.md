@@ -4,7 +4,7 @@ description:
 author: Rob Power
 slug: schuco-blog
 category: Glazing Industry
-date: '2017-18-08'
+date: '2017-08-18'
 ---
 
 # The Amazing Possibilities of Schüco

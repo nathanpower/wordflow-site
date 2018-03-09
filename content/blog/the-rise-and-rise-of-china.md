@@ -4,7 +4,7 @@ description: Written For Incasso Partners
 author: Rob Power
 slug: the-rise-and-rise-of-china
 category: Economics
-date: '2016-16-04'
+date: '2016-04-16'
 ---
 # The Rise and Rise of China
 

@@ -4,7 +4,7 @@ description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: from-success-to-significance
 category: Self Help
-date: '2016-21-04'
+date: '2016-04-21'
 ---
 # Moving from Success to Significance 
 To use a sporting analogy, life can be considered a game of two halves. The first half is so often suffused with chasing something - better grades at school and at college, leading to bigger jobs, better careers and bulkier bank balances. Much needs more, bigger is better, even more is even better. Life becomes a competitive race dominated by ego, image, and survival of the fittest. The underlying assumption being that who we are is determined by what we have and what other people think about us.Indeed some people spend their entire lives living out this paradigm, which is a real pity because it's an illusion, a lie you were sold or bought into.

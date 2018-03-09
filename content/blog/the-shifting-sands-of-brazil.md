@@ -4,7 +4,7 @@ description: Written For Incasso Partners
 author: Rob Power
 slug: the-shifting-sands-of-brazil
 category: Economics
-date: '2016-15-07'
+date: '2016-07-16'
 ---
 # The Shifting Sands of Brazil’s Economy
 Today Brazil has the tenth largest economy in the world but this is a relatively new situation by global economic standards. Between the years 2000 and 2012, Brazil ranked high amongst the fastest growing major economies in the world, achieving this through an average annual GDP growth surpassing 5%. This success was largely driven by measures taken by the government to liberalize the economy creating a much more fertile environment for private sector investment. Additionally, while Brazil always benefitted from its richness in natural resources, its growing trade with China throughout this period proved hugely beneficial to the nation as a whole. This growth culminated in 2012 when Brazil surpassed the UK in terms of economy as well as achieving 5th in the world ranking of US dollar billionaires. However, in 2013 the tide turned for Brazil with a major deceleration of growth which has escalated to the point where all forecasts predict a contraction of around 1% this year.

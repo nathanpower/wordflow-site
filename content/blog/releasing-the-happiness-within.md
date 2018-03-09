@@ -4,7 +4,7 @@ description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: releasing-the-happiness-within
 category: Self Help
-date: '2016-20-05'
+date: '2016-05-20'
 ---
 # Releasing the Happiness Within
 ### Pause for a moment and ask yourself this question…

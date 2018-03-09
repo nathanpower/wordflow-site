@@ -4,7 +4,7 @@ description:
 author: Rob Power
 slug: windows-lead-time
 category: Glazing Industry
-date: '2018-18-01'
+date: '2018-01-18'
 ---
 
 # Buying Windows – How long Should My Lead Time Be?

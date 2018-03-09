@@ -4,7 +4,7 @@ description: Written For Incasso Partners
 author: Rob Power
 slug: economy-is-japan-falling-on-its-sword
 category: Economics
-date: '2016-18-06'
+date: '2016-06-18'
 ---
 # Is Japan Falling on its Sword?
 ## Why a Shrinking and Aging Population is Playing Havoc with the Economy

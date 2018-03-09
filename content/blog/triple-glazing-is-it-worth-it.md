@@ -4,7 +4,7 @@ description:
 author: Rob Power
 slug: triple-glazing-is-it-worth-it
 category: Glazing Industry
-date: '2018-05-02'
+date: '2018-02-05'
 ---
 # Triple Glazing: Is it worth it?
 Discerning consumers today have developed a somewhat wise suspicion of the incessant updating of existing products. We are told that our razors need 5 blades now, four just won’t suffice. Toothbrushes are relentlessly updated to reach the parts that your antiquated yard brush has been neglecting for years, and that’s without mentioning the calculated drip feeding of tech updates by device manufacturers. We are motivated to believe that we always need the next new thing, lest the Joneses be mocking us whilst they silently mow down our cat in their electric car! It may seem on the face of it that the window industry’s insistence that double glazing is yesterday’s news is yet another example of commercial hoodwinkery, but is it? What exactly does triple glazing bring to the table?

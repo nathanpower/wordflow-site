@@ -4,7 +4,7 @@ description:
 author: Rob Power
 slug: passive-house-builds
 category: Glazing Industry
-date: '2017-02-05'
+date: '2017-05-02'
 ---
 
 # Passive House Builds: What they are and why they might be the future.

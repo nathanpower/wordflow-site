@@ -4,7 +4,7 @@ description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: finding-your-flow
 category: Self Help
-date: '2016-22-02'
+date: '2016-02-22'
 ---
 # Finding Your Flow
 ## The Power of Flow for a Happier and More Successful Life

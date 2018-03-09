@@ -4,7 +4,7 @@ description: Written For Incasso Partners
 author: Rob Power
 slug: why-irish-eyes-are-smiling
 category: Economics
-date: '2016-16-07'
+date: '2016-07-16'
 ---
 # Why Irish Eyes Are Smiling
 In economic terms, there was scarcely a part of the world unaffected by the economic crash of 2008. The ripple effects were truly global though some countries fared worse than others. Ranked highly on all lists of countries most affected is Ireland. In fact the impact on Ireland was made far worse by circumstances because up until 2007, Ireland were settling in to their strongest economic period in history; what was known in the press as the Celtic Tiger. To put it in individualistic terms, pride came before the fall. There may have been a certain amount of hubris involved in Ireland’s eventual crash, not least by the developers and bankers who had only seen their fortunes grow consistently for the previous decade. Regardless of whether mistakes were made on high, the consequences were suffered in the trenches. Unemployment grew from an almost negligible 4% in 2007 to a whopping 15% in 2011. Construction stopped, spending stopped, young people fled for greener pastures, and overseas investment faltered; waiting to see what would rise from the ashes.

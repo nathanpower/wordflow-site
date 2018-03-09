@@ -4,7 +4,7 @@ description:
 author: Rob Power
 slug: why-you-want-alu-clad
 category: Glazing Industry
-date: '2017-30-05'
+date: '2017-05-30'
 ---
 
 # Alu-Clad: What it is and Why You Want it

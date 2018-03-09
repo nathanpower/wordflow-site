@@ -4,7 +4,7 @@ description: 'Written for Dr. Marke Rowe'
 author: Rob Power
 slug: the-path-of-forgiveness
 category: Self Help
-date: '2016-18-08'
+date: '2016-08-18'
 ---
 # The Path of Forgiveness
 

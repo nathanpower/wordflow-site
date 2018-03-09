@@ -4,7 +4,7 @@ description: Written for Broadsheet
 author: Rob Power
 slug: meanwhile-in-waterford
 category: Opinion
-date: '2015-16-04'
+date: '2015-04-16'
 ---
 # Meanwhile In Waterford
 

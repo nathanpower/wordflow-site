@@ -4,7 +4,7 @@ description: Written For Incasso Partners
 author: Rob Power
 slug: economy-the-french-conundrum
 category: Economics
-date: '2016-18-01'
+date: '2016-01-18'
 ---
 # The French Conundrum
 ## Socialist Ideals VS Capitalist Realities
