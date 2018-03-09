@@ -56,7 +56,7 @@ export const getOverviews = async () => {
 
 export const getPortfolioLinks = async () => {
   const overviews = await getOverviews()
-  return overviews.map(o => ({ title: o.title, slug: o.slug }))
+  return overviews.map(o => ({ title: o.title, slug: o.slug })).sort((a, b) => a.order > b.order)
 }
 
 export const getPortfolioContent = async () => {
@@ -71,12 +71,12 @@ export const getPortfolioContent = async () => {
   const contentPromises = await Promise.all(contentFiles.map(files => parseFiles(files)))
   const content = await Promise.all(contentPromises)
 
-  return categories.reduce((memo, category, index) => {
+  return categories.sort((a, b) => a.order > b.order).reduce((memo, category, index) => {
     memo.push(Object.assign({
       category,
       slug: Path.basename(paths[index]),
       entries: content[index].sort((a, b) => a.order > b.order),
     }, overviews[index]))
     return memo
-  }, []).sort((a, b) => a.order > b.order)
+  }, [])
 }
