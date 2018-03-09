@@ -1,7 +1,7 @@
 title: Accoya Blog
 description: 
 author: Rob Power
-slug: accoya-blog
+slug: the-new-wonder-wood-for-windows
 category: Glazing Industry
 date: '2017-16-05'
 # Accoya
