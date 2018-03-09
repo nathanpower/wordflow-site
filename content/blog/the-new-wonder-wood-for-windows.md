@@ -1,4 +1,4 @@
-title: Accoya Blog
+title: The New Wonder Woord for Windows
 description: 
 author: Rob Power
 slug: the-new-wonder-wood-for-windows
