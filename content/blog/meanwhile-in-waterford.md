@@ -1,6 +1,6 @@
 ---
 title: Meanwhile, in Waterford
-description: Written for Broadsheet.ie
+description: Written for Broadsheet
 author: Rob Power
 slug: meanwhile-in-waterford
 category: Opinion
