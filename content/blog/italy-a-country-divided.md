@@ -1,6 +1,6 @@
 ---
 title: 'Italy, A Country Divided'
-description:Written For Incasso Partners
+description: Written For Incasso Partners
 author: Rob Power
 slug: italy-a-country-divided
 category: Economics

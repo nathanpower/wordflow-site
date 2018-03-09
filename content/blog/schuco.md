@@ -1,9 +1,12 @@
+---
 title: The Amzing possibilities of Schuco
 description: 
 author: Rob Power
 slug: schuco-blog
 category: Glazing Industry
 date: '2017-18-08'
+---
+
 # The Amazing Possibilities of Schüco
 Schüco (sometime Schueco) is warmly referred to by Zyle Fenster’s Walter as the ‘Rolls Royce of glazing systems’. They are a German producer of windows, doors, sliders, curtain walling and absolutely everything in between. The Schüco system is a little bit special as far as windows go and frankly, considering the kind of work they do on massive commercial and industrial projects internationally (learn more here), it is actually somewhat surprising that they are so engaged with the residential market. The fact is that they are though, and while it is worth saying upfront that Schüco products certainly aren’t cheap, anyone investing substantially in a contemporary styled home would do well to check out what Schüco have to offer before making a call on their glazing. We sat down for a chat with the guys at Zyle Fenster, a supplier of Schüco, to hear about what makes it special. The following are just some of the ways in which Schüco stands out in the crowd.
 ### Big and Bespoke

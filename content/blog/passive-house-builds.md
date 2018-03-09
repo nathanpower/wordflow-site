@@ -1,9 +1,12 @@
+---
 title: Passive House Builds
 description: 
 author: Rob Power
 slug: passive-house-builds
 category: Glazing Industry
 date: '2017-02-05'
+---
+
 # Passive House Builds: What they are and why they might be the future.
 Whether you’re involved in the building industry, you’ve got a passing interest in building your own home, or you’re just a fan of Grand Designs; it is very likely that you have heard the phrase ‘Passive House’. The ubiquity of the term is down to the steady growth of the popularity of the building practice internationally, and the chances are, if there isn’t a passive house near you already, there will be soon. But what exactly is it? What are the benefits? And is it something you should consider for your own building project?
 ## What is a Passive House?

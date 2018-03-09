@@ -1,9 +1,12 @@
+---
 title: 'Windows, Doors, and Sliders: How Big is Too Big?'
 description: 
 author: Rob Power
 slug: over-size-glazing
 category: Glazing Industry
 date: '2018-18-02'
+---
+
 # Windows, Doors, and Sliders: How Big is Too Big?
 As with all industries nowadays, technology marches on when it comes to the utility of glass in your home. Triple glazing is becoming more common-place, as is Alu-clad, a product which allows for greater longevity and reduced maintenance. Energy retention is increasing all the time in concert with the worlds increasing need for sustainability; making passive homes within reach for more and more people. However, as is also the case with other industries, as possibilities increase, so do customer expectations, and we are finding more and more clients seeking to maximize their views, and indeed the light in their home by installing oversize glazing. But what are the limits of today’s products? Whether it’s a fixed pane, a sash slider, or a sliding door, just how big can it be? We turned to Walter Power at Zyle Fenster Ireland to find out.
 #### How often are you getting questions about over-size glazing these days?

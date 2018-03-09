@@ -1,9 +1,12 @@
+---
 title: Five Questions People Ask When Buying Windows
 description: 
 author: Rob Power
 slug: five-questions-when-buying-windows
 category: Glazing Industry
 date: '2017-20-06'
+---
+
 # 5 Questions People Often Ask When Buying Windows
 Coming into the summer is a time when many people’s new homes are under construction, or indeed many existing homeowners begin to consider how they can upgrade their glazing before the upcoming winter. Although it is a busy season, Paul at Zyle Fenster UK found the time to sit down with us to talk about some of the most common questions he gets from new customers.
 ### What’s the best finish to choose that will look good both inside and outside?

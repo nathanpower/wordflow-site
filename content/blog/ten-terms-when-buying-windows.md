@@ -1,9 +1,12 @@
+---
 title: 'Explainer: 10 Terms to Understand When Buying Windows'
 description: 
 author: Rob Power
 slug: ten-terms-when-buying-windows
 category: Glazing Industry
 date: '2017-18-07'
+---
+
 # Explainer: 10 Terms to Understand When Buying Windows
 Buying windows can be a tricky process and it is worth being as well informed as possible before making your decision. After all, if you make the right choice, they could be with you for a lifetime. Here are some important terms explained so you can embark on your window buying journey armed with some useful industry knowledge. Take our advice and good luck with an altogether different kind of window-shopping!
 

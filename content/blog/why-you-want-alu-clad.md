@@ -1,9 +1,12 @@
+---
 title: 'Alu Clad: What it is and Why you Want it'
 description: 
 author: Rob Power
 slug: why-you-want-alu-clad
 category: Glazing Industry
 date: '2017-30-05'
+---
+
 # Alu-Clad: What it is and Why You Want it
 Since Alu Clad windows have hit the scene a number of years ago, they have been growing steadily in popularity, and for good reason, which we will get into later. It is hardly surprising that it was a system born in the harsh conditions of Scandinavia, where necessity is the mother of invention when it comes to optimising all the elements of building design. Alu Clad windows represent an inevitable evolution in window design that skilfully harmonises modern technology and traditional materials, while never losing site of the importance of stylish design. But what exactly are Alu Clad windows?
 
