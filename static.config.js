@@ -52,6 +52,7 @@ export default {
           path: `/post/${post.slug}`,
           component: 'src/containers/Post',
           getData: () => ({
+            posts,
             post,
           }),
         })),

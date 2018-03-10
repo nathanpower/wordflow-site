@@ -1,15 +1,6 @@
 import React from 'react'
-import { withRouteData, Link } from 'react-static'
+import { withRouteData } from 'react-static'
 //
+import BlogPost from '../components/blog/blog-post'
 
-export default withRouteData(({ post }) => {
-  const createMarkup = () => ({ __html: post.html })
-
-  return (
-    <div className="post">
-      <Link to="/blog/">{'<'} Back</Link>
-      <br />
-      <div className="blog-content" dangerouslySetInnerHTML={createMarkup()} />
-    </div>
-  )
-})
+export default withRouteData(({ post, posts }) => (<BlogPost post={post} posts={posts} />))

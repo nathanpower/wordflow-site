@@ -5,21 +5,14 @@ import { Link } from 'react-static'
 
 import './blog-nav.scss'
 
-export default ({ updateSearchQuery, posts }) => (
+export default ({ updateSearchQuery, posts, showSearch=true }) => (
   <div className="blog-nav row start-xs col-xs-12">
-    <div className="blog-search col-xs-12">
-      <span className="icon-search" />
-      <input className="search-input" type="search" placeholder="Search" onChange={updateSearchQuery} />
-    </div>
+    { showSearch ?
+      <div className="blog-search col-xs-12">
+        <span className="icon-search" />
+        <input className="search-input" type="search" placeholder="Search" onChange={updateSearchQuery} />
+      </div> : null }
 
-    <div className="blog-nav-section col-xs-12">
-      <h4 className="section-title"><span className="icon-radio-unchecked" />Recent Posts</h4>
-      {posts.filter((post, index) => index < 5).map(post => (
-        <div key={post.slug} className="section-link">
-          <Link to={`/blog/post/${post.slug}/`}>{post.title}</Link>
-        </div>
-      ))}
-    </div>
 
     <div className="blog-nav-section col-xs-12">
       <h4 className="section-title"><span className="icon-radio-unchecked" />Categories</h4>
@@ -29,6 +22,15 @@ export default ({ updateSearchQuery, posts }) => (
       }, []).map(category => (
         <div key={category} className="section-link">
           <Link to={`/blog/category/${category}`}>{category}</Link>
+        </div>
+      ))}
+    </div>
+
+    <div className="blog-nav-section col-xs-12">
+      <h4 className="section-title"><span className="icon-radio-unchecked" />Recent Posts</h4>
+      {posts.filter((post, index) => index < 5).map(post => (
+        <div key={post.slug} className="section-link">
+          <Link to={`/blog/post/${post.slug}/`}>{post.title}</Link>
         </div>
       ))}
     </div>

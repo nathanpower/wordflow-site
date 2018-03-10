@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+.blog-post-container {
+  padding: 50px;
+  min-height: calc(100vh - 220px);
+
+  .blog-post {
+    text-align: left;
+
+    p,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: rgb(141, 141, 141);
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 24px;
+    } 
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: .5px;
+      line-height: 1.8;
+    }
+  }
+
+  .blog-info {
+    position: sticky;
+    top: 70px;
+    height: 100%;
+    
+    @media only screen and (max-width: 62em) {
+      display: none;
+    }
+  }
+}

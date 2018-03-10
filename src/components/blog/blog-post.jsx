@@ -1,0 +1,26 @@
+
+import React from 'react'
+//
+import BlogMeta from './blog-meta'
+import BlogNav from './blog-nav'
+
+import './blog-post.scss'
+
+export default (({ post, posts }) => {
+  const createMarkup = () => ({ __html: post.html })
+
+  return (
+    <div className="blog-post-container row full-width col-xs-12 center-xs">
+      <div className="blog-post col-lg-6 col-md-7 col-sm-9 col-xs-11 left-xs">
+        <BlogMeta post={post} />
+        <div className="blog-content" dangerouslySetInnerHTML={createMarkup()} />
+      </div>
+      <div className="blog-info col-lg-2 col-md-3 left-xs">
+        <BlogNav
+          showSearch={false}
+          posts={posts}
+        />
+      </div>
+    </div>
+  )
+})
