@@ -11,7 +11,9 @@ export default (({ post, posts }) => {
 
   return (
     <div className="blog-post-container row full-width col-xs-12 center-xs">
-      <div className="blog-post col-lg-6 col-md-7 col-sm-9 col-xs-11 left-xs">
+      <div className="blog-post col-lg-7 col-md-8 col-sm-10 col-xs-11 left-xs">
+        <img src="https://placeimg.com/800/450/arch" width="100%" alt={post.title} />
+        <h1 className="post-title">{post.title}</h1>
         <BlogMeta post={post} />
         <div className="blog-content" dangerouslySetInnerHTML={createMarkup()} />
       </div>

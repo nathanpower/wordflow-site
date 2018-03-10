@@ -9,6 +9,7 @@
   margin: 0!important;
 
   .blog-search {
+    margin-bottom: 30px;
 
     input.search-input {
       font: 400 14px 'Poppins', sans-serif;
@@ -45,7 +46,11 @@
 
   .blog-nav-section {
     padding-left: 10px;
-    padding-top: 10px;
+    padding-bottom: 30px;
+
+    .section-title {
+      margin: 0;
+    }
 
     h4 {
       font: 300 18px 'Poppins', sans-serif;

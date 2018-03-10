@@ -6,6 +6,14 @@
 
   .blog-post {
     text-align: left;
+    padding-right: 25px;
+
+    .blog-content {
+
+      h1:first-of-type {
+        display: none;
+      }
+    }
 
     p,
     a,
@@ -32,6 +40,10 @@
 
     h3 {
       font-size: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
     } 
 
     p {
