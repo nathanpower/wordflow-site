@@ -4,6 +4,11 @@
   padding: 50px;
   min-height: calc(100vh - 220px);
 
+  .item-meta {
+    margin-bottom: 30px;
+  }
+
+
   .blog-post {
     text-align: left;
     padding-right: 25px;
@@ -31,7 +36,9 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 42px;
+      color: $black;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -51,6 +58,23 @@
       font-weight: 300;
       letter-spacing: .5px;
       line-height: 1.8;
+    }
+
+    blockquote {
+      
+      p {
+        font-size: 28px;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      P::before {
+        content: '\201C'
+      }
+
+      P::after {
+        content: '\201D'
+      }
     }
   }
 
