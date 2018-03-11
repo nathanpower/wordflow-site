@@ -52,6 +52,11 @@ img {
   max-width: 100%;
 }
 
+.content {
+  margin: 0 auto;
+  max-width: 2000px!important;
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('/fonts/icomoon.eot?rv9dmj');

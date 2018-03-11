@@ -17,7 +17,7 @@ export default (({ post, posts }) => {
         <BlogMeta post={post} showDescription />
         <div className="blog-content" dangerouslySetInnerHTML={createMarkup()} />
       </div>
-      <div className="blog-info col-lg-2 col-md-3 left-xs">
+      <div className="blog-info col-md-3 left-xs">
         <BlogNav
           showSearch={false}
           posts={posts}

@@ -64,7 +64,7 @@ export default class Blog extends React.Component {
 
     return (
       <div className="blog-main-container row full-width col-xs-12 center-xs">
-        <div className="blog-post-list col-lg-6 col-md-7 col-sm-9 col-xs-11 left-xs">
+        <div className="blog-post-list col-lg-7 col-md-8 col-sm-9 col-xs-11 left-xs">
           {posts.length === 0 && this.renderNoPosts()}
           {posts.map(post => (
             <div className="blog-list-item" key={post.slug}>
@@ -82,7 +82,7 @@ export default class Blog extends React.Component {
             )
         )}
         </div>
-        <div className="blog-info col-lg-2 col-md-3 left-xs">
+        <div className="blog-info col-md-3 left-xs">
           <BlogNav
             updateSearchQuery={ev => this.debouncedSearchQuery(ev.target.value)}
             posts={this.props.posts}
