@@ -26,7 +26,7 @@ export default ({ updateSearchQuery, posts, showSearch=true }) => (
 
           <Link
             to={path}
-            activeClassName={window.location !== undefined && window.location.pathname !== '/blog' && path === '/blog' ? '' : 'active'}
+            activeClassName={typeof window !== 'undefined' && window.location.pathname !== '/blog' && path === '/blog' ? '' : 'active'}
           >
             {category}
           </Link>
