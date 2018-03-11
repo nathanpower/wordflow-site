@@ -4,6 +4,10 @@
   padding: 50px;
   min-height: calc(100vh - 220px);
 
+  @media only screen and (max-width: 48em) {
+    padding: 15px 0!important;
+  }
+
   .item-meta {
     margin-bottom: 30px;
 
@@ -20,6 +24,10 @@
   .blog-post {
     text-align: left;
     padding-right: 25px;
+
+    @media only screen and (max-width: 62em) {
+      padding-right: 0;
+    }
 
     .blog-content {
 
@@ -47,18 +55,37 @@
       font-size: 42px;
       color: $black;
       margin-bottom: 10px;
+
+      @media only screen and (max-width: 48em) {
+        font-size: 32px;
+      }
     }
 
     h2 {
       font-size: 28px;
+
+      @media only screen and (max-width: 48em) {
+        font-size: 20px;
+      }
     }
 
     h3 {
       font-size: 24px;
+
+      @media only screen and (max-width: 48em) {
+        font-size: 16px;
+      }
     }
 
-    h4 {
+    h4,
+    h5,
+    h6 {
       font-size: 20px;
+
+
+      @media only screen and (max-width: 48em) {
+        font-size: 14px;
+      }
     } 
 
     p,
@@ -67,17 +94,31 @@
       font-weight: 300;
       letter-spacing: .5px;
       line-height: 1.8;
+
+      @media only screen and (max-width: 48em) {
+        font-size: 12px;
+      }
     }
 
     blockquote {
       border-left: 12px solid rgba(141, 141, 141, .5);
       padding-left: 30px;
       margin-left: 0;
+
+      @media only screen and (max-width: 48em) {
+        border-left: 4px solid rgba(141, 141, 141, .5);
+        padding-left: 15px;
+        margin-left: 0;
+      }
       
       p {
         font-size: 24px;
         font-weight: 400;
         font-style: italic;
+
+        @media only screen and (max-width: 48em) {
+          font-size: 16px;
+        }
       }
 
       // P::before {
