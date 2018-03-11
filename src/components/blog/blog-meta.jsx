@@ -2,7 +2,7 @@
 import React from 'react'
 //
 
-export default (({ post }) => {
+export default (({ post, showDescription=false }) => {
   const formatDate = (date) => {
     const monthNames = [
       'January', 'February', 'March',
@@ -24,6 +24,8 @@ export default (({ post }) => {
   return (
     <div className="item-meta">
       <span>{date} in <a href="#">{post.category}</a> by <a href="#">{post.author}</a></span>
+      { (showDescription && post.description) ?
+        <div className="item-description"><span>{post.description}</span></div> : null }
     </div>
   )
 })

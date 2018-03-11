@@ -1,6 +1,6 @@
 ---
 title: Releasing the Happiness Within
-description: 'Written for Dr. Marke Rowe'
+description: 'Written for Dr. Mark Rowe'
 author: Rob Power
 slug: releasing-the-happiness-within
 category: Self Help

@@ -10,6 +10,10 @@
     span {
       color: #8d8d8d;
     }
+
+    .item-description {
+      padding-top: 10px;
+    }
   }
 
 
@@ -65,20 +69,23 @@
     }
 
     blockquote {
+      border-left: 12px solid rgba(141, 141, 141, .5);
+      padding-left: 30px;
+      margin-left: 0;
       
       p {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 400;
         font-style: italic;
       }
 
-      P::before {
-        content: '\201C'
-      }
+      // P::before {
+      //   content: '\201C'
+      // }
 
-      P::after {
-        content: '\201D'
-      }
+      // P::after {
+      //   content: '\201D'
+      // }
     }
   }
 

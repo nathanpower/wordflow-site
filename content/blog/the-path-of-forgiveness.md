@@ -43,7 +43,7 @@ For Example:
 
 There's a wonderful African proverb -
 
->   'You can outrun what's running beside you but not what'srunning inside you'
+>   'You can outrun what's running beside you but not what's running inside you'
 
 At the risk of stating the obvious, the past has had its day. Let it go. Learn from it certainly; in fact the past can be a wonderful teacher. But holding on to past hurts and grievances is ultimately self-destructive and takes from your ability to enjoy the present. Let the past go and live more in the present moment. Being more mindful and present is a gift to your sense of well-being - fostering feelings of forgiveness and liberty.
 
