@@ -14,7 +14,13 @@
 
     .blog-list-item {
       text-align: left;
-      padding-bottom: 50px;
+      margin-bottom: 40px;
+      padding: 0 10px 10px 10px;
+      box-sizing: border-box;
+
+      &:hover {
+        cursor: pointer;
+      }
 
       .item-header {
         width: 100%;

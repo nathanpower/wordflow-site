@@ -10,12 +10,13 @@
 
   .blog-search {
     margin-bottom: 30px;
+    width: 100%;
 
     input.search-input {
       font: 400 14px 'Poppins', sans-serif;
       letter-spacing: .2px;
       color: $black;
-      width: 250px;
+      width: calc(100% - 55px);
       box-sizing: content-box;
       position: relative;
       overflow: hidden;
@@ -65,10 +66,24 @@
     }
 
     .section-link {
+      width: 100%;
       padding: 7px 0;
+
       a {
         // color: #585858;
+        box-sizing: border-box;
+        display: block;
+        padding: 0 15px;
         font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 100%;
+        text-overflow: ellipsis;
+
+        &.active {
+          background-color: $primary-color;
+          color: $white;
+        }
       }
     }
 

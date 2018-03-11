@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-static'
+import { Link, withRouter } from 'react-static'
 import debounce from 'lodash.debounce'
 
 import BlogNav from './blog-nav'
@@ -7,7 +7,7 @@ import BlogMeta from './blog-meta'
 
 import './blog.scss'
 
-export default class Blog extends React.Component {
+class Blog extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -61,22 +61,23 @@ export default class Blog extends React.Component {
   render () {
     const posts = this.filterPosts()
     const createMarkup = html => ({ __html: html })
+    const nav = this.props.history.push
 
     return (
       <div className="blog-main-container row full-width col-xs-12 center-xs">
         <div className="blog-post-list col-lg-7 col-md-8 col-sm-9 col-xs-11 left-xs">
           {posts.length === 0 && this.renderNoPosts()}
           {posts.map(post => (
-            <div className="blog-list-item" key={post.slug}>
+            <div className="blog-list-item" key={post.slug} onClick={() => { nav(`/blog/post/${post.slug}`) }}>
               <div className="item-header">
-                <h2><Link to={`/blog/post/${post.slug}/`}>{post.title}</Link></h2>
+                <h2><Link to={`/blog/post/${post.slug}`}>{post.title}</Link></h2>
               </div>
               <BlogMeta post={post} />
               <div className="item-content">
                 <p dangerouslySetInnerHTML={createMarkup(post.summary)} />
               </div>
               <div className="read-more">
-                <Link to={`/blog/post/${post.slug}/`}>Read more</Link>
+                <Link to={`/blog/post/${post.slug}`}>Read more</Link>
               </div>
             </div>
             )
@@ -92,3 +93,5 @@ export default class Blog extends React.Component {
     )
   }
 }
+
+export default withRouter(Blog)

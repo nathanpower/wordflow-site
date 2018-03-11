@@ -18,12 +18,18 @@ export default ({ updateSearchQuery, posts, showSearch=true }) => (
       <h4 className="section-title"><span className="icon-radio-unchecked" />Categories</h4>
       {posts.reduce((memo, post) => {
         if (!memo.find(p => p.category === post.category)) {
-          memo.push({ category: post.category, slug: post.categorySlug })
+          memo.push({ category: post.category, path: `/blog/category/${post.categorySlug}` })
         }
         return memo
-      }, []).map(({ category, slug }) => (
+      }, [{ category: 'All', path: '/blog' }]).map(({ category, path }) => (
         <div key={category} className="section-link">
-          <Link to={`/blog/category/${slug}`}>{category}</Link>
+
+          <Link
+            to={path}
+            activeClassName={window.location.pathname !== '/blog' && path === '/blog' ? '' : 'active'}
+          >
+            {category}
+          </Link>
         </div>
       ))}
     </div>
