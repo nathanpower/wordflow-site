@@ -24,6 +24,7 @@
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
     "react-static": "^5",
+    "slugify": "^1.2.9",
     "yaml-front-matter": "^4.0.0"
   },
   "devDependencies": {

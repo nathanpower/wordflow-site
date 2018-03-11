@@ -17,11 +17,13 @@ export default ({ updateSearchQuery, posts, showSearch=true }) => (
     <div className="blog-nav-section col-xs-12">
       <h4 className="section-title"><span className="icon-radio-unchecked" />Categories</h4>
       {posts.reduce((memo, post) => {
-        if (!memo.includes(post.category)) memo.push(post.category)
+        if (!memo.find(p => p.category === post.category)) {
+          memo.push({ category: post.category, slug: post.categorySlug })
+        }
         return memo
-      }, []).map(category => (
+      }, []).map(({ category, slug }) => (
         <div key={category} className="section-link">
-          <Link to={`/blog/category/${category}`}>{category}</Link>
+          <Link to={`/blog/category/${slug}`}>{category}</Link>
         </div>
       ))}
     </div>
@@ -38,11 +40,10 @@ export default ({ updateSearchQuery, posts, showSearch=true }) => (
     <div className="blog-nav-section col-xs-12">
       <h4 className="section-title"><span className="icon-radio-unchecked" />Archive</h4>
       {posts.reduce((memo, post) => {
-        const dateArgs = post.date.split('-').map((num, idx) => idx === 1 ? parseInt(num) - 1 : parseInt(num))
-        const year = new Date(...dateArgs).getFullYear()
+        const year = new Date(post.date).getFullYear()
         if (!memo.includes(year)) memo.push(year)
         return memo
-      }, []).sort((a, b) => a < b).map(year => (
+      }, []).sort((a, b) => a < b ? 1 : -1).map(year => (
         <div key={year} className="section-link">
           <Link to={`/blog/archive/${year}`}>{year}</Link>
         </div>

@@ -25,7 +25,18 @@ export default class Blog extends React.Component {
   }
 
   filterPosts () {
-    const { posts } = this.props
+    const posts = this.props.posts.filter(post => {
+      if (this.props.category) {
+        return this.props.category.category === post.category
+      }
+
+      if (this.props.archive) {
+        return this.props.archive === new Date(post.date).getFullYear()
+      }
+
+      return true
+    })
+
     const { searchQuery } = this.state
 
     if (!searchQuery) {

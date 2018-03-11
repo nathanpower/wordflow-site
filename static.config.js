@@ -16,7 +16,17 @@ export default {
     const quotes = await getContent('quotes')
     const testimonials = await getContent('testimonials')
     const portfolio = await getPortfolioContent()
-
+    const categories = posts.reduce((memo, post) => {
+      if (!memo.find(p => p.category === post.category)) {
+        memo.push({ category: post.category, slug: post.categorySlug })
+      }
+      return memo
+    }, [])
+    const archives = posts.reduce((memo, post) => {
+      const year = new Date(post.date).getFullYear()
+      if (!memo.includes(year)) memo.push(year)
+      return memo
+    }, [])
     return [
       {
         path: '/',
@@ -54,6 +64,38 @@ export default {
           getData: () => ({
             posts,
             post,
+          }),
+        })),
+      },
+      {
+        path: '/blog/category',
+        component: 'src/containers/Blog',
+        redirect: '/blog',
+        getData: () => ({
+          posts,
+        }),
+        children: categories.map(category => ({
+          path: `/${category.slug}`,
+          component: 'src/containers/Blog',
+          getData: () => ({
+            posts,
+            category,
+          }),
+        })),
+      },
+      {
+        path: '/blog/archive',
+        component: 'src/containers/Blog',
+        redirect: '/blog',
+        getData: () => ({
+          posts,
+        }),
+        children: archives.map(archive => ({
+          path: `/${archive}`,
+          component: 'src/containers/Blog',
+          getData: () => ({
+            posts,
+            archive,
           }),
         })),
       },

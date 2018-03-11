@@ -7,6 +7,7 @@ const FrontMatter = require('yaml-front-matter')
 const StartCase = require('lodash.startcase')
 const Flatten = require('lodash.flatten')
 const Marked = require('marked')
+const Slugify = require('slugify')
 
 const readFileAsync = promisify(Fs.readFile)
 
@@ -24,6 +25,10 @@ export const getContent = async folder => {
   converted.forEach(entry => {
     if (folder === 'blog') {
       delete entry.__content // let's not keep the blog markdown in memory
+      entry.slug = Slugify(entry.title, { lower: true })
+      entry.categorySlug = Slugify(entry.category, { lower: true })
+      const dateArgs = entry.date.split('-').map((num, idx) => idx === 1 ? parseInt(num) - 1 : parseInt(num))
+      entry.date = new Date(...dateArgs).valueOf()
     }
 
     const paragraphs = entry.html.match(/<p>(.*?)<\/p>/g)
@@ -33,7 +38,12 @@ export const getContent = async folder => {
     } <span class="summary-ellipsis">[...]</span></p>`
   })
 
-  return converted.sort((a, b) => a.order > b.order)
+  if (folder === 'blog') {
+    console.log('sorting...')
+    return converted.sort((a, b) => a.date < b.date ? 1 : -1)
+  }
+
+  return converted.sort((a, b) => a.order > b.order ? 1 : -1)
 }
 
 
@@ -71,11 +81,10 @@ export const getPortfolioContent = async () => {
   const contentPromises = await Promise.all(contentFiles.map(files => parseFiles(files)))
   const content = await Promise.all(contentPromises)
 
-  return categories.sort((a, b) => a.order > b.order).reduce((memo, category, index) => {
+  return categories.sort((a, b) => a.order > b.order ? 1 : -1).reduce((memo, category, index) => {
     memo.push(Object.assign({
       category,
-      slug: Path.basename(paths[index]),
-      entries: content[index].sort((a, b) => a.order > b.order),
+      entries: content[index].sort((a, b) => a.order > b.order ? 1 : -1),
     }, overviews[index]))
     return memo
   }, [])

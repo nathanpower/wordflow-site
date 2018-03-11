@@ -3,7 +3,7 @@ import React from 'react'
 //
 
 export default (({ post, showDescription=false }) => {
-  const formatDate = (date) => {
+  const formatDate = date => {
     const monthNames = [
       'January', 'February', 'March',
       'April', 'May', 'June', 'July',
@@ -18,8 +18,7 @@ export default (({ post, showDescription=false }) => {
     return `${monthNames[monthIndex]} ${day}, ${year}`
   }
 
-  const dateArgs = post.date.split('-').map((num, idx) => idx === 1 ? parseInt(num) - 1 : parseInt(num))
-  const date = formatDate(new Date(...dateArgs))
+  const date = formatDate(new Date(post.date))
 
   return (
     <div className="item-meta">
