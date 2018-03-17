@@ -1,11 +1,13 @@
 @import '../../variables.scss';
 
 .detail-body {
-  background-color: $orange;
+  background-color: $white;
+  max-width: 2000px;
+  margin: 0 auto;
 
   .detail-description {
  
-    padding: 15px 25px;
+    padding: 0px 25px 35px;
     h3 {
       text-align: left;
       font: 300 20px/1.65em 'Raleway', sans-serif;
@@ -13,28 +15,57 @@
     }
   }
 
-  .portfolio-item {
-    padding: 25px;
-  }
+  @media only screen and (min-width: 1400px) {
+    .portfolio-item {
+      padding: 25px 0 50px;
+      margin-bottom: 25px;
+      border-top: 1px solid $black;
+      height: 500px;
 
-  .portfolio-image,
-  .portfolio-text {
-    padding: 0 15px;
-    @media only screen and (max-width: 48em) {
+      .item-content {
+        display: inline-block;
 
-      order: 1!important;
-      text-align: left!important;
+    
+        img,
+        iframe {
+          float: left;
+          width: 700px;
+          padding: 25px;
+        }
+    
+        h3,
+        p {
+          text-align: left;
+        }
+    
+        h3 {
+          padding-top: 10px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          letter-spacing: .2px;
+          color: #222222;
+          font-size: 21px;
+        }
+    
+        p {
+          padding: 0 25px;
+        }
+      }
+    }
+
+      .portfolio-item:nth-child(2n+0) {
+
+        .item-content {
+          img,
+          iframe {
+            float: right;
+          }
+      
+          h3,
+          p {
+            text-align: right;
+          }   
+      }
     }
   }
-
-  .portfolio-text {
-    height: 331px;
-    font: 300 16px/1.65em 'Poppins', sans-serif;
-    color: #0b486b;
-
-    @media only screen and (max-width: 48em) {
-
-      height: auto;
-    }
   }
-}

@@ -7,8 +7,8 @@ import ScrollContainer from '../shared/scroll-container'
 
 export default ({ heading }) => (
   <ScrollContainer render={({ scrollTop }) => {
-    const darken = 255 - (scrollTop || 0)
-    const backgroundColor = scrollTop ? `rgb(${darken}, ${darken}, ${darken})` : 'white'
+    const darken = 247 - (scrollTop || 0)
+    const backgroundColor = scrollTop ? `rgb(${darken}, ${darken}, ${darken})` : '#F7F7F7'
     return (
       <div
         className="detail-header-container"
