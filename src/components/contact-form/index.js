@@ -10,7 +10,7 @@ export default class ContactForm extends React.Component {
     super(props)
     this.state = {}
     this.boundHandleChange = this.handleChange.bind(this)
-    // this.boundHandleSubmit = this.handleSubmit.bind(this)
+    this.boundHandleSubmit = this.handleSubmit.bind(this)
   }
 
   encode (data) {
@@ -23,16 +23,16 @@ export default class ContactForm extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  // handleSubmit (e) {
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: this.encode({ 'form-name': 'contact', ...this.state }),
-  //   })
+  handleSubmit (e) {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.encode({ 'form-name': 'contact', ...this.state }),
+    })
 
-  //   this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
-  //   e.preventDefault()
-  // }
+    this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
+    e.preventDefault()
+  }
 
   isValidForm () {
     const required = ['name', 'email', 'message']
@@ -59,8 +59,10 @@ export default class ContactForm extends React.Component {
             className="row col-xs-12 center-xs between-xs"
             name="contact"
             method="post"
-            netlify
-            netlify-honeypot="bot-field"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={this.boundHandleSubmit}
+            action="/contact?success=true"
           >
             <input hidden name="bot-field" />
             <input onChange={this.boundHandleChange} placeholder="Your name *" name="name" type="text" className="text-input col-sm-4 col-xs-12" />
