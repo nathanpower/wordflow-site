@@ -23,7 +23,8 @@ export default class ContactForm extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  handleSubmit () {
+  handleSubmit (e) {
+    e.preventDefault()
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
