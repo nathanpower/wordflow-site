@@ -3,10 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  text-align: center;
+  font: 300 26px/1.55em 'Raleway', sans-serif;
 }
 
 .detail-logo {
-  padding:35px 0 0px;;
+  padding: 35px 0 0px;
+  margin-bottom: 0;
+}
+
+.detail-heading {
+  padding-bottom: 30px;
 }

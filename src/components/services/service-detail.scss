@@ -7,7 +7,9 @@
 
   .detail-description {
  
-    padding: 0px 25px 35px;
+    margin-top: -1px;
+    border-top: 1px solid $grey;
+    padding: 40px 0;
     h3 {
       text-align: left;
       font: 300 20px/1.65em 'Raleway', sans-serif;
@@ -15,29 +17,124 @@
     }
   }
 
-  @media only screen and (min-width: 1400px) {
-    .portfolio-item {
-      padding: 25px 0 50px;
-      margin-bottom: 25px;
-      border-top: 1px solid $black;
-      height: 500px;
+    @media only screen and (min-width: 1400px) {
+      .portfolio-item {
+        padding: 75px 0;
+        margin-bottom: 75px;
+        border-top: 1px solid $grey;
+        height: 500px;
+        background: transparent;
 
-      .item-content {
-        display: inline-block;
+        .item-content {
+          display: inline-block;
+          position: relative;
 
-    
-        img,
-        iframe {
-          float: left;
-          width: 700px;
-          padding: 25px;
+          a.screenshot,
+          .video {
+            padding: 0;
+            margin: 0 75px 0 0;
+
+            h4 {
+              font-family: 'Montserrat', sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+              word-spacing: 0.6px;
+              line-height: 16.7px;
+              letter-spacing: -2px;
+              margin: 0;
+              padding: 0 1px;
+              color: $grey;
+              text-align: left;
+            }
+          }
+
+          .screenshot,
+          .video {
+            position: relative;
+            z-index: 0;
+            float: left;
+          }
+
+          .video {
+            width: 700px;
+            height: 450px;
+          }
+
+          a.screenshot.loaded:before,
+          a.screenshot.loaded:after {
+            content: '';
+            position: absolute;
+            box-sizing: border-box;
+            box-shadow: 0 15px 10px rgba(0,0,0,.6);
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            height: 30%;
+            z-index: 1;
+            transform-origin: 0 0;
+            transform: skewY(-6deg);
+          }
+
+          a.screenshot.loaded:after {
+            transform-origin: 100% 0;
+            transform: skewY(6deg);
+          }
+      
+          img {
+            position: relative;
+            z-index: 2;
+            width: 700px;
+          }
+      
+          h3,
+          p {
+            text-align: left;
+          }
+      
+          h3 {
+            padding-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            letter-spacing: .2px;
+            color: #222222;
+            font-size: 21px;
+          }
+      
+          p {
+            padding: 0 25px;
+          }
         }
-    
-        h3,
-        p {
-          text-align: left;
+      }
+
+        .portfolio-item:nth-child(2n+0) {
+
+          .item-content {
+            .screenshot,
+            .video {
+              float: right;
+              margin: 0 0 0 75px;
+            }
+        
+            h3,
+            p {
+              text-align: right;
+            }
+
+            a.screenshot h4 {
+              text-align: right;
+            }
         }
-    
+      }
+    }
+
+    @media only screen and (max-width: 1400px) {
+
+      .portfolio-item {
+        max-width: 700px;
+        border-top: 1px solid $grey;
+        padding-top: 50px;
+        margin-bottom: 30px;
+
         h3 {
           padding-top: 10px;
           font-family: 'Poppins', sans-serif;
@@ -46,26 +143,50 @@
           color: #222222;
           font-size: 21px;
         }
-    
+
+        .item-title {
+          display: none;
+        }
+
         p {
-          padding: 0 25px;
+          text-align: left;
+        }
+
+        .item-content {
+          margin-bottom: 10px;
+          position: relative;
+
+          .video {
+            height: 450px;
+          }
+
+          a.screenshot:before,
+          a.screenshot:after {
+            content: none;
+          }
         }
       }
     }
 
-      .portfolio-item:nth-child(2n+0) {
+    @media only screen and (max-width: 760px) {
 
+      .portfolio-item {
         .item-content {
-          img,
-          iframe {
-            float: right;
+          .video {
+            height: 350px;
           }
-      
-          h3,
-          p {
-            text-align: right;
-          }   
+        }
       }
     }
-  }
+
+    @media only screen and (max-width: 600px) {
+
+      .portfolio-item {
+        .item-content {
+          .video {
+            height: 250px;
+          }
+        }
+      }
+    }
   }
