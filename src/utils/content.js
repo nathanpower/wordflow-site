@@ -61,7 +61,10 @@ export const getOverviews = async () => {
 
   const overviews = Flatten(await Promise.all(overviewPromises))
 
-  return overviews.map((overview, i) => Object.assign(overview, { slug: Path.basename(paths[i]) }))
+  return overviews.map((overview, i) => Object.assign(overview, {
+    slug: Path.basename(paths[i]),
+    html: Marked(overview.__content),
+  }))
 }
 
 export const getPortfolioLinks = async () => {

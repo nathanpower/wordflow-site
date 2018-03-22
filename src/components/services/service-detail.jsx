@@ -1,11 +1,11 @@
 import React from 'react'
-import classNames from 'classnames'
 //
 import DetailHeader from './detail-header'
 
 import './service-detail.scss'
 
 export default (({ detail }) => {
+  const createMarkup = html => ({ __html: html })
   const imgLoadedHandler = el => {
     if (el) {
       el.addEventListener('load', () => {
@@ -38,7 +38,7 @@ export default (({ detail }) => {
       <DetailHeader heading={detail.title} />
       <div className="detail-body row full-width center-xs">
         <div className="detail-description row center-xs col-lg-10 col-md-11 col-xs-12">
-          <h3 className="col-lg-9 col-md-10 col-xs-11">{detail.__content}</h3>
+          <h3 className="row col-lg-9 col-md-10 col-sm-11 col-xs-12" dangerouslySetInnerHTML={createMarkup(detail.html)} />
         </div>
         <div className="portfolio-items row full-width center-xs">
           {detail.entries.map(item => {

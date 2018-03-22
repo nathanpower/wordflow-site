@@ -10,10 +10,15 @@
     margin-top: -1px;
     border-top: 1px solid $grey;
     padding: 40px 0;
-    h3 {
+    h3 p,
+    h3 p a {
       text-align: left;
       font: 300 20px/1.65em 'Raleway', sans-serif;
       color: #0b486b;
+    }
+
+    h3 > p > a {
+      color: $primary-color;
     }
   }
 
@@ -170,8 +175,19 @@
 
     @media only screen and (max-width: 760px) {
 
+      .detail-description {
+        padding: 10px 30px;
+        h3 p,
+        h3 p a {
+          font: 300 18px/1.65em 'Raleway', sans-serif;
+        }
+      }
+
       .portfolio-item {
         .item-content {
+           p {
+             padding: 0 30px;
+           }
           .video {
             height: 350px;
           }
@@ -181,8 +197,20 @@
 
     @media only screen and (max-width: 600px) {
 
+      .detail-description {
+        padding: 10px 10px;
+        h3 p,
+        h3 p a {
+          font: 300 18px/1.65em 'Raleway', sans-serif;
+        }
+      }
+      
+
       .portfolio-item {
         .item-content {
+          p {
+            padding: 0 10px;
+          }
           .video {
             height: 250px;
           }
