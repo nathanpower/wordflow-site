@@ -10,7 +10,7 @@ export default class ContactForm extends React.Component {
     super(props)
     this.state = {}
     this.boundHandleChange = this.handleChange.bind(this)
-    this.boundHandleSubmit = this.handleSubmit.bind(this)
+    // this.boundHandleSubmit = this.handleSubmit.bind(this)
   }
 
   encode (data) {
