@@ -23,6 +23,15 @@ export default ({ Html, Head, Body, children }) => (
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/images/favicon//ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90672869-4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90672869-4');
+      </script>
+
     </Head>
     <Body>{children}</Body>
   </Html>
