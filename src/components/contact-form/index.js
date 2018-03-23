@@ -71,7 +71,6 @@ class ContactForm extends React.Component {
   }
 
   render () {
-    console.log(this.props)
     return (
       <div className="contact-form-container row center-xs middle-xs around-xs">
         <div className="contact-form col-md-7 col-sm-10 col-xs-12 row center-xs">

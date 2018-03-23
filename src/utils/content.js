@@ -39,7 +39,6 @@ export const getContent = async folder => {
   })
 
   if (folder === 'blog') {
-    console.log('sorting...')
     return converted.sort((a, b) => a.date < b.date ? 1 : -1)
   }
 

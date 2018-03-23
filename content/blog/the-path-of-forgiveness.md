@@ -5,6 +5,8 @@ author: Rob Power
 slug: the-path-of-forgiveness
 category: Self Help
 date: '2016-08-18'
+image: 'serenity.jpg'
+imageCredit: 'Photo by Simon Migaj on Unsplash'
 ---
 # The Path of Forgiveness
 

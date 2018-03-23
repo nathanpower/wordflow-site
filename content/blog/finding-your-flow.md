@@ -5,6 +5,8 @@ author: Rob Power
 slug: finding-your-flow
 category: Self Help
 date: '2016-02-22'
+image: 'stream.jpg'
+imageCredit: 'Photo by Phil Houston on Unsplash'
 ---
 # Finding Your Flow
 ## The Power of Flow for a Happier and More Successful Life

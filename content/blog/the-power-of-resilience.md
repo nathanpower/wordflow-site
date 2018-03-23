@@ -5,6 +5,8 @@ author: Rob Power
 slug: the-power-of-resilience
 category: Self Help
 date: '2016-09-19'
+image: 'dawn-yoga.jpg'
+imageCredit: 'Photo by Dave Contreras on Unsplash'
 ---
 # Never Say Die!
 ## A Blog on the Power or Resilience

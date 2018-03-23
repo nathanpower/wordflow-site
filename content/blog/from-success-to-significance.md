@@ -5,11 +5,15 @@ author: Rob Power
 slug: from-success-to-significance
 category: Self Help
 date: '2016-04-21'
+image: 'droplet.jpg'
+imageCredit: 'Photo by zhang kaiyv on Unsplash'
 ---
 # Moving from Success to Significance 
 To use a sporting analogy, life can be considered a game of two halves. The first half is so often suffused with chasing something - better grades at school and at college, leading to bigger jobs, better careers and bulkier bank balances. Much needs more, bigger is better, even more is even better. Life becomes a competitive race dominated by ego, image, and survival of the fittest. The underlying assumption being that who we are is determined by what we have and what other people think about us.Indeed some people spend their entire lives living out this paradigm, which is a real pity because it's an illusion, a lie you were sold or bought into.
 
-### Confucius once wrote that we all have two lives, and that your second life begins the moment you realise you only have one life. 
+*Confucius once wrote:* 
+
+> We all have two lives, and your second life begins the moment you realise you only have one life. 
 
 Because there is a second half to this game of life, with the dawning realisation that less is more, that the real purpose of life is a life of purpose and contribution; that while we make a living from what we do, we make a life from what we give.
 
