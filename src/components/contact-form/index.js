@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from 'react-static'
 
 import './contact-form.scss'
 
@@ -23,15 +24,20 @@ export default class ContactForm extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  handleSubmit (e) {
+  async handleSubmit (e) {
     e.preventDefault()
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: this.encode({ 'form-name': 'contact', ...this.state }),
-    })
 
-    this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({ 'form-name': 'contact', ...this.state }),
+      })
+    } catch (err) {
+      alert('Could not submit form, please try again or refresh page.')
+    } finally {
+      this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
+    }
   }
 
   isValidForm () {
@@ -59,8 +65,8 @@ export default class ContactForm extends React.Component {
             className="row col-xs-12 center-xs between-xs"
             name="contact"
             method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            netlify
+            netlify-honeypot="bot-field"
             onSubmit={this.boundHandleSubmit}
           >
             <input hidden name="bot-field" />
