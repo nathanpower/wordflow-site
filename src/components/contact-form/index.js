@@ -23,7 +23,7 @@ export default class ContactForm extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  handleSubmit (e) {
+  handleSubmit () {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -31,7 +31,6 @@ export default class ContactForm extends React.Component {
     })
 
     this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
-    e.preventDefault()
   }
 
   isValidForm () {
