@@ -15,7 +15,7 @@ export default (({ detail }) => {
   }
 
   const renderImage = item => (
-    <a className="screenshot" href={item.link}>
+    <a className="screenshot" href={item.link} target="_blank">
       <h4 className="item-title">{item.client}</h4>
       <img alt={item.client} src={`/images/${item.image}`} ref={el => imgLoadedHandler(el)} />
     </a>
