@@ -1,7 +1,8 @@
 import React from 'react'
 import { Router, Route } from 'react-static'
-//
 import Routes from 'react-static-routes'
+import Notifications, {notify} from 'react-notify-toast';
+//
 import ScrollContainer from './components/shared/scroll-container'
 import NavBar from './components/navbar'
 import Footer from './components/footer'
@@ -17,13 +18,14 @@ const RenderRoutes = ({ getComponentForPath }) => (
     // The component is rendered!
     return (
       <ScrollContainer render={({ scrollTop }) => (
-        <div>
+        <React.Fragment>
+          <Notifications />
           <NavBar scrolled={scrollTop > 50} />
           <div className="content">
             <Comp key={props.location.pathname} scrollTop={scrollTop} {...props} />
           </div>
           <Footer />
-        </div>
+        </React.Fragment>
     )}
     />
     )

@@ -1,12 +1,13 @@
 import React from 'react'
-import { Redirect } from 'react-static'
+import { withRouter } from 'react-static'
+import { notify } from 'react-notify-toast'
 
 import './contact-form.scss'
 
 import PhoneIcon from '../icons/phone'
 import MailIcon from '../icons/mail'
 
-export default class ContactForm extends React.Component {
+class ContactForm extends React.Component {
   constructor (props) {
     super(props)
     this.state = {}
@@ -27,16 +28,40 @@ export default class ContactForm extends React.Component {
   async handleSubmit (e) {
     e.preventDefault()
 
+    const successStyle = {
+      background: '#F7F7F7',
+      text: '#222222',
+    }
+
+    const warnStyle = {
+      background: 'rgb(254, 130, 34)',
+      text: '#F7F7F7',
+    }
+
+    const showFailed = () => {
+      notify.show('Could not submit form, please try again or refresh page.', 'custom', 10000, warnStyle)
+    }
+
+    const showSuccess = () => {
+      notify.show('Thanks for your message, we will be in touch!', 'custom', 10000, successStyle)
+    }
+
     try {
-      await fetch('/', {
+      const res = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({ 'form-name': 'contact', ...this.state }),
       })
+
+      if (res.ok) {
+        showSuccess()
+        this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
+        this.props.history.push('/')
+      } else {
+        showFailed()
+      }
     } catch (err) {
-      alert('Could not submit form, please try again or refresh page.')
-    } finally {
-      this.setState({ name: undefined, email: undefined, message: undefined, subject: undefined })
+      showFailed()
     }
   }
 
@@ -46,6 +71,7 @@ export default class ContactForm extends React.Component {
   }
 
   render () {
+    console.log(this.props)
     return (
       <div className="contact-form-container row center-xs middle-xs around-xs">
         <div className="contact-form col-md-7 col-sm-10 col-xs-12 row center-xs">
@@ -65,8 +91,8 @@ export default class ContactForm extends React.Component {
             className="row col-xs-12 center-xs between-xs"
             name="contact"
             method="post"
-            netlify
-            netlify-honeypot="bot-field"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
             onSubmit={this.boundHandleSubmit}
           >
             <input hidden name="bot-field" />
@@ -83,3 +109,5 @@ export default class ContactForm extends React.Component {
     )
   }
 }
+
+export default withRouter(ContactForm)
