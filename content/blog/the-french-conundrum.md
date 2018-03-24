@@ -5,6 +5,8 @@ author: Rob Power
 slug: economy-the-french-conundrum
 category: Economics
 date: '2016-01-18'
+image: 'notre-dame.jpg'
+imageCaption: 'Photo by Pedro Lastra on Unsplash'
 ---
 # The French Conundrum
 ## Socialist Ideals VS Capitalist Realities

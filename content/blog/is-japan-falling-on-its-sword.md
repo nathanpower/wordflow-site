@@ -5,6 +5,8 @@ author: Rob Power
 slug: economy-is-japan-falling-on-its-sword
 category: Economics
 date: '2016-06-18'
+image: 'tokyo.jpg'
+imageCaption: 'Photo by Carlos Quiapo on Unsplash'
 ---
 # Is Japan Falling on its Sword?
 ## Why a Shrinking and Aging Population is Playing Havoc with the Economy

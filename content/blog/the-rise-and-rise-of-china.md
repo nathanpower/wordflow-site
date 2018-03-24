@@ -5,6 +5,8 @@ author: Rob Power
 slug: the-rise-and-rise-of-china
 category: Economics
 date: '2016-04-16'
+image: 'hong-kong.jpg'
+imageCaption: 'Photo by Chester Ho on Unsplash'
 ---
 # The Rise and Rise of China
 

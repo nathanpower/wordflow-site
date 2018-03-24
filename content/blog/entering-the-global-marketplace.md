@@ -5,6 +5,8 @@ author: Rob Power
 slug: entering-the-global-marketplace
 category: Economics
 date: '2016-07-20'
+image: 'laptop-graphs.jpg'
+imageCaption: 'Photo by Lukas Blazek on Unsplash'
 ---
 # Entering the Global Marketplace
 
