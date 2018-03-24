@@ -5,6 +5,7 @@ author: Rob Power
 slug: ten-terms-when-buying-windows
 category: Glazing Industry
 date: '2017-07-18'
+image: '10-terms-windows.jpg'
 ---
 
 # Explainer: 10 Terms to Understand When Buying Windows

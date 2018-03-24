@@ -9,12 +9,12 @@ import './blog-post.scss'
 export default (({ post, posts }) => {
   const createMarkup = () => ({ __html: post.html })
   const image = post.image ? `../../images/${post.image}` : 'https://placeimg.com/800/450/arch'
-  const imageCredit = post.imageCredit || ''
+  const imageCaption = post.imageCaption || ''
 
   return (
     <div className="blog-post-container row full-width col-xs-12 center-xs">
       <div className="blog-post col-lg-7 col-md-8 col-sm-10 col-xs-11 left-xs">
-        <img title={imageCredit} src={image} width="100%" alt={post.title} />
+        <img title={imageCaption} src={image} width="100%" alt={post.title} />
         <h1 className="post-title">{post.title}</h1>
         <BlogMeta post={post} showDescription />
         <div className="blog-content" dangerouslySetInnerHTML={createMarkup()} />
