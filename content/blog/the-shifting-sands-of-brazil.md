@@ -2,7 +2,6 @@
 title: The Shifting Sands Of Brazil
 description: Written For Incasso Partners
 author: Rob Power
-slug: the-shifting-sands-of-brazil
 category: Economics
 date: '2016-07-16'
 image: 'rio.jpg'

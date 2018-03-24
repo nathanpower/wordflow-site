@@ -2,7 +2,6 @@
 title: Passive House Builds
 description: 
 author: Rob Power
-slug: passive-house-builds
 category: Glazing Industry
 date: '2017-05-02'
 image: 'passive-house-builds.jpg'

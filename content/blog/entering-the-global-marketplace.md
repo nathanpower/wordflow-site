@@ -2,7 +2,6 @@
 title: Entering The Global Marketplace
 description: Written For Incasso Partners
 author: Rob Power
-slug: entering-the-global-marketplace
 category: Economics
 date: '2016-07-20'
 image: 'laptop-graphs.jpg'

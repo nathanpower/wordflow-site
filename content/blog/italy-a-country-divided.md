@@ -2,7 +2,6 @@
 title: 'Italy, A Country Divided'
 description: Written For Incasso Partners
 author: Rob Power
-slug: italy-a-country-divided
 category: Economics
 date: '2016-05-18'
 image: 'colesium.jpg'

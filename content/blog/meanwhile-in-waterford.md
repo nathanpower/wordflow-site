@@ -2,7 +2,6 @@
 title: 'Meanwhile, in Waterford'
 description: Written for Broadsheet
 author: Rob Power
-slug: meanwhile-in-waterford
 category: Opinion
 date: '2015-04-16'
 image: 'county-pride.jpg'

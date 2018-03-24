@@ -2,7 +2,6 @@
 title: The French Conundrum
 description: Written For Incasso Partners
 author: Rob Power
-slug: economy-the-french-conundrum
 category: Economics
 date: '2016-01-18'
 image: 'notre-dame.jpg'

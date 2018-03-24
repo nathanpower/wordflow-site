@@ -2,7 +2,6 @@
 title: From Success to Significance
 description: 'Written for Dr. Marke Rowe'
 author: Rob Power
-slug: from-success-to-significance
 category: Self Help
 date: '2016-04-21'
 image: 'droplet.jpg'

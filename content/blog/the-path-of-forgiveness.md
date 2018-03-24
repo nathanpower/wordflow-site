@@ -2,7 +2,6 @@
 title: The Path of Forgiveness
 description: 'Written for Dr. Marke Rowe'
 author: Rob Power
-slug: the-path-of-forgiveness
 category: Self Help
 date: '2016-08-18'
 image: 'serenity.jpg'

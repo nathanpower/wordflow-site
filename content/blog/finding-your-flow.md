@@ -2,7 +2,6 @@
 title: Finding Your Flow
 description: 'Written for Dr. Marke Rowe'
 author: Rob Power
-slug: finding-your-flow
 category: Self Help
 date: '2016-02-22'
 image: 'stream.jpg'
