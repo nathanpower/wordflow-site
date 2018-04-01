@@ -63,7 +63,9 @@ export const getOverviews = async () => {
   return overviews.map((overview, i) => Object.assign(overview, {
     slug: Path.basename(paths[i]),
     html: Marked(overview.__content),
-  }))
+    category: StartCase(Path.basename(paths[i])),
+    path: paths[i]
+  })).sort((a, b) => a.order > b.order ? 1 : -1)
 }
 
 export const getPortfolioLinks = async () => {
@@ -72,18 +74,16 @@ export const getPortfolioLinks = async () => {
 }
 
 export const getPortfolioContent = async () => {
-  const paths = await getPortfolioPaths()
   const overviews = await getOverviews()
-  const categories = paths.map(path => StartCase(Path.basename(path)))
 
-  const entryPromises = paths.map(path => Glob([`${path}/entries/*.md`]))
+  const entryPromises = overviews.map(({ path }) => Glob([`${path}/entries/*.md`]))
   const contentPaths = await Promise.all(entryPromises)
   const contentFilePromises = contentPaths.map(paths => readFiles(paths))
   const contentFiles = await Promise.all(contentFilePromises)
   const contentPromises = await Promise.all(contentFiles.map(files => parseFiles(files)))
   const content = await Promise.all(contentPromises)
 
-  return categories.sort((a, b) => a.order > b.order ? 1 : -1).reduce((memo, category, index) => {
+  return overviews.reduce((memo, { category }, index) => {
     memo.push(Object.assign({
       category,
       entries: content[index].sort((a, b) => a.order > b.order ? 1 : -1),
