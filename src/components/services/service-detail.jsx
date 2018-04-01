@@ -1,10 +1,12 @@
 import React from 'react'
 //
+import { withRouter } from 'react-static'
 import DetailHeader from './detail-header'
 
 import './service-detail.scss'
 
-export default (({ detail }) => {
+const serviceDetail = (({ detail, history }) => {
+  const nav = history.push
   const createMarkup = html => ({ __html: html })
   const imgLoadedHandler = el => {
     if (el) {
@@ -15,7 +17,13 @@ export default (({ detail }) => {
   }
 
   const renderImage = item => (
-    <a className="screenshot" href={item.link} target="_blank">
+    <a className="screenshot" href={item.link} target="_blank" onClick={(e) => {
+      const isInternalLink = !item.link.includes('://')
+      if(isInternalLink) { // internal
+        e.preventDefault()
+        nav(item.link)
+      }
+    }}>
       <h4 className="item-title">{item.client}</h4>
       <img alt={item.client} src={`/images/${item.image}`} ref={el => imgLoadedHandler(el)} />
     </a>
@@ -58,3 +66,5 @@ export default (({ detail }) => {
     </div>
   )
 })
+
+export default withRouter(serviceDetail)
