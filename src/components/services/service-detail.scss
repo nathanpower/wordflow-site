@@ -27,6 +27,36 @@
     h3 > p > a {
       color: $primary-color;
     }
+
+    blockquote {
+      border-left: 12px solid rgba(141, 141, 141, .5);
+      padding-left: 30px;
+      margin-left: 0;
+
+      @media only screen and (max-width: 48em) {
+        border-left: 4px solid rgba(141, 141, 141, .5);
+        padding-left: 15px;
+        margin-left: 0;
+      }
+      
+      p {
+        font-size: 24px;
+        font-weight: 400;
+        font-style: italic;
+
+        @media only screen and (max-width: 48em) {
+          font-size: 16px;
+        }
+      }
+
+      // P::before {
+      //   content: '\201C'
+      // }
+
+      // P::after {
+      //   content: '\201D'
+      // }
+    }
   }
 
     @media only screen and (min-width: 1400px) {

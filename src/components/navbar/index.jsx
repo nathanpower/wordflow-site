@@ -87,7 +87,8 @@ export default class NavBar extends React.Component {
         >
           Services
         </div>
-        <a href="/#testimonials">Testimonials</a>
+        <Link to="/about">About</Link>
+        <Link to="/#testimonials">Testimonials</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/blog">Blog</Link>
       </div>

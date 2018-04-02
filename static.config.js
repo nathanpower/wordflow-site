@@ -12,6 +12,7 @@ export default {
     }
   },
   getRoutes: async () => {
+    const about = await getContent('about')
     const posts = await getContent('blog')
     const quotes = await getContent('quotes')
     const testimonials = await getContent('testimonials')
@@ -51,6 +52,13 @@ export default {
       {
         path: '/contact',
         component: 'src/containers/Contact',
+      },
+      {
+        path: '/about',
+        component: 'src/containers/About',
+        getData: () => ({
+          about
+        })
       },
       {
         path: '/blog',

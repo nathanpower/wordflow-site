@@ -58,6 +58,7 @@ const serviceDetail = (({ detail, history }) => {
   )
 
   const style = detail.heroImage ? { borderTop: 'none', paddingTop: 0 } : null;
+  console.log(detail)
 
   return (
     <div className="service-detail">
@@ -69,7 +70,7 @@ const serviceDetail = (({ detail, history }) => {
           <h3 className="row col-lg-9 col-md-10 col-sm-11 col-xs-12" dangerouslySetInnerHTML={createMarkup(detail.html)} />
         </div>
         <div className="portfolio-items row full-width center-xs">
-          {detail.entries.map(item => {
+          {Array.isArray(detail.entries) && detail.entries.map(item => {
             return (
               <div key={item.client} className="portfolio-item row col-lg-10 col-md-11 col-xs-12">
                 <div className="item-content">
