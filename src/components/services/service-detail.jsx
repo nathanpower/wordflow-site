@@ -58,7 +58,6 @@ const serviceDetail = (({ detail, history }) => {
   )
 
   const style = detail.heroImage ? { borderTop: 'none', paddingTop: 0 } : null;
-  console.log(detail)
 
   return (
     <div className="service-detail">
