@@ -1,5 +1,5 @@
 ---
-image: adwords.png
+image: search-results.png
 client: Google Adwords
 link: 'https://www.google.ie/search?q=zyle+fenster+ireland'
 order: 3
