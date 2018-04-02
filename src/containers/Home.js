@@ -15,7 +15,7 @@ export default withRouteData(({ portfolio, quotes, testimonials }) => (
     <Services portfolio={portfolio} />
     <Carousel items={quotes} color="#159C92" />
     <CallToAction headerText="Get In Touch" buttonMsg="Contact WordFlow" color="rgb(254, 130, 34)" />
-    <Carousel headerText="Testimonials" items={testimonials} color="#A6A6A6" height={180} alignItems="top" />
+    <Carousel id="testimonials" headerText="Testimonials" items={testimonials} color="#A6A6A6" height={180} alignItems="top" />
     <ContactForm />
   </div>
 ))

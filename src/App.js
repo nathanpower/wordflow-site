@@ -11,7 +11,7 @@ import './app.scss'
 
 // This is the default renderer for `<Routes>`
 const RenderRoutes = ({ getComponentForPath }) => (
-  // The default renderer uses a catch all route to recieve the pathname
+  // The default renderer uses a catch all route to receive the pathname
   <Route path="*" render={props => {
     // The pathname is used to retrieve the component for that path
     const Comp = getComponentForPath(props.location.pathname)

@@ -5,7 +5,7 @@ import Carousel from 'nuka-carousel'
 
 import './carousel.scss'
 
-export default ({ items, color, headerText, alignItems='center', height=285 }) => {
+export default ({ items, color, headerText, alignItems='center', height=285, id }) => {
   const settings = {
     autoplay: true,
     autoplayInterval: 5000,
@@ -14,7 +14,7 @@ export default ({ items, color, headerText, alignItems='center', height=285 }) =
   }
 
   return (
-    <div className="carousel row full-width center-xs" style={{ backgroundColor: color }}>
+    <div id={id} className="carousel row full-width center-xs" style={{ backgroundColor: color }}>
 
       {
         headerText
