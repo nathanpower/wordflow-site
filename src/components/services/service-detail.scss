@@ -5,6 +5,13 @@
   max-width: 2000px;
   margin: 0 auto;
 
+  .hero-img-wrapper {
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    padding-bottom: 56.5%;
+  }
+
   .detail-description {
  
     margin-top: -1px;

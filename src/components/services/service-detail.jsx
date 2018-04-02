@@ -16,6 +16,22 @@ const serviceDetail = (({ detail, history }) => {
     }
   }
 
+  const renderHeroImage = () => {
+
+    if (!detail.heroImage) {
+      return null;
+    }
+
+    const info = detail.heroImageInfo || '';
+    return (
+      <div className="row full-width center-xs">
+        <div className="hero-img-wrapper">
+          <img src={`/images/${detail.heroImage}`} alt={info} title={info} />
+        </div>
+      </div>
+      )
+    }
+
   const renderImage = item => (
     <a className="screenshot" href={item.link} target="_blank" onClick={(e) => {
       const isInternalLink = !item.link.includes('://')
@@ -41,11 +57,15 @@ const serviceDetail = (({ detail, history }) => {
     </div>
   )
 
+  const style = detail.heroImage ? { borderTop: 'none', paddingTop: 0 } : null;
+
   return (
     <div className="service-detail">
       <DetailHeader heading={detail.title} />
+      {renderHeroImage()}
       <div className="detail-body row full-width center-xs">
-        <div className="detail-description row center-xs col-lg-10 col-md-11 col-xs-12">
+        <div className="detail-description row center-xs col-lg-10 col-md-11 col-xs-12" style={style}>
+
           <h3 className="row col-lg-9 col-md-10 col-sm-11 col-xs-12" dangerouslySetInnerHTML={createMarkup(detail.html)} />
         </div>
         <div className="portfolio-items row full-width center-xs">
