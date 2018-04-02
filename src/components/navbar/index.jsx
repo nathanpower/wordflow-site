@@ -3,7 +3,6 @@ import classNames from 'classnames'
 import debounce from 'lodash.debounce'
 
 import { Link, SiteData } from 'react-static'
-import scrollToElement from 'scroll-to-element'
 import BurgerIcon from '../icons/burger'
 import CancelIcon from '../icons/cancel'
 import NavDropdown from './nav-dropdown'
