@@ -14,6 +14,7 @@ I took on various other projects sporadically over the ensuing years while I con
 Since I have begun, I have taken pleasure in endeavouring to exceed the expectations of my clients, while getting an insight into a variety of industries. I look forward to continuing to deliver quality copy to my ongoing clients, and hopefully enjoying mutually beneficial relationships with new collaborators.
 
 Rob Power
+
 Creator of WordFlow
 
 Let *us* worry about the words.
