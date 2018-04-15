@@ -142,6 +142,7 @@ export default class NavBar extends React.Component {
 
     return (
       <div className="mobile-nav open full-width row start-xs">
+      <Link className="col-xs-12" to="/about">About</Link>
         {portfolioLinks.map(link => (
           <Link
             onClick={this.boundCloseDropdown}
