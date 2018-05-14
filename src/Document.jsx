@@ -24,6 +24,7 @@ export default ({ Html, Head, Body, children }) => (
       <meta name="msapplication-TileImage" content="/images/favicon//ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="google-site-verification" content="47fgjA0SGPzAGm5kQP5N-gnlMeFXlUChmUlRR3r3q-w" />
+      <meta name="google-site-verification" content="BRya9GrV-bAtkOTUh6SEWrcfv4UlKap5m-DzbGLBkvw" />
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90672869-4" />
 
     </Head>
