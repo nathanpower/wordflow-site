@@ -80,9 +80,9 @@ class ContactForm extends React.Component {
               <span><PhoneIcon /></span>
               <span className="number-text">+353 89 4262725</span>
             </h2>
-            <a className="col-xs-12 email-address" href="mailto:rapower82@gmail.com">
+            <a className="col-xs-12 email-address" href="mailto:rob@wordflow.ie">
               <span><MailIcon color="#8d8d8d" /></span>
-              <span className="email-text">rapower82@gmail.com</span>
+              <span className="email-text">rob@wordflow.ie</span>
             </a>
           </address>
 
