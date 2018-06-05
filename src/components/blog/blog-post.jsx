@@ -8,7 +8,7 @@ import './blog-post.scss'
 
 export default (({ post, posts }) => {
   const createMarkup = () => ({ __html: post.html })
-  const image = post.image ? `../../images/${post.image}` : 'https://placeimg.com/800/450/arch'
+  const image = post.image ? `../../../images/${post.image}` : 'https://placeimg.com/800/450/arch'
   const imageCaption = post.imageCaption || ''
 
   return (

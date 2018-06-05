@@ -57,8 +57,8 @@ export default {
         path: '/about',
         component: 'src/containers/About',
         getData: () => ({
-          about
-        })
+          about,
+        }),
       },
       {
         path: '/blog',
@@ -113,31 +113,48 @@ export default {
       },
     ]
   },
-  webpack: (config, { defaultLoaders, stage }) => {
+  webpack: (config, { stage, defaultLoaders }) => {
+    let loaders = []
+
+    if (stage === 'dev') {
+      loaders = [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
+    } else {
+      loaders = [
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+            minimize: stage === 'prod',
+            sourceMap: false,
+          },
+        },
+        {
+          loader: 'sass-loader',
+          options: { includePaths: ['src/'] },
+        },
+      ]
+
+      // Don't extract css to file during node build process
+      if (stage !== 'node') {
+        loaders = ExtractTextPlugin.extract({
+          fallback: {
+            loader: 'style-loader',
+            options: {
+              sourceMap: false,
+              hmr: false,
+            },
+          },
+          use: loaders,
+        })
+      }
+    }
+
     config.module.rules = [
       {
         oneOf: [
           {
             test: /\.s(a|c)ss$/,
-            use:
-              stage === 'dev'
-                ? [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
-                : ExtractTextPlugin.extract({
-                  use: [
-                    {
-                      loader: 'css-loader',
-                      options: {
-                        importLoaders: 1,
-                        minimize: true,
-                        sourceMap: false,
-                      },
-                    },
-                    {
-                      loader: 'sass-loader',
-                      options: { includePaths: ['src/'] },
-                    },
-                  ],
-                }),
+            use: loaders,
           },
           defaultLoaders.cssLoader,
           defaultLoaders.jsLoader,
