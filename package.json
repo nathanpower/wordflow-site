@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
-    "dist": "export SITE_ROOT=http://localhost:3000 && npm run build && serve dist -p 3000",
+    "dist": "export SITE_ROOT=http://localhost:3000 && npm run build && serve dist",
     "test": "eslint ./src || true"
   },
   "dependencies": {
@@ -33,6 +33,6 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.7.2",
     "sass-loader": "^7.0.0",
-    "serve": "^6.1.0"
+    "serve": "^7.0.0"
   }
 }
