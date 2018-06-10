@@ -18,7 +18,7 @@ const renderMeta = routeInfo => {
         <meta property="article:author" content={author} />
         <meta property="og:description" content={description} />
         <meta property="og:site_name" content={siteName} />
-        <meta property="og:image" content={`https://wwww.wordflow.ie/images/${image}`} />
+        <meta property="og:image" content={`https://www.wordflow.ie/images/${image}`} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="article:published_time" content={date} />
