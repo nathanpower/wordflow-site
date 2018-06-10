@@ -1,3 +1,4 @@
+import React from 'react'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import { getContent, getPortfolioContent, getPortfolioLinks } from './src/utils/content'
 import Document from './src/Document'

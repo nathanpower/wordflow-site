@@ -1,6 +1,38 @@
 import React from 'react'
 
-export default ({ Html, Head, Body, children }) => (
+const renderMeta = routeInfo => {
+  if (!routeInfo || !routeInfo.path) {
+    return null
+  }
+
+  const siteName = 'WordFlow'
+
+  if (routeInfo.path.includes('blog/post')) {
+    const {
+      title, description, author, date, image,
+    } = routeInfo.allProps.post
+    return (
+      <React.Fragment>
+        <title>{`${title}`}</title>
+        <meta name="description" content={description} />
+        <meta property="article:author" content={author} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:image" content={`https://wwww.wordflow.ie/images/${image}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        <meta property="article:published_time" content={date} />
+        <meta property="og:url" content={`https://wwww.wordflow.ie/${routeInfo.path}`} />
+      </React.Fragment>
+    )
+  }
+
+  return null
+}
+
+export default ({
+  Html, Head, Body, children, routeInfo,
+}) => (
   <Html lang="en-UK">
     <Head>
       <meta charSet="UTF-8" />
@@ -20,6 +52,7 @@ export default ({ Html, Head, Body, children }) => (
       <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
       <link rel="manifest" href="/images/favicon//manifest.json" />
+      {renderMeta(routeInfo)}
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/images/favicon//ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
