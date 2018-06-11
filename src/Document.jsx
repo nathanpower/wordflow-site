@@ -16,6 +16,7 @@ const renderMeta = routeInfo => {
       <React.Fragment>
         <title>{`${siteName} - ${tagLine}`}</title>
         <meta name="description" content={siteDescription} />
+        <meta property="og:type" content="website" />
         <meta property="og:description" content={siteDescription} />
         <meta property="og:site_name" content={siteName} />
         <meta property="og:image" content={`${canonicalUrl}/images/${defaultImage}`} />
@@ -56,6 +57,7 @@ const renderMeta = routeInfo => {
       {meta.title && <title>{`${meta.title}`}</title>}
       {meta.description && <meta name="description" content={meta.description} />}
       {meta.description && <meta property="og:description" content={meta.description} />}
+      {meta.description && <meta property="og:type" content="website" />}
       {meta.title && <meta property="og:site_name" content={siteName} />}
       {meta.title && <meta property="og:image" content={`${canonicalUrl}/images/${defaultImage}`} />}
       {meta.title && <meta property="og:image:type" content="image/jpeg" />}
