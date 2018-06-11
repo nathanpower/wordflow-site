@@ -6,6 +6,24 @@ const renderMeta = routeInfo => {
   }
 
   const siteName = 'WordFlow'
+  const tagLine = 'Let us worry about the words'
+  const siteDescription = 'A one stop shop for all your Copy and content needs'
+  const canonicalUrl = 'https://wwww.wordflow.ie'
+  const defaultImage = 'splash-screen.jpg'
+
+  if (routeInfo.path === '/') {
+    return (
+      <React.Fragment>
+        <title>{`${siteName} - ${tagLine}`}</title>
+        <meta name="description" content={siteDescription} />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:image" content={`${canonicalUrl}/images/${defaultImage}`} />
+        <meta property="og:title" content={`${siteName} - ${tagLine}`} />
+        <meta property="og:url" content={`${canonicalUrl}`} />
+      </React.Fragment>
+    )
+  }
 
   if (routeInfo.path.includes('blog/post')) {
     const {
@@ -18,16 +36,29 @@ const renderMeta = routeInfo => {
         <meta property="article:author" content={author} />
         <meta property="og:description" content={description} />
         <meta property="og:site_name" content={siteName} />
-        <meta property="og:image" content={`https://www.wordflow.ie/images/${image}`} />
+        <meta property="og:image" content={`${canonicalUrl}/images/${image}`} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="article:published_time" content={date} />
-        <meta property="og:url" content={`https://wwww.wordflow.ie/${routeInfo.path}`} />
+        <meta property="og:url" content={`${canonicalUrl}/${routeInfo.path}`} />
       </React.Fragment>
     )
   }
 
-  return null
+  const { detail = {} } = routeInfo.allProps
+  const { meta = {}, title = siteName } = detail
+
+  return (
+    <React.Fragment>
+      {meta.title && <title>{`${meta.title}`}</title>}
+      {meta.description && <meta name="description" content={meta.description} />}
+      {meta.description && <meta property="og:description" content={meta.description} />}
+      {meta.title && <meta property="og:site_name" content={siteName} />}
+      {meta.title && <meta property="og:image" content={`${canonicalUrl}/images/${defaultImage}`} />}
+      {meta.title && <meta property="og:title" content={`${meta.title}`} />}
+      {meta.title && <meta property="og:url" content={`${canonicalUrl}/${routeInfo.path}`} />}
+    </React.Fragment>
+  )
 }
 
 export default ({

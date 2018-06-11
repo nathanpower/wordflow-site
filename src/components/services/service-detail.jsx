@@ -17,25 +17,24 @@ const serviceDetail = (({ detail, history }) => {
   }
 
   const renderHeroImage = () => {
-
     if (!detail.heroImage) {
-      return null;
+      return null
     }
 
-    const info = detail.heroImageInfo || '';
+    const info = detail.heroImageInfo || ''
     return (
       <div className="row full-width center-xs">
         <div className="hero-img-wrapper">
           <img src={`/images/${detail.heroImage}`} alt={info} title={info} />
         </div>
       </div>
-      )
-    }
+    )
+  }
 
   const renderImage = item => (
-    <a className="screenshot" href={item.link} target="_blank" onClick={(e) => {
+    <a className="screenshot" href={item.link} rel="noopener noreferrer" target="_blank" onClick={e => {
       const isInternalLink = !item.link.includes('://')
-      if(isInternalLink) { // internal
+      if (isInternalLink) { // internal
         e.preventDefault()
         nav(item.link)
       }
@@ -57,7 +56,7 @@ const serviceDetail = (({ detail, history }) => {
     </div>
   )
 
-  const style = detail.heroImage ? { borderTop: 'none', paddingTop: 0 } : null;
+  const style = detail.heroImage ? { borderTop: 'none', paddingTop: 0 } : null
 
   return (
     <div className="service-detail">
@@ -69,18 +68,16 @@ const serviceDetail = (({ detail, history }) => {
           <h3 className="row col-lg-9 col-md-10 col-sm-11 col-xs-12" dangerouslySetInnerHTML={createMarkup(detail.html)} />
         </div>
         <div className="portfolio-items row full-width center-xs">
-          {Array.isArray(detail.entries) && detail.entries.map(item => {
-            return (
-              <div key={item.client} className="portfolio-item row col-lg-10 col-md-11 col-xs-12">
-                <div className="item-content">
-                  {item.image && renderImage(item)}
-                  {item.video && renderVideo(item)}
-                  <h3>{item.client}</h3>
-                  <p>{item.__content}</p>
-                </div>
+          {Array.isArray(detail.entries) && detail.entries.map(item => (
+            <div key={item.client} className="portfolio-item row col-lg-10 col-md-11 col-xs-12">
+              <div className="item-content">
+                {item.image && renderImage(item)}
+                {item.video && renderVideo(item)}
+                <h3>{item.client}</h3>
+                <p>{item.__content}</p>
               </div>
-            )
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </div>

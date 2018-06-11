@@ -18,6 +18,7 @@ export default {
     const quotes = await getContent('quotes')
     const testimonials = await getContent('testimonials')
     const portfolio = await getPortfolioContent()
+
     const categories = posts.reduce((memo, post) => {
       if (!memo.find(p => p.category === post.category)) {
         memo.push({ category: post.category, slug: post.categorySlug })
