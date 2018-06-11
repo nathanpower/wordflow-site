@@ -19,6 +19,9 @@ const renderMeta = routeInfo => {
         <meta property="og:description" content={siteDescription} />
         <meta property="og:site_name" content={siteName} />
         <meta property="og:image" content={`${canonicalUrl}/images/${defaultImage}`} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="898" />
         <meta property="og:title" content={`${siteName} - ${tagLine}`} />
         <meta property="og:url" content={`${canonicalUrl}`} />
       </React.Fragment>
@@ -55,6 +58,9 @@ const renderMeta = routeInfo => {
       {meta.description && <meta property="og:description" content={meta.description} />}
       {meta.title && <meta property="og:site_name" content={siteName} />}
       {meta.title && <meta property="og:image" content={`${canonicalUrl}/images/${defaultImage}`} />}
+      {meta.title && <meta property="og:image:type" content="image/jpeg" />}
+      {meta.title && <meta property="og:image:width" content="1600" />}
+      {meta.title && <meta property="og:image:height" content="898" />}
       {meta.title && <meta property="og:title" content={`${meta.title}`} />}
       {meta.title && <meta property="og:url" content={`${canonicalUrl}/${routeInfo.path}`} />}
     </React.Fragment>
