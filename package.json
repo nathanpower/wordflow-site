@@ -29,7 +29,7 @@
     "yaml-front-matter": "^4.0.0"
   },
   "devDependencies": {
-    "eslint-config-react-tools": "1.x.x",
+    "eslint-config-react-tools": "^2.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.7.2",
     "sass-loader": "^7.0.0",
