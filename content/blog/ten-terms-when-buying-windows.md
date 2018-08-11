@@ -32,3 +32,5 @@ Both toughened and laminated glass are products that, although different, are cr
 There are many good window systems on the market today which will score reasonably well on some of the above criteria. However, it is important to understand that the product itself is not the only consideration when deciding on a window company to work with. It is essential that windows and doors are installed to an exacting standard to ensure years of high performance. Additionally, fluctuating weather conditions often cause products to change position slightly in the first year following installation as the engineered products settle. This may cause some water or air leakage but is nearly always solvable with some expert adjustment. Our advice is do your homework, ask around and read forums to ensure that the company you go with cares as much about you during installation and after-service, as they do at the point of sale.
 
 If you have any more queries about the right product to buy, please feel free to get in touch with us at info@zylefenster.ie
+
+https://www.zylefenster.co.uk/blog/explainer-10-terms-to-understand-when-buying-windows
