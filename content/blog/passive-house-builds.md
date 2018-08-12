@@ -24,4 +24,5 @@ If you live in a passive build you are never going to hear someone complain abou
 Although it varies from country to country, construction costs are said to be around 10% more than that of a conventional build, although this is dependent on the availability of materials and professionals in your area. Indeed there have been passive builds which have come in under the cost of a similar conventional product. Either way the ongoing savings, durability, and unparalleled level of comfort means that, if you are considering a new build, you would be doing yourself a disservice not to at least look into your options when it comes to developing a build to Passivhaus standards. In an upcoming blog, we will profile one of the first passive builds completed in South East Ireland in  Zyle Fenster played a major role in guiding the client and providing the ideal products to meet the specifications required.
 
 To learn more about this and other Zyle Fenster UK Products, please feel free to browse through our range [here](http://www.zylefenster.co.uk/products).
+
 https://www.zylefenster.co.uk/blog/passive-house-builds-what-they-are-and-why-they-might-be-the-future
