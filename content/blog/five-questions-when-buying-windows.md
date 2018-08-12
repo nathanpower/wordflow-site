@@ -20,4 +20,5 @@ So when it comes to opening windows, the three main choices you have are Flush C
 ### How many of my windows need to open?
 If your home doesn’t have a modern heat recovery system, which will also provide adequate ventilation, then regulations state that there should be an opening equal to one twentieth of the floor area in each room. This is usually easily covered by one substantial window, or a couple of small ones in the average room. Of course more sizable properties will have to increase their opening sizes as a result. It is good information to have as savings can be made when buying fixed panes and depending on circumstances, many opening windows see little use.
 
-If you would like to know more about our products, please click here, or email info@zylefenster.ie
+If you would like to know more about our products, please click [here](http://www.zylefenster.co.uk/products), or email info@zylefenster.ie
+https://www.zylefenster.co.uk/blog/5-questions-people-often-ask-when-buying-windows
