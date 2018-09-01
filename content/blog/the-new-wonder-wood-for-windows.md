@@ -24,3 +24,5 @@ In reality, the technology to produce accoya has been around for decades but itâ
 Accoya is certainly more expensive than other woods in terms of window and door production, but for those whose budget can reach it, it provides a unique opportunity to use a wood that is both beautiful and extremely durable. There are many climates and locations where a homeowner would, in the past, be limited to using PVC or Alu-clad windows in order to get a reasonable lifespan from their products. Accoya represents an opportunity to have both the beauty of an exterior wood finish, while still maintaining the durability of an aluminium cladding. Our advice would be, if you can afford it, it is certainly economic in the long term.
 
 To find out more about Accoya windows and many other products, feel free to visit zylefenster.ie
+
+https://www.zylefenster.co.uk/blog/accoya-blog

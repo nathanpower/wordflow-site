@@ -34,3 +34,5 @@ We spoke to Walter at Zyle Fenster Ireland and asked him how best to avoid any d
 “The best way to keep your build going smoothly is to ensure that you call me to measure the windows the moment the last opening is complete. This means that when I put through your order, your team can continue with constructing the entire roof while your windows are in production. If you are lucky enough to have a consistent run of good weather and complete your roof in say four or five weeks, then the finished floor can be applied to our agreed height. Following this there is always ground works to be done. The key element is planning and scheduling; when that is in place there should be little to no issue with an eight week lead in time. Essentially, it is simply worth it to have high quality windows going forward.”
 
 With this advice, it seems as though lead-in times shouldn’t cause too much of a ruckus for the organised home builder, but it is certainly beneficial to make yourselves aware of them early on and plan accordingly.
+
+https://www.zylefenster.co.uk/blog/buying-windows-how-long-should-my-lead-time-be

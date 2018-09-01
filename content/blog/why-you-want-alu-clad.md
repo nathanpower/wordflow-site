@@ -28,3 +28,5 @@ When it comes to Alu Clad, form certainly does not suffer on account of the supe
 There will always be some buildings that call for purely, aluminium, wood, or even uPVC windows. Having said that, it seems undeniable the Alu Clad windows truly gives you the durability promised by aluminium while also having the classic interior styling that can only be found with wood. When you add to this that Alu Clad windows can be energy rated all the way down to passive, they become an extremely attractive prospect. Our advice is, if you are in the market for windows and doors, the wise move is to at least consider Alu Clad.
 
 For more information on our products, feel free to click here, or contact us on info@zylefenster.ie
+
+https://www.zylefenster.co.uk/blog/alu-clad-what-it-is-and-why-you-want-it
