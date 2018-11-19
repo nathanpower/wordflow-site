@@ -99,6 +99,7 @@ class ContactForm extends React.Component {
             <input onChange={this.boundHandleChange} placeholder="Your email *" name="email" type="text" className="text-input col-sm-7 col-xs-12" />
             <input onChange={this.boundHandleChange} placeholder="Subject" name="subject" type="text" className="text-input col-xs-12" />
             <textarea onChange={this.boundHandleChange} cols="40" rows="12" name="message" placeholder="Your message *" type="text" className="multiline-input col-xs-12" />
+            <div data-netlify-recaptcha></div>
             <div className="btn-container row center-xs middle-xs around-xs col-xs-12">
               <input disabled={!this.isValidForm()} value="submit" type="submit" className="contact-submit-btn" />
             </div>
