@@ -74,7 +74,7 @@ class ContactForm extends React.Component {
   }
 
   isValidForm () {
-    const required = ['name', 'email', 'message']
+    const required = ['name', 'email', 'message', 'g-recaptcha-response']
     return required.every(field => this.state[field] && this.state[field].trim().length > 0)
   }
 
