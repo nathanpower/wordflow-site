@@ -1,11 +1,14 @@
 import React from 'react'
 import { withRouter } from 'react-static'
 import { notify } from 'react-notify-toast'
+import Recaptcha from "react-google-recaptcha";
 
 import './contact-form.scss'
 
 import PhoneIcon from '../icons/phone'
 import MailIcon from '../icons/mail'
+
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 class ContactForm extends React.Component {
   constructor (props) {
@@ -13,6 +16,7 @@ class ContactForm extends React.Component {
     this.state = {}
     this.boundHandleChange = this.handleChange.bind(this)
     this.boundHandleSubmit = this.handleSubmit.bind(this)
+    this.boundHandleRecaptcha = this.handleRecaptcha.bind(this)
   }
 
   encode (data) {
@@ -23,6 +27,10 @@ class ContactForm extends React.Component {
 
   handleChange (e) {
     this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleRecaptcha (value) {
+    this.setState({ 'g-recaptcha-response': value });
   }
 
   async handleSubmit (e) {
@@ -92,6 +100,7 @@ class ContactForm extends React.Component {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             onSubmit={this.boundHandleSubmit}
           >
             <input hidden name="bot-field" />
@@ -99,7 +108,11 @@ class ContactForm extends React.Component {
             <input onChange={this.boundHandleChange} placeholder="Your email *" name="email" type="text" className="text-input col-sm-7 col-xs-12" />
             <input onChange={this.boundHandleChange} placeholder="Subject" name="subject" type="text" className="text-input col-xs-12" />
             <textarea onChange={this.boundHandleChange} cols="40" rows="12" name="message" placeholder="Your message *" type="text" className="multiline-input col-xs-12" />
-            <div data-netlify-recaptcha></div>
+            <Recaptcha
+              ref="recaptcha"
+              sitekey={RECAPTCHA_KEY}
+              onChange={this.boundHandleRecaptcha}
+            />
             <div className="btn-container row center-xs middle-xs around-xs col-xs-12">
               <input disabled={!this.isValidForm()} value="submit" type="submit" className="contact-submit-btn" />
             </div>
