@@ -25,7 +25,7 @@
     "react-google-recaptcha": "^1.0.5",
     "react-notify-toast": "^0.5.0",
     "react-router": "^4.2.0",
-    "react-static": "^5",
+    "react-static": "^6.0.0",
     "slugify": "^1.2.9",
     "yaml-front-matter": "^4.0.0"
   },
