@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, withRouter } from 'react-static'
+import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router'
 import debounce from 'lodash.debounce'
 
 import BlogNav from './blog-nav'

@@ -2,7 +2,7 @@
 import React from 'react'
 import debounce from 'lodash.debounce'
 //
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 
 import './service-item.scss'
 
@@ -41,7 +41,7 @@ export default class ServiceItem extends React.Component {
     return (
       <div ref={this.boundSetRef} className="service-item-container col-md-4 col-sm-9 col-xs-12">
         <Link
-          
+
           to={`/services/${item.slug}`}
           className="service-item"
           style={{

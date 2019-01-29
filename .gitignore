@@ -21,3 +21,4 @@ yarn-error.log*
 
 *.lock.*
 .vscode
+set-dev-env.sh

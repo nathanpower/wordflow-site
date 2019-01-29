@@ -1,7 +1,7 @@
 
 import React from 'react'
 //
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 
 import './blog-nav.scss'
 
@@ -26,7 +26,7 @@ export default ({ updateSearchQuery, posts, showSearch=true }) => (
 
           <Link
             to={path}
-            activeClassName={typeof window !== 'undefined' && window.location.pathname !== '/blog' && path === '/blog'? '' : 'active'}
+            className={typeof window !== 'undefined' && window.location.pathname !== '/blog' && path === '/blog'? '' : 'active'}
           >
             {category}
           </Link>

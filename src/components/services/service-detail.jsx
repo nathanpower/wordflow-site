@@ -1,11 +1,11 @@
 import React from 'react'
 //
-import { withRouter } from 'react-static'
+import { withRouter } from 'react-router'
 import DetailHeader from './detail-header'
 
 import './service-detail.scss'
 
-const serviceDetail = (({ detail, history }) => {
+const serviceDetail = (({ detail={}, history }) => {
   const nav = history.push
   const createMarkup = html => ({ __html: html })
   const imgLoadedHandler = el => {
