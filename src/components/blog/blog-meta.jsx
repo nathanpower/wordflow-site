@@ -1,6 +1,8 @@
 
 import React from 'react'
 //
+import { Link } from 'react-router-dom'
+import Slugify from 'slugify';
 
 export default (({ post, showDescription=false }) => {
   const formatDate = date => {
@@ -22,7 +24,7 @@ export default (({ post, showDescription=false }) => {
 
   return (
     <div className="item-meta">
-      <span>{date} in <a href="#">{post.category}</a> by <a href="#">{post.author}</a></span>
+      <span>{date} in <Link to={`/blog/category/${Slugify(post.category.toLowerCase())}`}>{post.category}</Link> by <Link to="/about">{post.author}</Link></span>
       { (showDescription && post.description) ?
         <div className="item-description"><span>{post.description}</span></div> : null }
     </div>
