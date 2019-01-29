@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
-    "dist": "npm run build && serve dist",
+    "dist": "npm run build && serve -l 3000 dist",
     "test": "eslint ./src || true"
   },
   "dependencies": {
@@ -38,6 +38,6 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.7.2",
     "sass-loader": "^7.0.0",
-    "serve": "^8.0.0"
+    "serve": "^10.1.1"
   }
 }
