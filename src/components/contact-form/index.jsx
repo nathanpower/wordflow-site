@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouter } from 'react-static'
+import { withRouter } from 'react-router'
 import { notify } from 'react-notify-toast'
 import Recaptcha from "react-google-recaptcha";
 

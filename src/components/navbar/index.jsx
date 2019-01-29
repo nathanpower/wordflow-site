@@ -2,7 +2,8 @@ import React from 'react'
 import classNames from 'classnames'
 import debounce from 'lodash.debounce'
 
-import { Link, SiteData } from 'react-static'
+import { SiteData } from 'react-static'
+import { Link } from 'react-router-dom'
 import BurgerIcon from '../icons/burger'
 import CancelIcon from '../icons/cancel'
 import NavDropdown from './nav-dropdown'
@@ -33,12 +34,15 @@ export default class NavBar extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
+
+    const right = this.state.dropdownPos.right;
+
     if (nextProps.scrolled && !this.props.scrolled) {
-      this.setState({ dropdownPos: { top: 50, right: this.state.dropdownPos.right } })
+      this.setState({ dropdownPos: { top: 50, right } })
     }
 
     if (!nextProps.scrolled && this.props.scrolled) {
-      this.setState({ dropdownPos: { top: 100, right: this.state.dropdownPos.right } })
+      this.setState({ dropdownPos: { top: 100, right } })
     }
   }
 
@@ -52,7 +56,7 @@ export default class NavBar extends React.Component {
 
     if (this.dropDownRef) {
       const { right } = this.dropDownRef.getBoundingClientRect()
-      this.setState({ dropdownPos: { top: scrolled ? 50 : 100, right: innerWidth - right } })
+      this.setState({ dropdownPos: { top: scrolled ? 50 : 100, right: window.innerWidth - right } })
     }
   }
 
@@ -61,7 +65,8 @@ export default class NavBar extends React.Component {
   }
 
   toggleDropdown () {
-    this.setState({ dropdownVisible: !this.state.dropdownVisible })
+    const currentVisibility = this.state.dropdownVisible;
+    this.setState({ dropdownVisible: !currentVisibility })
   }
 
   closeDropdown () {
@@ -69,7 +74,8 @@ export default class NavBar extends React.Component {
   }
 
   toggleMobileMenu () {
-    this.setState({ mobileMenuVisible: !this.state.mobileMenuVisible })
+    const currentVisibility = this.state.mobileMenuVisible;
+    this.setState({ mobileMenuVisible: !currentVisibility })
   }
 
   renderDesktopLinks () {
@@ -115,6 +121,7 @@ export default class NavBar extends React.Component {
     const Icon = this.state.mobileMenuVisible ? CancelIcon : BurgerIcon
     return (
       <button
+        type="button"
         className="burger-menu row end-xs col-xs-1"
         onClick={this.boundToggleMenu}
         ref={this.boundSetBurgerMenuRef}
@@ -126,12 +133,13 @@ export default class NavBar extends React.Component {
 
   renderMobileSublinks () {
     return (
-      <SiteData render={({ portfolioLinks }) => (
-        <div>
-          {portfolioLinks.map(link => <Link className="col-xs-12" to={`/services/${link.slug}`}>{link.title}</Link>)}
-        </div>
-      )}
-      />
+      <SiteData>
+        {({ portfolioLinks }) => (
+          <div>
+            {portfolioLinks.map(link => <Link className="col-xs-12" to={`/services/${link.slug}`}>{link.title}</Link>)}
+          </div>
+        )}
+      </SiteData>
     )
   }
 
@@ -161,19 +169,21 @@ export default class NavBar extends React.Component {
     const { scrolled } = this.props
 
     return (
-      <SiteData render={({ portfolioLinks }) => (
-        <div>
-          <nav className={classNames('full-width row middle-xs center-sm start-xs', { scrolled })}>
-            <div className="nav-home row start-xs col-sm-2 col-xs-11">
-              <Link to="/">WordFlow</Link>
-            </div>
-            {this.renderDesktopLinks()}
-            {this.renderBurgerMenu()}
-            {this.renderMobileLinks(portfolioLinks)}
-          </nav>
-          {this.renderDesktopDropDown(portfolioLinks)}
-        </div>
-      )} />
+      <SiteData>
+        {({ portfolioLinks }) => (
+          <div>
+            <nav className={classNames('full-width row middle-xs center-sm start-xs', { scrolled })}>
+              <div className="nav-home row start-xs col-sm-2 col-xs-11">
+                <Link to="/">WordFlow</Link>
+              </div>
+              {this.renderDesktopLinks()}
+              {this.renderBurgerMenu()}
+              {this.renderMobileLinks(portfolioLinks)}
+            </nav>
+            {this.renderDesktopDropDown(portfolioLinks)}
+          </div>
+        )}
+      </SiteData>
     )
   }
 }

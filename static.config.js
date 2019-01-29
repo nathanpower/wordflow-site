@@ -1,5 +1,3 @@
-import React from 'react'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import { getContent, getPortfolioContent, getPortfolioLinks } from './src/utils/content'
 import Document from './src/Document'
 
@@ -34,6 +32,11 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home',
+        localProps: {
+          portfolio,
+          quotes,
+          testimonials,
+        },
         getData: () => ({
           portfolio,
           quotes,
@@ -42,6 +45,7 @@ export default {
         children: portfolio.map(detail => ({
           path: `services/${detail.slug}`,
           component: 'src/containers/Service',
+          localProps: { detail },
           getData: () => ({
             detail,
           }),
@@ -58,6 +62,7 @@ export default {
       {
         path: '/about',
         component: 'src/containers/About',
+        localProps: { about },
         getData: () => ({
           about,
         }),
@@ -65,12 +70,14 @@ export default {
       {
         path: '/blog',
         component: 'src/containers/Blog',
+        localProps: { posts },
         getData: () => ({
           posts,
         }),
         children: posts.map(post => ({
           path: `/post/${post.slug}`,
           component: 'src/containers/Post',
+          localProps: { posts, post },
           getData: () => ({
             posts,
             post,
@@ -81,12 +88,14 @@ export default {
         path: '/blog/category',
         component: 'src/containers/Blog',
         redirect: '/blog',
+        localProps: { posts },
         getData: () => ({
           posts,
         }),
         children: categories.map(category => ({
           path: `/${category.slug}`,
           component: 'src/containers/Blog',
+          localProps: { posts, category },
           getData: () => ({
             posts,
             category,
@@ -97,12 +106,14 @@ export default {
         path: '/blog/archive',
         component: 'src/containers/Blog',
         redirect: '/blog',
+        localProps: { posts },
         getData: () => ({
           posts,
         }),
         children: archives.map(archive => ({
           path: `/${archive}`,
           component: 'src/containers/Blog',
+          localProps: { posts, archive },
           getData: () => ({
             posts,
             archive,
@@ -110,60 +121,13 @@ export default {
         })),
       },
       {
-        is404: true,
-        redirect: '/',
+        path: '404',
+        component: 'src/containers/404',
       },
     ]
   },
-  webpack: (config, { stage, defaultLoaders }) => {
-    let loaders = []
-
-    if (stage === 'dev') {
-      loaders = [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
-    } else {
-      loaders = [
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1,
-            minimize: stage === 'prod',
-            sourceMap: false,
-          },
-        },
-        {
-          loader: 'sass-loader',
-          options: { includePaths: ['src/'] },
-        },
-      ]
-
-      // Don't extract css to file during node build process
-      if (stage !== 'node') {
-        loaders = ExtractTextPlugin.extract({
-          fallback: {
-            loader: 'style-loader',
-            options: {
-              sourceMap: false,
-              hmr: false,
-            },
-          },
-          use: loaders,
-        })
-      }
-    }
-
-    config.module.rules = [
-      {
-        oneOf: [
-          {
-            test: /\.s(a|c)ss$/,
-            use: loaders,
-          },
-          defaultLoaders.cssLoader,
-          defaultLoaders.jsLoader,
-          defaultLoaders.fileLoader,
-        ],
-      },
-    ]
-    return config
-  },
+  plugins: [
+    'react-static-plugin-sass',
+    'react-static-plugin-react-router'
+  ]
 }

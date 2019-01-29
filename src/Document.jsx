@@ -29,7 +29,7 @@ const renderMeta = routeInfo => {
     )
   }
 
-  if (routeInfo.path.includes('blog/post')) {
+  if (routeInfo.path.includes('blog/post') && routeInfo.allProps) {
     const {
       title, description, author, date, image,
     } = routeInfo.allProps.post
@@ -49,7 +49,7 @@ const renderMeta = routeInfo => {
     )
   }
 
-  const { detail = {} } = routeInfo.allProps
+  const { detail = {} } = routeInfo.allProps && routeInfo.allProps.detail ? routeInfo.allProps.detail : {}
   const { meta = {}, title = siteName } = detail
 
   return (

@@ -1,7 +1,7 @@
 
 import React from 'react'
 //
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 
 import './call-to-action.scss'
 
