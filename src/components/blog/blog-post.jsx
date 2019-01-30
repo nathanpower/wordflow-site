@@ -6,7 +6,7 @@ import BlogNav from './blog-nav'
 
 import './blog-post.scss'
 
-export default (({ post, posts }) => {
+export default (({ post = { category: '' }, posts }) => {
   const createMarkup = () => ({ __html: post.html })
   const image = post.image ? `../../../images/${post.image}` : 'https://placeimg.com/800/450/arch'
   const imageCaption = post.imageCaption || ''

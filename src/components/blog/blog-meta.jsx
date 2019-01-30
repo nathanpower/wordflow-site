@@ -24,7 +24,13 @@ export default (({ post, showDescription=false }) => {
 
   return (
     <div className="item-meta">
-      <span>{date} in <Link to={`/blog/category/${Slugify(post.category.toLowerCase())}`}>{post.category}</Link> by <Link to="/about">{post.author}</Link></span>
+      <span>{date} in <Link
+        onClick={e => e.stopPropagation()}
+        to={`/blog/category/${Slugify(post.category.toLowerCase())}`}
+      >{post.category}</Link> by <Link
+        onClick={e => e.stopPropagation()}
+        to="/about"
+      >{post.author}</Link></span>
       { (showDescription && post.description) ?
         <div className="item-description"><span>{post.description}</span></div> : null }
     </div>
