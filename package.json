@@ -30,7 +30,7 @@
     "react-static-plugin-react-router": "^6.3.1",
     "react-static-plugin-sass": "^6.3.0",
     "slugify": "^1.2.9",
-    "webpack": "4.28.2",
+    "webpack": "4.29.1",
     "yaml-front-matter": "^4.0.0"
   },
   "devDependencies": {
