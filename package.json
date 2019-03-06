@@ -20,7 +20,7 @@
     "marked": "^0.5.0",
     "normalize.css": "^8.0.0",
     "nuka-carousel": "^4.0.0",
-    "react": "^16.0.0",
+    "react": "^16.8.4",
     "react-dom": "^16.0.0",
     "react-google-recaptcha": "^1.0.5",
     "react-notify-toast": "^0.5.0",
