@@ -31,7 +31,7 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/Home',
+        template: 'src/containers/Home',
         localProps: {
           portfolio,
           quotes,
@@ -44,7 +44,7 @@ export default {
         }),
         children: portfolio.map(detail => ({
           path: `services/${detail.slug}`,
-          component: 'src/containers/Service',
+          template: 'src/containers/Service',
           localProps: { detail },
           getData: () => ({
             detail,
@@ -57,11 +57,11 @@ export default {
       },
       {
         path: '/contact',
-        component: 'src/containers/Contact',
+        template: 'src/containers/Contact',
       },
       {
         path: '/about',
-        component: 'src/containers/About',
+        template: 'src/containers/About',
         localProps: { about },
         getData: () => ({
           about,
@@ -69,14 +69,14 @@ export default {
       },
       {
         path: '/blog',
-        component: 'src/containers/Blog',
+        template: 'src/containers/Blog',
         localProps: { posts },
         getData: () => ({
           posts,
         }),
         children: posts.map(post => ({
           path: `/post/${post.slug}`,
-          component: 'src/containers/Post',
+          template: 'src/containers/Post',
           localProps: { posts, post },
           getData: () => ({
             posts,
@@ -86,7 +86,7 @@ export default {
       },
       {
         path: '/blog/category',
-        component: 'src/containers/Blog',
+        template: 'src/containers/Blog',
         redirect: '/blog',
         localProps: { posts },
         getData: () => ({
@@ -94,7 +94,7 @@ export default {
         }),
         children: categories.map(category => ({
           path: `/${category.slug}`,
-          component: 'src/containers/Blog',
+          template: 'src/containers/Blog',
           localProps: { posts, category },
           getData: () => ({
             posts,
@@ -104,7 +104,7 @@ export default {
       },
       {
         path: '/blog/archive',
-        component: 'src/containers/Blog',
+        template: 'src/containers/Blog',
         redirect: '/blog',
         localProps: { posts },
         getData: () => ({
@@ -112,7 +112,7 @@ export default {
         }),
         children: archives.map(archive => ({
           path: `/${archive}`,
-          component: 'src/containers/Blog',
+          template: 'src/containers/Blog',
           localProps: { posts, archive },
           getData: () => ({
             posts,
@@ -122,12 +122,13 @@ export default {
       },
       {
         path: '404',
-        component: 'src/containers/404',
+        template: 'src/containers/404',
       },
     ]
   },
   plugins: [
-    'react-static-plugin-sass',
-    'react-static-plugin-react-router'
+    require.resolve('react-static-plugin-sass'),
+    require.resolve('react-static-plugin-react-router'),
+    require.resolve('react-static-plugin-sitemap')
   ]
 }
