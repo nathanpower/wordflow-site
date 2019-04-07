@@ -19,6 +19,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+artifacts
+
 *.lock.*
 .vscode
 set-dev-env.sh
