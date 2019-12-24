@@ -33,7 +33,7 @@
     "react-static-plugin-sitemap": "^7.0.0",
     "slugify": "^1.2.9",
     "webpack": "^4.28.2",
-    "yaml-front-matter": "^4.0.0"
+    "yaml-front-matter": "^4.1.0"
   },
   "devDependencies": {
     "eslint-config-react-tools": "^1.1.7",
