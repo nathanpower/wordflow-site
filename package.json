@@ -17,7 +17,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.flatten": "^4.4.0",
     "lodash.startcase": "^4.4.0",
-    "marked": "^0.6.2",
+    "marked": "^0.8.1",
     "normalize.css": "^8.0.0",
     "nuka-carousel": "^4.0.0",
     "react": "^16.0.0",
