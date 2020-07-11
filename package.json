@@ -23,7 +23,7 @@
     "react": "^16.0.0",
     "react-animation": "^1.0.9",
     "react-dom": "^16.0.0",
-    "react-google-recaptcha": "^2.0.1",
+    "react-google-recaptcha": "^1.1.0",
     "react-notify-toast": "^0.5.0",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",

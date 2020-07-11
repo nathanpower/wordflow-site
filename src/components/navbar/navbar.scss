@@ -46,10 +46,10 @@ nav {
     &:after {
       content: "\25BC";
       display: inline-block;
-      font-size: 8px;
+      font-size: 12px;
       position: relative;
       margin-left: 3px;
-      top: 40%;
+      top: 50%;
 
       transform: translateY(-50%);
     }
