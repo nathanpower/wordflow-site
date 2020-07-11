@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import debounce from 'lodash.debounce'
 
 import { SiteData } from 'react-static'
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 import BurgerIcon from '../icons/burger'
 import CancelIcon from '../icons/cancel'
 import NavDropdown from './nav-dropdown'
@@ -11,7 +11,7 @@ import ClickElseWhere from '../shared/click-elsewhere'
 
 import './navbar.scss'
 
-export default class NavBar extends React.Component {
+class NavBar extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -84,7 +84,7 @@ export default class NavBar extends React.Component {
       return null
     }
 
-    const servicesActive = typeof window !== 'undefined' && window.location.pathname.startsWith('/services');
+    const servicesActive = this.props.location.pathname.startsWith('/services');
 
     return (
       <div className="nav-links row end-sm col-sm-9">
@@ -189,3 +189,5 @@ export default class NavBar extends React.Component {
     )
   }
 }
+
+export default withRouter(NavBar);

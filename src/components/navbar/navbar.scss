@@ -43,6 +43,7 @@ nav {
 
   .nav-links .dropdown-button {
     cursor: pointer;
+    border-bottom: 1px solid transparent;
 
     &:after {
       content: "\25BC";
@@ -50,7 +51,7 @@ nav {
       font-size: 12px;
       position: relative;
       margin-left: 3px;
-      top: 50%;
+      top: 7px;
       transform: translateY(-50%);
     }
 
@@ -99,6 +100,7 @@ nav.scrolled .nav-home a {
   color: $black;
   opacity: 1;
   font-weight: 400;
+  border-bottom: 1px solid transparent;
 }
 
 nav.scrolled .nav-links a,
