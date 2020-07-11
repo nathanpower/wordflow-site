@@ -1,0 +1,116 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: public/img
+public_folder: img
+collections:
+  - label: "About Page"
+    name: "about"
+    files: "content/about/about.md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Image", name: "heroImage", widget: "image" }
+      - { label: "Hero Image Info", name: "heroInfo", widget: "string" }
+  - label: "Blog"
+    name: "blog"
+    folder: "content/blog"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - label: "Author",
+        name: "author",
+        widget: "select",
+        default: "Rob Power"
+        options: ["Rob Power"]
+      - label: "Category",
+        name: "title",
+        widget: "string":
+        default: "Opinion"
+        options: ["Economics", "Glazing Industry", "Self Help", "Opinion"]
+      - { label: "Date", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Portfolio"
+    name: "portfolio"
+    folder: "content/portfolio"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - label: "Meta"
+        name: "meta"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+  - label: "Blog Creation"
+    name: "blog-creation"
+    folder: "content/portfolio/blog-creation"
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - { label: "Link", name: "link", widget: "string" }
+  - label: "Copy Editing"
+    name: "copy-editing"
+    folder: "content/portfolio/copy-editing"
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - { label: "Link", name: "link", widget: "string" }
+  - label: "Social Media"
+    name: "social-media"
+    folder: "content/portfolio/social-media"
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - { label: "Link", name: "link", widget: "string" }
+  - label: "Video Scripts"
+    name: "video-scripts"
+    folder: "content/portfolio/video-scripts"
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - { label: "Link", name: "link", widget: "string" }
+  - label: "Social Media"
+    name: "social-media"
+    folder: "content/portfolio/social-media"
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - { label: "Link", name: "link", widget: "string" }
+  - label: "Website Copy"
+    name: "website-copy"
+    folder: "content/portfolio/website-copy"
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - { label: "Link", name: "link", widget: "string" }
+  - label: "Writer for Hire"
+    name: "writer-for-hire"
+    folder: "content/portfolio/writer-for-hire"
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+      - { label: "Link", name: "link", widget: "string" }
+  - label: "Quotes"
+    name: "quotes"
+    folder: "content/quotes"
+    fields:
+      - { label: "Client", name: "client", widget: "string", identifier_field: "client" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+  - label: "Testimonials"
+    name: "testimonials"
+    folder: "content/testimonials"
+    fields:
+      - { label: "Client", name: "client", widget: "string", identifier_field: "client" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
+
+

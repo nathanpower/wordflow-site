@@ -49,7 +49,7 @@ export const getContent = async folder => {
 export const getOverviews = async () => {
   const paths = await getPortfolioPaths()
 
-  const overViewPromises = paths.map(path => Glob([`${path}/overview*.md`]))
+  const overViewPromises = paths.map(path => Glob([`${path}.md`]))
 
   const overviewPaths = await Promise.all(overViewPromises)
 
@@ -76,7 +76,7 @@ export const getPortfolioLinks = async () => {
 export const getPortfolioContent = async () => {
   const overviews = await getOverviews()
 
-  const entryPromises = overviews.map(({ path }) => Glob([`${path}/entries/*.md`]))
+  const entryPromises = overviews.map(({ path }) => Glob([`${path}/*.md`]))
   const contentPaths = await Promise.all(entryPromises)
   const contentFilePromises = contentPaths.map(paths => readFiles(paths))
   const contentFiles = await Promise.all(contentFilePromises)
