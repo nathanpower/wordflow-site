@@ -27,7 +27,8 @@ nav {
   .nav-links a,
   .nav-links .dropdown-button {
     color: $white;
-    padding: 1rem;
+    margin: 16px;
+    padding: 3px 0;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -50,8 +51,12 @@ nav {
       position: relative;
       margin-left: 3px;
       top: 50%;
-
       transform: translateY(-50%);
+    }
+
+    &.nav-active,
+    &:hover {
+      border-bottom: 1px solid $white
     }
   }
 }
@@ -83,12 +88,25 @@ nav {
   }
 }
 
+.nav-links a.nav-active,
+.nav-links a:hover {
+  border-bottom: 1px solid $white;
+}
+
 nav.scrolled .nav-links a,
 nav.scrolled .nav-links .dropdown-button,
 nav.scrolled .nav-home a {
   color: $black;
   opacity: 1;
   font-weight: 400;
+}
+
+nav.scrolled .nav-links a,
+nav.scrolled .nav-links .dropdown-button {
+  &.nav-active,
+  &:hover {
+    border-bottom: 1px solid $black;
+  }
 }
 
 @media only screen and (min-width: 48em) {

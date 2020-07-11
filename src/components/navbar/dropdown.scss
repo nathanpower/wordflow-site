@@ -40,6 +40,10 @@
           color: $white;
         }
       }
+
+      a.nav-active {
+        color: $white;
+      }
     }
 
     li:last-child {
@@ -52,7 +56,7 @@
       color: #8d8d8d;
 
       &:hover,
-      &.active {
+      &:active {
         color: $white;
       }
     }

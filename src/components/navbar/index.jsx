@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import debounce from 'lodash.debounce'
 
 import { SiteData } from 'react-static'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import BurgerIcon from '../icons/burger'
 import CancelIcon from '../icons/cancel'
 import NavDropdown from './nav-dropdown'
@@ -66,6 +66,7 @@ export default class NavBar extends React.Component {
 
   toggleDropdown () {
     const currentVisibility = this.state.dropdownVisible;
+    console.log({ currentVisibility })
     this.setState({ dropdownVisible: !currentVisibility })
   }
 
@@ -83,19 +84,21 @@ export default class NavBar extends React.Component {
       return null
     }
 
+    const servicesActive = typeof window !== 'undefined' && window.location.pathname.startsWith('/services');
+
     return (
       <div className="nav-links row end-sm col-sm-9">
         <div
           role="navigation"
-          className="dropdown-button"
+          className={`dropdown-button${servicesActive ? ' nav-active' : ''}`}
           onClick={this.boundToggleDropdown}
           ref={this.boundSetDropdownRef}
         >
           Services
         </div>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/blog">Blog</Link>
+        <NavLink activeClassName="nav-active" to="/about">About</NavLink>
+        <NavLink activeClassName="nav-active" to="/contact">Contact</NavLink>
+        <NavLink activeClassName="nav-active" to="/blog">Blog</NavLink>
       </div>
     )
   }
@@ -135,7 +138,7 @@ export default class NavBar extends React.Component {
       <SiteData>
         {({ portfolioLinks }) => (
           <div>
-            {portfolioLinks.map(link => <Link className="col-xs-12" to={`/services/${link.slug}`}>{link.title}</Link>)}
+            {portfolioLinks.map(link => <NavLink className="col-xs-12" to={`/services/${link.slug}`}>{link.title}</NavLink>)}
           </div>
         )}
       </SiteData>
@@ -149,17 +152,17 @@ export default class NavBar extends React.Component {
 
     return (
       <div className="mobile-nav open full-width row start-xs">
-      <Link className="col-xs-12" to="/about">About</Link>
+      <NavLink className="col-xs-12" to="/about">About</NavLink>
         {portfolioLinks.map(link => (
-          <Link
+          <NavLink
             onClick={this.boundCloseDropdown}
             key={link.slug}
             className="col-xs-12"
             to={`/services/${link.slug}`}>{link.title}
-          </Link>
+          </NavLink>
         ))}
-        <Link className="col-xs-12" to="/contact">Contact</Link>
-        <Link className="col-xs-12" to="/blog">Blog</Link>
+        <NavLink className="col-xs-12" to="/contact">Contact</NavLink>
+        <NavLink className="col-xs-12" to="/blog">Blog</NavLink>
       </div>
     )
   }
@@ -173,7 +176,7 @@ export default class NavBar extends React.Component {
           <div>
             <nav className={classNames('full-width row middle-xs center-sm start-xs', { scrolled })}>
               <div className="nav-home row start-xs col-sm-2 col-xs-11">
-                <Link to="/">WordFlow</Link>
+                <NavLink to="/">WordFlow</NavLink>
               </div>
               {this.renderDesktopLinks()}
               {this.renderBurgerMenu()}

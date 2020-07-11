@@ -1,19 +1,19 @@
 @import '../../variables.scss';
 
 .carousel {
-  height: 350px;
+  height: auto;
+  padding: 24px 0;
 
   .carousel-item {
     width: 100%;
     display: flex;
+
     justify-content: center;
     color: $white;
     font-family: Montserrat, sans-serif;
   }
 
   h2.carousel-header {
-    padding-bottom: 0;
-    padding-top: 40px;
     height: 40px;
     color: $white;
     font-family: Montserrat, sans-serif;
@@ -29,7 +29,7 @@
     font-weight: 700;
     line-height: 50px;
     letter-spacing: -2px;
-    margin: 0;
+    margin: 0 0 24px;
 
     @media only screen and (max-width: 48em) {
       font-size: 30px;
@@ -79,6 +79,24 @@
 .slider-control-centerleft,
 .slider-control-centerright {
   display: none;
+}
+
+.slider-control-bottomcenter {
+
+  bottom: -16px!important;
+
+  .paging-item svg {
+
+    width: 24px;
+    height: 12px;
+
+    circle {
+      cx: 6;
+      cy: 6;
+      r: 6;
+    }
+
+  }
 }
 
 .slider-decorator-2 {
