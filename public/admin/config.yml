@@ -6,7 +6,7 @@ public_folder: img
 collections:
   - label: "About Page"
     name: "about"
-    files: "content/about/about.md"
+    folder: "content/about"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
