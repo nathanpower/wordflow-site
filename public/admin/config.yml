@@ -50,7 +50,7 @@ collections:
     folder: "content/portfolio/blog-creation"
     fields:
       - { label: "Client", name: "client", widget: "string" }
-      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Image", name: "image", widget: "image" }
       - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
