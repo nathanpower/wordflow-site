@@ -2,11 +2,11 @@
 title: Writer For Hire
 thumbnail: logo-white-bg.jpg
 order: 6
-heroImage: 'typewriter.jpg'
-heroInfo: 'Photo by Patrick Fore on Unsplash'
 meta:
-  title: 'Professional Writer for Hire'
-  description: 'Scripts, white papers, proposals, speeches; whatever your writing need, we have the experience to deliver'
+  description: >-
+    Scripts, white papers, proposals, speeches; whatever your writing need, we
+    have the experience to deliver.
+  title: Professional Writer for Hire
 ---
 We specialise in finding the right words to meet your needs. Over the years we have found that your needs might not always fit neatly into one of our service categories. For example, we have been engaged to write copy for mobile phone apps, to re-write white papers for companies seeking investment, we have written application letters and copy edited PhD proposals, we have even helped people with speeches. The point is that we believe we can help you regardless of the nature of your communications need, which is why we created this category.
 
