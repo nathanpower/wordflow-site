@@ -39,6 +39,8 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Hero Image", name: "heroImage", widget: "image" }
+      - { label: "Hero Image Info", name: "heroInfo", widget: "string" }
       - label: "Meta"
         name: "meta"
         widget: "object"
