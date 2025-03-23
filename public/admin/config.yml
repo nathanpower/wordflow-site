@@ -2,9 +2,9 @@ backend:
   name: github
   repo: nathanpower/wordflow-site
   branch: master
+  base_url: https://decap.wordflow.ie
 media_folder: public/images
 public_folder: /images
-base_url: https://decap.wordflow.ie
 collections:
   - label: "About Page"
     name: "about"
