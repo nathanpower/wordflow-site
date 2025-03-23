@@ -8,7 +8,7 @@ const renderMeta = routeInfo => {
   const siteName = 'WordFlow'
   const tagLine = 'Let us worry about the words'
   const siteDescription = 'A one stop shop for all your Copy and content needs'
-  const canonicalUrl = 'https://www.wordflow.ie'
+  const canonicalUrl = 'https://wordflow.ie'
   const defaultImage = 'splash-screen.jpg'
 
   if (routeInfo.path === '/') {

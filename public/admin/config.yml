@@ -3,6 +3,7 @@ backend:
   branch: master
 media_folder: public/images
 public_folder: /images
+base_url: https://decap.wordflow.ie
 collections:
   - label: "About Page"
     name: "about"
