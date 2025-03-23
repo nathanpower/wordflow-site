@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: nathanpower/wordflow-site
   branch: master
 media_folder: public/images
 public_folder: /images
