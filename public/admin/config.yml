@@ -8,7 +8,7 @@ collections:
     name: "about"
     folder: "content/about"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "about-title", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
       - { label: "Hero Image Info", name: "heroInfo", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -16,7 +16,7 @@ collections:
     name: "blog"
     folder: "content/blog"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "blog-title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - label: "Author"
         name: "author"
@@ -24,7 +24,7 @@ collections:
         default: "Rob Power"
         options: ["Rob Power"]
       - label: "Category"
-        name: "title"
+        name: "category-title"
         widget: "string"
         default: "Opinion"
         options: ["Economics", "Glazing Industry", "Self Help", "Opinion"]
@@ -35,7 +35,7 @@ collections:
     name: "portfolio"
     folder: "content/portfolio"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "portfolio-title", widget: "string" }
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -45,8 +45,8 @@ collections:
         name: "meta"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Title", name: "meta-title", widget: "string" }
+          - { label: "Description", name: "meta-description", widget: "string" }
   - label: "Blog Creation"
     name: "blog-creation"
     folder: "content/portfolio/blog-creation"
@@ -77,15 +77,6 @@ collections:
   - label: "Video Scripts"
     name: "video-scripts"
     folder: "content/portfolio/video-scripts"
-    fields:
-      - { label: "Client", name: "client", widget: "string" }
-      - { label: "Image", name: "thumbnail", widget: "image" }
-      - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
-      - { label: "Link", name: "link", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Social Media"
-    name: "social-media"
-    folder: "content/portfolio/social-media"
     fields:
       - { label: "Client", name: "client", widget: "string" }
       - { label: "Image", name: "thumbnail", widget: "image" }
@@ -125,5 +116,3 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Order", name: "order", widget: "number", valueType: "int", default: 1 }
       - { label: "Body", name: "body", widget: "markdown" }
-
-
