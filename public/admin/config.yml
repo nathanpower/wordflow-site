@@ -1,10 +1,8 @@
 backend:
-  name: github
-  repo: nathanpower/wordflow-site
+  name: git-gateway
   branch: master
 media_folder: public/images
-site_url: https://wordflow.ie
-publish_mode: editorial_workflow
+public_folder: /images
 collections:
   - label: "About Page"
     name: "about"
